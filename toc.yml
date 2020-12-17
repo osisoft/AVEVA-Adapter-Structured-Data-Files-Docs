@@ -1,4 +1,4 @@
-- name: PI Adapter for Structured Data Files
+- name: PI Adapter for Structured Data Files versions
   dropdown: true
   items:
   - name: PI Adapter for Structured Data Files 1.0
