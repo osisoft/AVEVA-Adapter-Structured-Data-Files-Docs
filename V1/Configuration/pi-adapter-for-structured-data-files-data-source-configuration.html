@@ -89,8 +89,8 @@
 </ul>
 </li>
 <li>Save the file. For example, <code>ConfigureDataSource.json</code>.</li>
-<li><p>Use any of the <a class="xref" href="../Main/V1.3/Configuration/configuration-tools.html">Configuration tools</a> capable of making HTTP requests to run a PUT command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;ComponentId&gt;/DataSource/</code>.</p>
-<p>   <strong>Note:</strong> The following example uses SDF1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../Main/V1.3/Configuration/system-components-configuration.html">System components configuration</a>.</p>
+<li><p>Use any of the <a class="xref" href="../main/V1.3/Configuration/configuration-tools.html">Configuration tools</a> capable of making HTTP requests to run a PUT command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;ComponentId&gt;/DataSource/</code>.</p>
+<p>   <strong>Note:</strong> The following example uses SDF1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1.3/Configuration/system-components-configuration.html">System components configuration</a>.</p>
 <p> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
 <p> Example using <code>curl</code>:</p>
 <pre><code class="lang-bash">curl -d &quot;@ConfigureDataSource.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/SDF1/DataSource&quot;
