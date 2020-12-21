@@ -53,6 +53,7 @@ The following parameters are available for configuring a Structured Data Files d
 | **OutputDirectory** | Required | `string` | Location for the files to be moved to after being processed.<br><br>Example: `C:\\OutputDirectory` |
 | **HasHeader** | Optional | `bool` | Indicates if a header line is present in the file.<br><br>Default value: `false` |
 | **Culture** | Optional | `string` | Locale setting for the input files.<br><br>Example: `en-US`<br>Default value: local culture |
+| **TimeZone** | Optional | `string` | Time zone of timestamps in the input files. If specified, the value must be a valid entry from the IANA time zone database.<br><br>Example: `America/Los_Angeles`<br>Default value: `Etc/UTC` |
 | **Format** | Optional | `string` | Input file format.<br><br>Allowed values: `Csv`, `Json`, `Xml`<br><br>Default value: `Csv` |
 | **Compression** | Optional | `string` | Input file compression format.<br><br>Allowed value: `None`, `Zip`, `Tar`, `GZip`, `TarGZip`<br>Default value: `None` |
 | **Encoding** | Optional | `string` | Character encoding used in the input files. <br><br>Allowed value: `UTF8`, `ASCII`, `Unicode`<br>Default value: `UTF8` |
@@ -82,7 +83,8 @@ The following are examples of valid Structured Data Files data source configurat
   "InputPath": "C:\\InputDirectory\\*.csv",
   "OutputDirectory": "C:\\OutputDirectory",
   "HasHeader": true,
-  "Culture": "en-ca",
+  "Culture": "fr-FR",
+  "TimeZone": "Europe/Paris",
   "Compression": "Zip",
   "FieldSeparator": "|"
 }
