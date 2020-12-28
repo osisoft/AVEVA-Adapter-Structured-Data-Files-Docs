@@ -49,8 +49,9 @@ The following parameters are available for configuring a Structured Data Files d
 | Parameter                     | Required | Type      | Description |
 |-------------------------------|----------|-----------|-------------|
 | **FriendlyName** | Optional | `string` | The label to use for the data source. |
-| **InputPath** | Required | `string` | Location of the source files to process. Can optionally include a wildcard as part of the path.<br><br>Example: `C:\\InputDirectory`, `C:\\InputDirectory\\*.csv"` |
+| **InputDirectory** | Required | `string` | Location of the source files to process.<br><br>Example: `C:\\InputDirectory` |
 | **OutputDirectory** | Required | `string` | Location for the files to be moved to after being processed.<br><br>Example: `C:\\OutputDirectory` |
+| **FileNameFilter** | Optional | `string` | File name filter for files in the InputDirectory. Use `*` as the wildcard character.<br><br>Example: `*.csv` |
 | **HasHeader** | Optional | `bool` | Indicates if a header line is present in the file.<br><br>Default value: `false` |
 | **Culture** | Optional | `string` | Locale setting for the input files.<br><br>Example: `en-US`<br>Default value: local culture |
 | **TimeZone** | Optional | `string` | Time zone of timestamps in the input files. If specified, the value must be a valid entry from the IANA time zone database.<br><br>Example: `America/Los_Angeles`<br>Default value: `Etc/UTC` |
@@ -70,7 +71,7 @@ The following are examples of valid Structured Data Files data source configurat
 
 ```json
 {
-  "InputPath": "C:\\InputDirectory",
+  "InputDirectory": "C:\\InputDirectory",
   "OutputDirectory": "C:\\OutputDirectory"
 }
 ```
@@ -80,7 +81,8 @@ The following are examples of valid Structured Data Files data source configurat
 ```json
 {
   "FriendlyName": "Weather",
-  "InputPath": "C:\\InputDirectory\\*.csv",
+  "InputDirectory": "C:\\InputDirectory",
+  "FileNameFilter": "*.csv",
   "OutputDirectory": "C:\\OutputDirectory",
   "HasHeader": true,
   "Culture": "fr-FR",
