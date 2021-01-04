@@ -8,7 +8,7 @@
     <title>PI Adapter for Structured Data Files data source configuration </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="PI Adapter for Structured Data Files data source configuration ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -123,16 +123,22 @@
 <td>The label to use for the data source.</td>
 </tr>
 <tr>
-<td><strong>InputPath</strong></td>
+<td><strong>InputDirectory</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>Location of the source files to process. Can optionally include a wildcard as part of the path.<br><br>Example: <code>C:\\InputDirectory</code>, <code>C:\\InputDirectory\\*.csv&quot;</code></td>
+<td>Location of the source files to process.<br><br>Example: <code>C:\\InputDirectory</code></td>
 </tr>
 <tr>
 <td><strong>OutputDirectory</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
 <td>Location for the files to be moved to after being processed.<br><br>Example: <code>C:\\OutputDirectory</code></td>
+</tr>
+<tr>
+<td><strong>FileNameFilter</strong></td>
+<td>Optional</td>
+<td><code>string</code></td>
+<td>File name filter for files in the InputDirectory. Use <code>*</code> as the wildcard character.<br><br>Example: <code>*.csv</code></td>
 </tr>
 <tr>
 <td><strong>HasHeader</strong></td>
@@ -145,6 +151,12 @@
 <td>Optional</td>
 <td><code>string</code></td>
 <td>Locale setting for the input files.<br><br>Example: <code>en-US</code><br>Default value: local culture</td>
+</tr>
+<tr>
+<td><strong>TimeZone</strong></td>
+<td>Optional</td>
+<td><code>string</code></td>
+<td>Time zone of timestamps in the input files. If specified, the value must be a valid entry from the IANA time zone database.<br><br>Example: <code>America/Los_Angeles</code><br>Default value: <code>Etc/UTC</code></td>
 </tr>
 <tr>
 <td><strong>Format</strong></td>
@@ -194,16 +206,18 @@
 <p>The following are examples of valid Structured Data Files data source configurations:</p>
 <h3 id="structured-data-files-data-source-configuration-1">Structured Data Files data source configuration #1</h3>
 <pre><code class="lang-json">{
-  &quot;InputPath&quot;: &quot;C:\\InputDirectory&quot;,
+  &quot;InputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
   &quot;OutputDirectory&quot;: &quot;C:\\OutputDirectory&quot;
 }
 </code></pre><h3 id="structured-data-files-data-source-configuration-2">Structured Data Files data source configuration #2</h3>
 <pre><code class="lang-json">{
   &quot;FriendlyName&quot;: &quot;Weather&quot;,
-  &quot;InputPath&quot;: &quot;C:\\InputDirectory\\*.csv&quot;,
+  &quot;InputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
+  &quot;FileNameFilter&quot;: &quot;*.csv&quot;,
   &quot;OutputDirectory&quot;: &quot;C:\\OutputDirectory&quot;,
   &quot;HasHeader&quot;: true,
-  &quot;Culture&quot;: &quot;en-ca&quot;,
+  &quot;Culture&quot;: &quot;fr-FR&quot;,
+  &quot;TimeZone&quot;: &quot;Europe/Paris&quot;,
   &quot;Compression&quot;: &quot;Zip&quot;,
   &quot;FieldSeparator&quot;: &quot;|&quot;
 }
