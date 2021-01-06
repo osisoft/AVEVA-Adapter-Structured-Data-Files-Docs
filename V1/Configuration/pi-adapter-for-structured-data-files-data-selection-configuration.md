@@ -54,7 +54,7 @@ Linux: `/opt/OSIsoft/Adapters/StructuredDataFiles/Schemas`
 
 | Parameter        | Required | Type      | Description |
 |------------------|----------|-----------|-------------|
-| **Name** | Optional | `string` | The optional friendly name of the data item collected from the data source. If not configured, the default value is null and results in the ****StreamId**** value being  used also as a ****Name****. |
+| **Name** | Optional | `string` | The optional friendly name of the data item collected from the data source. If not configured, the default value is null and results in the ****StreamId**** value being used also as a ****Name****. |
 | **DataFilterId** | Optional | `string` | The identifier of a data filter defined in the [Data filters configuration](xref:DataFiltersConfiguration). <br>By default, no filter is applied. |
 | **Selected** | Optional | `boolean` | If true, data for this item is collected and sent to one or more configured OMF endpoint.<br><br>Allowed value: `true` or `false`<br>Default value:`true` |
 | **StreamId** | Optional | `string` | The custom identifier used to create the streams. If not specified, the Structured Data Files adapter generates a default value based on the `DefaultStreamIdPattern` in the [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterForStructuredDataFilesDataSourceConfiguration).<br>A properly configured custom stream ID follows these rules: <br> Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores ("__").<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters:<br>\/  \:  \? \#  \[  \]  \@  \!  \$  \&  \'  \(  \)  \\  \*  \+  \,  \;  \=  \%  \<  \>  \`|
