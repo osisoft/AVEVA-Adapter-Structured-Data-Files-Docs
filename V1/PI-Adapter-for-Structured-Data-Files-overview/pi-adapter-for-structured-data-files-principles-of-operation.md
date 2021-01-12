@@ -78,7 +78,7 @@ The metadata level is set in [General configuration](xref:GeneralConfiguration).
 - `Medium`: AdapterType (_ComponentType_) and DataSource (_ComponentId_)
 - `High`: AdapterType (_ComponentType_), DataSource (_ComponentId_), InputDirectory
 
-Stream created for a given item have a unique identifier (stream ID). If you specify a custom stream ID for the item in data selection configuration, the adapter uses that stream ID to create the stream. Otherwise, the adapter constructs the stream ID with the following format constructed from the data source's `FriendlyName` and the item's `ValueField`:
+Each stream created for a given item has a unique identifier (stream ID). If you specify a custom stream ID for the item in data selection configuration, the adapter uses that stream ID to create the stream. Otherwise, the adapter constructs the stream ID with the following format constructed from the data source's `FriendlyName` and the item's `ValueField`:
 
 ```code
 <Adapter Component ID>.<FriendlyName>.<ValueField>
