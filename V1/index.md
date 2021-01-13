@@ -4,7 +4,7 @@ uid: PIAdapterforSDFOverview
 
 # PI Adapter for Structured Data Files overview
 
-PI Adapter for Strcutured Data Files is a data-collection component that transfers time-series data from source devices to OMF endpoints in OSIsoft Cloud Services or PI Servers. --TBD Content--
+PI Adapter for Structured Data Files is a data-collection component that transfers time-series data from source files in a local or remote directory to OMF endpoints in OSIsoft Cloud Services or PI Servers. 
 
 ## Adapter installation
 
