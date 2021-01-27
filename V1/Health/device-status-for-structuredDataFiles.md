@@ -17,9 +17,9 @@ The possible statuses:
 
 | Status                            | Meaning                               |
 |-----------------------------------|---------------------------------------|
-| `Good`                          | The component is connected to the data source and it is collecting data. |
-| `ConnectedNoData`               | The component is connected to the data source but it is not receiving data from it. |
-| `AttemptingFailover`            | The adapter is attempting to failover. |
+| `Good`                          | Connected to a DataSource, able to process files successfully. |
+| `ConnectedNoData`               | Connected to a DataSource, but error processing files. |
+| `No Status`                     | Connected to a Datasource, but no files to process. |
 | `Starting`                      | The component is currently in the process of starting up and is not yet connected to the data source. |
 | `DeviceInError`                 | The component encountered an error either while connecting to the data source or attempting to collect data. |
 | `Shutdown`                      | The component is either in the process of shutting down or has finished. |
