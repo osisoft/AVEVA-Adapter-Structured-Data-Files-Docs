@@ -12,8 +12,8 @@ Dynamic data is sent every minute to configured health endpoints.
 
 The following health data are available:
 
-- [Device status]
-- [Next Health Message Expected]
+- [Device status](xref:DeviceStatusForStructuredDataFiles)
+- [Next Health Message Expected](xref:NextHealthMessageExpectedForStructuredDataFiles)
 
 ## AF structure
 
