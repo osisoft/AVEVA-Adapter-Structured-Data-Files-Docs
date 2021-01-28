@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>PI Adapter for Structured Data Files principles of operation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="PI Adapter for Structured Data Files principles of operation ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -75,8 +75,133 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
+            <article class="content wrap" id="_content" data-uid="PIAdapterforSDFPrinciplesOfOperation">
+<h1 id="pi-adapter-for-structured-data-files-principles-of-operation">PI Adapter for Structured Data Files principles of operation</h1>
 
+<p>The adapter&#39;s operations focus on data collection and stream creation.</p>
+<h2 id="adapter-configuration">Adapter configuration</h2>
+<p>For the adapter to start data collection, you need to configure the adapter by defining the following:</p>
+<ul>
+<li><strong>Data source</strong>: Provide the data source from which the adapter should collect data.</li>
+<li><strong>Data selection</strong>: Select items for which the adapter should gather data from the files.</li>
+<li><strong>Logging</strong>: Set up the logging attributes to manage the adapter logging behavior.</li>
+</ul>
+<p>For more information, see <a href="xref:PIAdapterforSDFDataSourceConfiguration">PI Adapter for Structured Data Files data source configuration</a>, <a href="xref:PIAdapterforSDFtDataSelectionConfiguration">PI Adapter for Structured Data Files data selection configuration</a>, and <a class="xref" href="../main/V1/Configuration/logging-configuration.html">Logging configuration</a>.</p>
+<h2 id="data-collection">Data collection</h2>
+<p>When the adapter starts it scans for all files in the input directory that match the configured file name filter. These files are processed in order of their creation time. As new files are added to the input directory while the adapter is running, the files are processed in the order that they are added. Renaming a file will result in it being moved to the end of the processing queue. After a file has been processed, it will be moved to the output directory. </p>
+<p>Opening a file in the input directory could result in the adapter being unable to open it or move it to the output directory. Therefore, it is recommended that files are not opened after being placed in the input directory.</p>
+<p><strong>Note:</strong> If the adapter is unable to move a file to the output directory after processing it, the file will be processed again on an adapter restart unless it is manually removed from the input directory.</p>
+<h3 id="supported-file-types">Supported file types</h3>
+<p>The adapter supports files that are in CSV, JSON, or XML format. The raw data files can be uncompressed or compressed as a zip, gzip, tar, or tar.gzip files. The files can have UTF-8, ASCII, or Unicode encoding.</p>
+<p><strong>Note:</strong> Compression is only supported at the individual file level. The adapter does not support compressed archives that contain multiple files.</p>
+<h3 id="supported-data-types">Supported data types</h3>
+<p>The following table lists value data types that the adapter supports for data collection and types of streams that will be created.</p>
+<table>
+<thead>
+<tr>
+<th>Value data type</th>
+<th>Stream data type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SByte</td>
+<td><code>Int16</code></td>
+</tr>
+<tr>
+<td>Byte</td>
+<td><code>Int16</code></td>
+</tr>
+<tr>
+<td>Int16</td>
+<td><code>Int16</code></td>
+</tr>
+<tr>
+<td>UInt16</td>
+<td><code>UInt16</code></td>
+</tr>
+<tr>
+<td>Int32</td>
+<td><code>Int32</code></td>
+</tr>
+<tr>
+<td>UInt32</td>
+<td><code>UInt32</code></td>
+</tr>
+<tr>
+<td>Int64</td>
+<td><code>Int64</code></td>
+</tr>
+<tr>
+<td>UInt64</td>
+<td><code>UInt64</code></td>
+</tr>
+<tr>
+<td>Single</td>
+<td><code>Single</code></td>
+</tr>
+<tr>
+<td>Double</td>
+<td><code>Double</code></td>
+</tr>
+<tr>
+<td>Decimal</td>
+<td><code>Single</code></td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td><code>DateTime</code></td>
+</tr>
+<tr>
+<td>String</td>
+<td><code>String</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="stream-creation">Stream creation</h2>
+<p>The adapter creates a stream with two properties for a selected item. The properties are described in the following table:</p>
+<table>
+<thead>
+<tr>
+<th>Property name</th>
+<th>Data type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Timestamp</code></td>
+<td>DateTime</td>
+<td>Timestamp of the given item update.</td>
+</tr>
+<tr>
+<td><code>Value</code></td>
+<td>Specified on the type of incoming value</td>
+<td>Value of the item update.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> If streams are deleted from an endpoint while the adapter is running, the ingress component must be restarted to recreate the streams. See <a class="xref" href="../main/V1/Administration/start-and-stop-ingress-component.html">Start and stop ingress component</a>.</p>
+<p>Certain metadata are sent with each stream created.
+The following metadata are common for every adapter type:</p>
+<ul>
+<li><strong>ComponentId</strong>: Specifies the data source, for example, <em>SDF1</em></li>
+<li><strong>ComponentType</strong>: Specifies the type of adapter, for example, <em>SDF1</em></li>
+</ul>
+<p>Metadata specific to the Structured Data Files adapter:</p>
+<ul>
+<li><strong>InputDirectory</strong>: Location of the source files to process.</li>
+</ul>
+<p>The metadata level is set in <a class="xref" href="../main/V1/Configuration/general-configuration.html">General configuration</a>. For the Structured Data Files adapter, the following metadata is sent for the individual level:</p>
+<ul>
+<li><code>None</code>: No metadata</li>
+<li><code>Low</code>: AdapterType (<em>ComponentType</em>) and DataSource (<em>ComponentId</em>)</li>
+<li><code>Medium</code>: AdapterType (<em>ComponentType</em>) and DataSource (<em>ComponentId</em>)</li>
+<li><code>High</code>: AdapterType (<em>ComponentType</em>), DataSource (<em>ComponentId</em>), InputDirectory</li>
+</ul>
+<p>Each stream created for a given item has a unique identifier (stream ID). If you specify a custom stream ID for the item in data selection configuration, the adapter uses that stream ID to create the stream. Otherwise, the adapter constructs the stream ID with the following format constructed from the data source&#39;s <code>FriendlyName</code> and the item&#39;s <code>ValueField</code>:</p>
+<pre><code class="lang-code">&lt;Adapter Component ID&gt;.&lt;FriendlyName&gt;.&lt;ValueField&gt;
+</code></pre><p><strong>Note:</strong> The naming convention is affected by <code>StreamIdPrefix</code> and <code>DefaultStreamIdPattern</code> settings in data source configuration. For more information, see <a href="xref:PIAdapterforSDFDataSourceConfiguration">PI Adapter for Structured Data Files data source configuration</a>.</p>
 </article>
           </div>
           
