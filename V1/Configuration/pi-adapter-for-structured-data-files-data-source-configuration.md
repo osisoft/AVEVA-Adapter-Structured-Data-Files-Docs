@@ -49,7 +49,7 @@ The following parameters are available for configuring a Structured Data Files d
 | Parameter                     | Required | Type      | Description |
 |-------------------------------|----------|-----------|-------------|
 | **FriendlyName** | Optional | `string` | The label to use for the data source. |
-| **[InputDirectory](###Note)** | Required | `string` | Location of the source files to process.<br><br>Example: `C:\\InputDirectory` |
+| **InputDirectory** | Required | `string` | Location of the source files to process.<br><br>Example: `C:\\InputDirectory` |
 | **OutputDirectory** | Required | `string` | Location for the files to be moved to after being processed.<br><br>Example: `C:\\OutputDirectory` |
 | **FileNameFilter** | Optional | `string` | File name filter for files in the InputDirectory. Use `*` as the wildcard character.<br><br>Example: `*.csv` |
 | **HasHeader** | Optional | `bool` | Indicates if a header line is present in the file.<br><br>Default value: `false` |
@@ -62,8 +62,7 @@ The following parameters are available for configuring a Structured Data Files d
 | **LineSeparator** | Optional | `string` | Character(s) used to separate lines in the input files. Only applies to CSV files.<br><br>Default value: `\n` |
 | **StreamIdPrefix** | Optional | `string` | The stream ID prefix applied to all data items collected from the data source. <br><br>Default value: `{ComponentId}` |
 | **DefaultStreamIdPattern** | Optional | `string` | Specifies the default stream Id pattern to use.<br><br>Possible parameters: `{FriendlyName}`, `{ValueField}`<br>Default pattern: `{FriendlyName}.{ValueField}` |
-### Note:
-If InputDirectory is deleted while the Adapter is running, the user should restart the Adapter once the same directory is restored.  
+  
 ## Structured Data Files data source examples
 
 The following are examples of valid Structured Data Files data source configurations:
