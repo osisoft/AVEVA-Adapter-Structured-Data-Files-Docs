@@ -62,7 +62,7 @@ The following parameters are available for configuring a Structured Data Files d
 | **LineSeparator** | Optional | `string` | Character(s) used to separate lines in the input files. Only applies to CSV files.<br><br>Default value: `\n` |
 | **StreamIdPrefix** | Optional | `string` | The stream ID prefix applied to all data items collected from the data source. <br><br>Default value: `{ComponentId}` |
 | **DefaultStreamIdPattern** | Optional | `string` | Specifies the default stream Id pattern to use.<br><br>Possible parameters: `{FriendlyName}`, `{ValueField}`<br>Default pattern: `{FriendlyName}.{ValueField}` |
-  
+
 ## Structured Data Files data source examples
 
 The following are examples of valid Structured Data Files data source configurations:
