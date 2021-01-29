@@ -24,6 +24,8 @@ Opening a file in the input directory could result in the adapter being unable t
 
 **Note:** If the adapter is unable to move a file to the output directory after processing it, the file will be processed again on an adapter restart unless it is manually removed from the input directory.
 
+**Note:** If the input directory is deleted while the adapter is running, the adapter will attempt to resume data collection once the directory is recreated. In some cases, such as when the input directory is deleted and recreated within a short period of time, you may need to restart the adapter in order for data collection to continue.
+
 ### Supported file types
 
 The adapter supports files that are in CSV, JSON, or XML format. The raw data files can be uncompressed or compressed as a zip, gzip, tar, or tar.gzip files. The files can have UTF-8, ASCII, or Unicode encoding.
