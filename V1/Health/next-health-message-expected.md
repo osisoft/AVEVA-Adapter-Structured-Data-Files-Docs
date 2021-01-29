@@ -1,5 +1,5 @@
 ---
-uid: NextHealthMessageExpected1-3
+uid: NextHealthMessageExpectedForStructuredDataFiles
 ---
 
 # Next health message expected
