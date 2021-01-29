@@ -4,9 +4,7 @@ uid: DeviceStatusForStructuredDataFiles
 
 # Device status
 
-The device status indicates the health of the component and whether it is currently communicating properly with the data source. This time-series data is stored within a PI point or OCS stream, depending on the endpoint type.
-
-The StructuredDataFiles adapter sends a status value of `Good` when all configured StructuredDataFiles devices respond within the specified timeout. When a StructuredDataFiles device fails to process file to more than one **AllowedConsecutiveFailedRequests**,  it is considered disconnected and a `DeviceInError` status is sent. For more information, see [PI Adapter for StructuredDataFiles data source configuration](xref:PIAdapterforStructuredDataFilesDataSourceConfiguration). For any individual device that transitions from connected to disconnected and vice versa, an appropriate status is sent. If there are one or more disconnected devices, `DeviceInError` is sent; if all devices are connected, `Good` is sent.
+The device status indicates the health of this component and if it is currently communicating properly with the data source. This time-series data is stored within a PI point or OCS stream, depending on the endpoint type. During healthy steady-state operation, a value of Good is expected.
 
 | Property                          | Type                                 | description                    |
 |-----------------------------------|--------------------------------------|--------------------------------|
@@ -17,9 +15,9 @@ The possible statuses:
 
 | Status                            | Meaning                               |
 |-----------------------------------|---------------------------------------|
-| `Good`                          | Connected to a DataSource, able to process files successfully. |
-| `ConnectedNoData`               | Connected to a DataSource, but error processing files. |
-| `No Status`                     | Connected to a Datasource, but no files to process. |
+| `Good`                          | The adapter is connected to the data source and is successfully processing files. |
+| `ConnectedNoData`               | The component is connected to the data source, but there was an error parsing a data file or a file contained no data for selected items. |
+| `AttemptingFailover`            | Connected to a data source, but no files to process. |
 | `Starting`                      | The component is currently in the process of starting up and is not yet connected to the data source. |
 | `DeviceInError`                 | The component encountered an error either while connecting to the data source. |
 | `Shutdown`                      | The component is either in the process of shutting down or has finished. |
