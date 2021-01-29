@@ -87,8 +87,3 @@ Each stream created for a given item has a unique identifier (stream ID). If you
 ```
 
 **Note:** The naming convention is affected by `StreamIdPrefix` and `DefaultStreamIdPattern` settings in data source configuration. For more information, see [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterforSDFDataSourceConfiguration).
-
-## Special Operation Scenarios
-### InputDirectory Deletion
-If InputDirectory is deleted while the Adapter is running, the user should restart the Adapter once the same directory is restored.  
-
