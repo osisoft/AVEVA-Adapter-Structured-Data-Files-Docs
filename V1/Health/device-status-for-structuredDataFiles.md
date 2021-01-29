@@ -21,7 +21,7 @@ The possible statuses:
 | `ConnectedNoData`               | Connected to a DataSource, but error processing files. |
 | `No Status`                     | Connected to a Datasource, but no files to process. |
 | `Starting`                      | The component is currently in the process of starting up and is not yet connected to the data source. |
-| `DeviceInError`                 | The component encountered an error either while connecting to the data source or attempting to collect data. |
+| `DeviceInError`                 | The component encountered an error either while connecting to the data source. |
 | `Shutdown`                      | The component is either in the process of shutting down or has finished. |
 | `Removed`                       | The adapter component has been removed and will no longer collect data. |
 | `NotConfigured`                 | The adapter component has been created but is not yet configured. |
