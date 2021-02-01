@@ -1,0 +1,6 @@
+- name: Adapter health
+  href: adapter-health-for-structured-data-files.md
+- name: Device status
+  href: device-status-for-structured-data-files.md
+- name: Next health message expected
+  href: next-health-message-expected.md
