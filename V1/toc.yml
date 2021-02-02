@@ -12,8 +12,8 @@
   href: main/V1.3/Administration/toc.yml
   topicHref: main/V1/Administration/administration.md
 - name: Health and diagnostics
-  href: main/V1.3/Health/toc.yml
-  topicHref: main/V1.3/Health/health-and-diagnostics.md
+  href: Health/toc.yml
+  topicHref: Health/health-and-diagnostics-for-structured-data-files.md
 - name: Release notes
   href: Release-notes/release-notes.md
 - name: Technical support and feedback
