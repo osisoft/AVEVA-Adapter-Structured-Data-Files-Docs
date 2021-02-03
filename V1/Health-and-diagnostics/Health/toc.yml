@@ -1,0 +1,4 @@
+- name: PI Adapter for Structured Data Files device status
+  href: device-status-for-structured-data-files.md
+- name: Next health message expected
+  href: next-health-message-expected.md

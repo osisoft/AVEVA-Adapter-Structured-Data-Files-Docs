@@ -1,4 +1,4 @@
-- name: PI Adapter for PI Adapter for Structured Data Files overview
+- name: PI Adapter for Structured Data Files overview
   href: PI-Adapter-for-Structured-Data-Files-overview/toc.yml
   topicHref: index.md
   homepage: index.md
@@ -12,7 +12,7 @@
   href: main/V1.3/Administration/toc.yml
   topicHref: main/V1/Administration/administration.md
 - name: Health and diagnostics
-  href: main/V1.3/Health/toc.yml
+  href: Health-and-diagnostics/toc.yml
   topicHref: main/V1.3/Health/health-and-diagnostics.md
 - name: Release notes
   href: Release-notes/release-notes.md
