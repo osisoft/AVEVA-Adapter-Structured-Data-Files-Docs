@@ -22,6 +22,9 @@ references:
 - uid: AdapterHealth1-4
   name: Adapter health
   href: V1/main/V1.4/Health/adapter-health.html
+- uid: AdapterHealthForStructuredDataFiles
+  name: Adapter health
+  href: V1/Health-and-diagnostics/Health/adapter-health-for-structured-data-files.html
 - uid: AdapterMetadata
   name: Adapter metadata
   href: V1/main/V1/Metadata/adapter-metadata.html
@@ -58,6 +61,12 @@ references:
 - uid: ConfigurationTools1-4
   name: Configuration tools
   href: V1/main/V1.4/Configuration/configuration-tools.html
+- uid: ConfigureANetworkProxy1-3
+  name: Configure a network proxy
+  href: V1/main/V1.3/Configuration/configure-a-network-proxy.html
+- uid: ConfigureANetworkProxy1-4
+  name: Configure a network proxy
+  href: V1/main/V1.4/Configuration/configure-a-network-proxy.html
 - uid: DataFiltersConfiguration
   name: Data filters configuration
   href: V1/main/V1/Configuration/data-filters-configuration.html
@@ -85,6 +94,9 @@ references:
 - uid: DeviceStatus1-4
   name: Device status
   href: V1/main/V1.4/Health/device-status.html
+- uid: DeviceStatusForStructuredDataFiles
+  name: Device status
+  href: V1/Health-and-diagnostics/Health/device-status-for-structured-data-files.html
 - uid: DiagnosticsConfiguration
   name: Diagnostics configuration
   href: V1/main/V1/ARCHIVE/Diagnostics%20configuration.html
@@ -142,6 +154,9 @@ references:
 - uid: HealthAndDiagnostics1-4
   name: Health and Diagnostics
   href: V1/main/V1.4/Health/health-and-diagnostics.html
+- uid: HealthAndDiagnosticsForStructuredDataFiles
+  name: Health and diagnostics
+  href: V1/Health-and-diagnostics/Health/health-and-diagnostics-for-structured-data-files.html
 - uid: HealthEndpointConfiguration
   name: Health endpoint configuration
   href: V1/main/V1/Configuration/health-endpoint-configuration.html
@@ -199,6 +214,9 @@ references:
 - uid: NextHealthMessageExpected1-4
   name: Next health message expected
   href: V1/main/V1.4/Health/next-health-message-expected.html
+- uid: NextHealthMessageExpectedForStructuredDataFiles
+  name: Next health message expected
+  href: V1/Health-and-diagnostics/Health/next-health-message-expected.html
 - uid: PIAdapterforSDFOverview
   name: PI Adapter for Structured Data Files overview
   href: V1/index.html

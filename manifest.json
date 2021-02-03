@@ -62,6 +62,58 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "V1/Health-and-diagnostics/Health/adapter-health-for-structured-data-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Health-and-diagnostics/Health/adapter-health-for-structured-data-files.html",
+          "hash": "sFifoHDm5eR4hxMCN+0B7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Health-and-diagnostics/Health/device-status-for-structured-data-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Health-and-diagnostics/Health/device-status-for-structured-data-files.html",
+          "hash": "NWLjEtdi67zGNVh3BO0eOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink",
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "V1/Health-and-diagnostics/Health/health-and-diagnostics-for-structured-data-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Health-and-diagnostics/Health/health-and-diagnostics-for-structured-data-files.html",
+          "hash": "0SUmCrM8Dge544zja8U+tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Health-and-diagnostics/Health/next-health-message-expected.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Health-and-diagnostics/Health/next-health-message-expected.html",
+          "hash": "pJSCeRFxAdIcou2FsLv3EQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "V1/Installation/install-pi-adapter-for-structured-data-files-using-docker.md",
       "output": {
         ".html": {
@@ -96,7 +148,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/PI-Adapter-for-Structured-Data-Files-overview/pi-adapter-for-structured-data-files-principles-of-operation.html",
-          "hash": "zGNFR2mTzRLIvHHZ4OLaWw=="
+          "hash": "o/I2Z1i9zaybWVbunSD64w=="
         }
       },
       "is_incremental": false,
@@ -248,6 +300,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "V1/main/V1.3/Configuration/configure-a-network-proxy.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1.3/Configuration/configure-a-network-proxy.html",
+          "hash": "u9u8uii8AYxcK9WgZO/zvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "V1/main/V1.3/Configuration/data-filters-configuration.md",
       "output": {
         ".html": {
@@ -271,6 +335,21 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1.3/Configuration/egress-endpoint-configuration/configure-a-network-proxy.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1.3/Configuration/egress-endpoint-configuration/configure-a-network-proxy.html",
+          "hash": "xFi+AjVLaw0MbkzkpnPuTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1.3/Configuration/egress-endpoint-configuration/prepare-egress-destinations.md",
       "output": {
@@ -288,7 +367,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1.3/Configuration/egress-endpoint-configuration/toc.html",
-          "hash": "vwgooyH61m2iYP1SdAXT0Q=="
+          "hash": "uMY4ymzQL4+/TZGMvhBV1g=="
         }
       },
       "is_incremental": false,
@@ -456,7 +535,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1.3/Health/adapter-health.html",
-          "hash": "coHfTJEeAySJ5BSgKDO4EQ=="
+          "hash": "JqVThYNG/1Z2GSwprTYdxg=="
         }
       },
       "is_incremental": false,
@@ -468,7 +547,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1.3/Health/device-status.html",
-          "hash": "xxz04F87w22qAxNpueVPxg=="
+          "hash": "dJxzRBurAri9k54KNHUCFQ=="
         }
       },
       "is_incremental": false,
@@ -492,7 +571,19 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1.3/Health/next-health-message-expected.html",
-          "hash": "2J1Da4yepMyelGPu0rpTSQ=="
+          "hash": "eANaCR32Qilx7tJ0f88fFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "V1/main/V1.3/Health/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1.3/Health/toc.html",
+          "hash": "XfOZ2J11Vyd/ZJKzdDtoSQ=="
         }
       },
       "is_incremental": false,
@@ -627,6 +718,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "V1/main/V1.3/images/forward-proxy.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1/main/V1.3/images/forward-proxy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "V1/main/V1.3/images/health-data.PNG",
       "output": {
         "resource": {
@@ -664,6 +766,28 @@
       "output": {
         "resource": {
           "relative_path": "V1/main/V1.3/images/removed-logs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1/main/V1.3/images/reverse-proxy.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1/main/V1.3/images/reverse-proxy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1/main/V1.3/images/windows-network-proxy-environment-variable.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1/main/V1.3/images/windows-network-proxy-environment-variable.png"
         }
       },
       "is_incremental": false,
@@ -791,6 +915,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "V1/main/V1.4/Configuration/configure-a-network-proxy.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1.4/Configuration/configure-a-network-proxy.html",
+          "hash": "S1xS99DyhFSbfIhm+xl3ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "V1/main/V1.4/Configuration/data-filters-configuration.md",
       "output": {
         ".html": {
@@ -814,6 +950,21 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1.4/Configuration/egress-endpoint-configuration/configure-a-network-proxy.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1.4/Configuration/egress-endpoint-configuration/configure-a-network-proxy.html",
+          "hash": "Ycmy5OXk9ukDUS1FFLRYpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1.4/Configuration/egress-endpoint-configuration/prepare-egress-destinations.md",
       "output": {
@@ -831,7 +982,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1.4/Configuration/egress-endpoint-configuration/toc.html",
-          "hash": "vwgooyH61m2iYP1SdAXT0Q=="
+          "hash": "uMY4ymzQL4+/TZGMvhBV1g=="
         }
       },
       "is_incremental": false,
@@ -1182,6 +1333,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "V1/main/V1.4/images/forward-proxy.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1/main/V1.4/images/forward-proxy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "V1/main/V1.4/images/health-data.PNG",
       "output": {
         "resource": {
@@ -1219,6 +1381,28 @@
       "output": {
         "resource": {
           "relative_path": "V1/main/V1.4/images/removed-logs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1/main/V1.4/images/reverse-proxy.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1/main/V1.4/images/reverse-proxy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1/main/V1.4/images/windows-network-proxy-environment-variable.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1/main/V1.4/images/windows-network-proxy-environment-variable.png"
         }
       },
       "is_incremental": false,
@@ -1800,7 +1984,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "mkpweMVCJRlanfkurtF6zA=="
+          "hash": "cdUGd5M0iR13b2+aJcnLrw=="
         }
       },
       "is_incremental": false,
@@ -1833,7 +2017,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 113,
+          "total_file_count": 121,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

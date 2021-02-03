@@ -10,14 +10,14 @@
     <meta name="title" content="Device status ">
     <meta name="generator" content="docfx 2.56.5.0">
     
-    <link rel="shortcut icon" href="../../../../favicon.ico">
-    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
-    <meta property="docfx:rel" content="../../../../">
+    <meta property="docfx:rel" content="../../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -33,8 +33,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="../../../../V1/index.html" width="46">
-                <img id="logo" src="../../../../V1/main/V1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
+              <a class="navbar-brand" href="../../../V1/index.html" width="46">
+                <img id="logo" src="../../../V1/main/V1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -75,7 +75,7 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="DeviceStatus1-3">
+            <article class="content wrap" id="_content" data-uid="DeviceStatusForStructuredDataFiles">
 <h1 id="device-status">Device status</h1>
 
 <p>The device status indicates the health of this component and if it is currently communicating properly with the data source. This time-series data is stored within a PI point or OCS stream, depending on the endpoint type. During healthy steady-state operation, a value of <code>Good</code> is expected.</p>
@@ -84,7 +84,7 @@
 <tr>
 <th>Property</th>
 <th>Type</th>
-<th>Description</th>
+<th>description</th>
 </tr>
 </thead>
 <tbody>
@@ -100,7 +100,7 @@
 </tr>
 </tbody>
 </table>
-<p>The possible statuses are:</p>
+<p>The possible statuses:</p>
 <table>
 <thead>
 <tr>
@@ -111,15 +111,15 @@
 <tbody>
 <tr>
 <td><code>Good</code></td>
-<td>The component is connected to the data source and it is collecting data.</td>
+<td>The component is connected to the data source and is successfully processing files.</td>
 </tr>
 <tr>
 <td><code>ConnectedNoData</code></td>
-<td>The component is connected to the data source but it is not receiving data from it.</td>
+<td>The component is connected to the data source, but there was an error parsing a data file or a file contained no data for selected items.</td>
 </tr>
 <tr>
 <td><code>AttemptingFailover</code></td>
-<td>The adapter is attempting to fail over.</td>
+<td>The component is attempting to fail over.</td>
 </tr>
 <tr>
 <td><code>Starting</code></td>
@@ -127,19 +127,19 @@
 </tr>
 <tr>
 <td><code>DeviceInError</code></td>
-<td>The component encountered an error either while connecting to the data source or attempting to collect data.</td>
+<td>The component encountered an error either while connecting to the data source.</td>
 </tr>
 <tr>
 <td><code>Shutdown</code></td>
-<td>The component is either in the process of shutting down or has finished.</td>
+<td>The component is in the process of shutting down or has finished.</td>
 </tr>
 <tr>
 <td><code>Removed</code></td>
-<td>The adapter component has been removed and will no longer collect data.</td>
+<td>The component has been removed and will no longer collect data.</td>
 </tr>
 <tr>
 <td><code>NotConfigured</code></td>
-<td>The adapter component has been created but is not yet configured.</td>
+<td>The component has been created but is not yet configured.</td>
 </tr>
 </tbody>
 </table>
@@ -151,7 +151,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/PI-Adapter/blob/master/V1.3/Health/device-status.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/PI-Adapter-Structured-Data-Files-Docs/blob/master/V1/Health-and-diagnostics/Health/device-status-for-structured-data-files.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -177,8 +177,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
   </body>
 </html>
