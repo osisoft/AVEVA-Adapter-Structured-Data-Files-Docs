@@ -16,7 +16,7 @@ Complete the following steps to configure a Structured Data Files data source:
     - For content structure, see [Structured Data Files data source examples](#structured-data-files-data-source-examples).
     - For a table of all available parameters, see [Structured Data Files data source parameters](#structured-data-files-data-source-examples).
 2. Save the file. For example, `ConfigureDataSource.json`.
-3. Use any of the [Configuration tools](xref:ConfigurationTools1-3) capable of making HTTP requests to run a PUT command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<ComponentId>/DataSource/`.
+3. Use any of the [Configuration tools](xref:ConfigurationTools1-3) capable of making HTTP requests to run a `PUT` command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<ComponentId>/DataSource/`
 
       **Note:** The following example uses SDF1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration1-3).
 
@@ -61,7 +61,7 @@ The following parameters are available for configuring a Structured Data Files d
 | **FieldSeparator** | Optional | `string` | Character used to delineate fields in the input files. Only applies to CSV files.<br><br>Default value: `,` |
 | **LineSeparator** | Optional | `string` | Character(s) used to separate lines in the input files. Only applies to CSV files.<br><br>Default value: `\n` |
 | **StreamIdPrefix** | Optional | `string` | The stream ID prefix applied to all data items collected from the data source. <br><br>Default value: `{ComponentId}` |
-| **DefaultStreamIdPattern** | Optional | `string` | Specifies the default stream Id pattern to use.<br><br>Possible parameters: `{FriendlyName}`, `{ValueField}`<br>Default pattern: `{FriendlyName}.{ValueField}` |
+| **DefaultStreamIdPattern** | Optional | `string` | Specifies the default stream ID pattern to use.<br><br>Possible parameters: `{FriendlyName}`, `{ValueField}`<br>Default pattern: `{FriendlyName}.{ValueField}` |
 
 ## Structured Data Files data source examples
 
@@ -96,9 +96,9 @@ The following are examples of valid Structured Data Files data source configurat
 
 | Relative URL | HTTP verb | Action |
 | ------------ | --------- | ------ |
-| api/v1/configuration/_ComponentId_/DataSource  | GET | Retrieves the Structured Data Files data source configuration |
-| api/v1/configuration/_ComponentId_/DataSource  | POST | Creates the Structured Data Files data source configuration |
-| api/v1/configuration/_ComponentId_/DataSource  | PUT | Configures or updates the Structured Data Files data source configuration |
-| api/v1/configuration/_ComponentId_/DataSource | DELETE | Deletes the Structured Data Files data source configuration |
+| api/v1/configuration/\<ComponentId\>/DataSource  | `GET` | Retrieves the Structured Data Files data source configuration |
+| api/v1/configuration\<ComponentId\>/DataSource  | `POST` | Creates the Structured Data Files data source configuration |
+| api/v1/configuration/\<ComponentId\>/DataSource  | `PUT` | Configures or updates the Structured Data Files data source configuration |
+| api/v1/configuration/\<ComponentId\>/DataSource | `DELETE` | Deletes the Structured Data Files data source configuration |
 
-**Note:** Replace _ComponentId_ with the Id of your Structured Data Files component, for example SDF1.
+**Note:** Replace \<ComponentId\> with the Id of your Structured Data Files component, for example SDF1.
