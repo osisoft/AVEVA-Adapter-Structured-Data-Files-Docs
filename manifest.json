@@ -155,15 +155,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Release-notes/release-notes.md",
       "output": {
         ".html": {
           "relative_path": "V1/Release-notes/release-notes.html",
-          "hash": "NpYNDZYL091u5Y5lzg8yew=="
+          "hash": "sYLgTy/l8A+wp0LhEi+Rmw=="
         }
       },
       "is_incremental": false,
@@ -301,6 +298,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1.3/Configuration/configure-a-network-proxy.md",
       "output": {
@@ -337,9 +337,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1.3/Configuration/egress-endpoint-configuration/configure-a-network-proxy.md",
       "output": {
