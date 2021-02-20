@@ -97,7 +97,7 @@ The following are examples of valid Structured Data Files data source configurat
 | Relative URL | HTTP verb | Action |
 | ------------ | --------- | ------ |
 | api/v1/configuration/\<ComponentId\>/DataSource  | `GET` | Retrieves the Structured Data Files data source configuration |
-| api/v1/configuration\<ComponentId\>/DataSource  | `POST` | Creates the Structured Data Files data source configuration |
+| api/v1/configuration/\<ComponentId\>/DataSource  | `POST` | Creates the Structured Data Files data source configuration |
 | api/v1/configuration/\<ComponentId\>/DataSource  | `PUT` | Configures or updates the Structured Data Files data source configuration |
 | api/v1/configuration/\<ComponentId\>/DataSource | `DELETE` | Deletes the Structured Data Files data source configuration |
 
