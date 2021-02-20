@@ -67,6 +67,8 @@ The following parameters are available for configuring a Structured Data Files d
 
 The following are examples of valid Structured Data Files data source configurations:
 
+**Note:** When copy and pasting the examples below, validate the `InputDirectory` and `OutputDirectory` path for the data source host OS: Windows or Linux.
+
 ### Structured Data Files data source configuration #1
 
 ```json
@@ -101,4 +103,4 @@ The following are examples of valid Structured Data Files data source configurat
 | api/v1/configuration/\<ComponentId\>/DataSource  | `PUT` | Configures or updates the Structured Data Files data source configuration |
 | api/v1/configuration/\<ComponentId\>/DataSource | `DELETE` | Deletes the Structured Data Files data source configuration |
 
-**Note:** Replace \<ComponentId\> with the Id of your Structured Data Files component, for example SDF1.
+**Note:** Replace \<ComponentId\> with the ID of your Structured Data Files component, for example SDF1.
