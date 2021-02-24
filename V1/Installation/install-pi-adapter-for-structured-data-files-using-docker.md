@@ -19,9 +19,9 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	```bash
 	#!/bin/sh
 	if [ -z $portnum ] ; then
-			exec /SDF_linux-arm/OSIsoft.Data.System.Host
+			exec /StructuredDataFiles_linux-arm/OSIsoft.Data.System.Host
 	else
-			exec /SDF_linux-arm/OSIsoft.Data.System.Host --port:$portnum
+			exec /StructuredDataFiles_linux-arm/OSIsoft.Data.System.Host --port:$portnum
 	fi
 	```
 	
@@ -30,9 +30,9 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	```bash
 	#!/bin/sh
 	if [ -z $portnum ] ; then
-			exec /SDF_linux-arm64/OSIsoft.Data.System.Host
+			exec /StructuredDataFiles_linux-arm64/OSIsoft.Data.System.Host
 	else
-			exec /SDF_linux-arm64/OSIsoft.Data.System.Host --port:$portnum
+			exec /StructuredDataFiles_linux-arm64/OSIsoft.Data.System.Host --port:$portnum
 	fi
 	```
 	
@@ -41,9 +41,9 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	```bash
 	#!/bin/sh
 	if [ -z $portnum ] ; then
-			exec /SDF_linux-x64/OSIsoft.Data.System.Host
+			exec /StructuredDataFiles_linux-x64/OSIsoft.Data.System.Host
 	else
-			exec /SDF_linux-x64/OSIsoft.Data.System.Host --port:$portnum
+			exec /StructuredDataFiles_linux-x64/OSIsoft.Data.System.Host --port:$portnum
 	fi
 	```
 	
@@ -63,7 +63,7 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates libicu60 libssl1.1 curl
 	COPY sdfdockerstart.sh /
 	RUN chmod +x /sdfdockerstart.sh
-	ADD ./SDF_linux-arm.tar.gz .
+	ADD ./StructuredDataFiles_linux-arm.tar.gz .
 	ENTRYPOINT ["/sdfdockerstart.sh"]
 	```
 	
@@ -75,7 +75,7 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates libicu66 libssl1.1 curl
 	COPY sdfdockerstart.sh /
 	RUN chmod +x /sdfdockerstart.sh
-	ADD ./SDF_linux-arm64.tar.gz .
+	ADD ./StructuredDataFiles_linux-arm64.tar.gz .
 	ENTRYPOINT ["/sdfdockerstart.sh"]
 	```
 
@@ -87,11 +87,11 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates libicu66 libssl1.1 curl
 	COPY sdfdockerstart.sh /
 	RUN chmod +x /sdfdockerstart.sh
-	ADD ./SDF_linux-x64.tar.gz .
+	ADD ./StructuredDataFiles_linux-x64.tar.gz .
 	ENTRYPOINT ["/sdfdockerstart.sh"]
 	```
 
-2. Copy the `SDF_linux-\<platform>.tar.gz` file to the same directory as the `Dockerfile`.
+2. Copy the `StructuredDataFiles_linux-\<platform>.tar.gz` file to the same directory as the `Dockerfile`.
 
 3. Copy the `sdfdockerstart.sh` script to the same directory as the `Dockerfile`.
 
