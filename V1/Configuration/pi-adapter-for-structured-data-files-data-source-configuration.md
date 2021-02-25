@@ -49,7 +49,7 @@ The following parameters are available for configuring a Structured Data Files d
 | **FriendlyName** | Optional | `string` | The label to use for the data source. |
 | **InputDirectory** | Required | `string` | Location of the source files to process. FTP servers are not supported.<br><br>Example: `C:\\InputDirectory` |
 | **OutputDirectory** | Required | `string` | Location for the files to be moved to after being processed. FTP servers are not supported.<br><br>Example: `C:\\OutputDirectory` |
-| **FileNameFilter** | Optional | `string` | File name filter for files in the **InputDirectory**. Use `*` as the wildcard character.<br><br>Example: `*.csv` |
+| **FileNameFilter** | Optional | `string` | Pattern used to match files in the **InputDirectory** for processing. If no filter is specified, the adapter will attempt to process all files in the **InputDirectory**. Use `*` as the wildcard character.<br><br>Example: `*.csv` |
 | **HasHeader** | Optional | `bool` | Indicates if a header line is present in the file. Only applies to CSV files.<br><br>Default value: `false` |
 | **Culture** | Optional | `string` | Locale setting for the input files.<br><br>Example: `en-US`<br>Default value: local culture |
 | **TimeZone** | Optional | `string` | Time zone of timestamps in the input files. If specified, the value must be a valid entry from the IANA time zone database.<br><br>Example: `America/Los_Angeles`<br>Default value: `Etc/UTC` |
