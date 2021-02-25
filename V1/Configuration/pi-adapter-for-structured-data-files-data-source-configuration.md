@@ -47,8 +47,8 @@ The following parameters are available for configuring a Structured Data Files d
 | Parameter                     | Required | Type      | Description |
 |-------------------------------|----------|-----------|-------------|
 | **FriendlyName** | Optional | `string` | The label to use for the data source. |
-| **InputDirectory** | Required | `string` | Location of the source files to process. FTP sites are not supported.<br><br>Example: `C:\\InputDirectory` |
-| **OutputDirectory** | Required | `string` | Location for the files to be moved to after being processed. FTP sites are not supported.<br><br>Example: `C:\\OutputDirectory` |
+| **InputDirectory** | Required | `string` | Location of the source files to process. FTP servers are not supported.<br><br>Example: `C:\\InputDirectory` |
+| **OutputDirectory** | Required | `string` | Location for the files to be moved to after being processed. FTP servers are not supported.<br><br>Example: `C:\\OutputDirectory` |
 | **FileNameFilter** | Optional | `string` | File name filter for files in the **InputDirectory**. Use `*` as the wildcard character.<br><br>Example: `*.csv` |
 | **HasHeader** | Optional | `bool` | Indicates if a header line is present in the file. Only applies to CSV files.<br><br>Default value: `false` |
 | **Culture** | Optional | `string` | Locale setting for the input files.<br><br>Example: `en-US`<br>Default value: local culture |
