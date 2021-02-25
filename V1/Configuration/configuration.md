@@ -3,9 +3,7 @@ uid: StructuredDataFilesConfiguration
 ---
 # Configuration
 
-PI Adapter for Structured Data Files collects data from XML, JSON, and CSV files stored on the edge; converts that data to the OSIsoft Message Format; and then sends the data to one or more  endpoint.
-
-Before the adapter can begin this process, you must set several adapter configuration files by calling its REST API. Some configurations are required. Others are optional.
+Before you can begin using the adapter, you must set several adapter configuration files by calling its REST API. Some configurations are required. Others are optional.
 
 The examples in the configuration topics use cURL, a commonly available tool on both Windows and Linux. You can configure the adapter with any programming language or tool that supports making REST calls or with the EdgeCmd utility. For more information, see the [EdgeCmd utility documentation](https://osisoft.github.io/Edgecmd-Docs/V1.2/edgecmd-utility.html).
 
@@ -15,7 +13,7 @@ For more information on PI Adapter configuration tools, see [Configuration tools
 
 ## Quick Start
 
-The following table lists all configurations available for the PI Adapter for Structured Data Files along with their purpose. Complete each **Required** configuration to establish a data flow from a Structured Data Files data source to one or more endpoint. Complete them in sequential order. Some configurations are optional.
+The following table lists all configurations available for the PI Adapter for Structured Data Files along with their purpose. Complete each **Required** configuration to establish a data flow from a Structured Data Files data source to one or more endpoints. Complete them in sequential order. Some configurations are optional.
 
 | Configuration | Description | Required | Optional |
 |--|--|:-:|:-:|
