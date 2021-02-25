@@ -129,10 +129,10 @@ Suppose you have a file-share directory "/sdf/InputDirectory" and you want to mo
 3. Update the InputDirectory and OutputDirectory of your DataSource Configuration to be as the following: 
 	```json
 	{
-	...
+	 
 	"InputDirectory": "/usr/share/OSIsoft/InputDirectory",
 	"OutputDirectory": "/usr/share/OSIsoft/OutputDirectory",
-	... 
+	 
 	}
 	```
 The default port `5590` is accessible from the host and you can make REST calls to the Structured Data Files adapter from applications on the local host computer. The data is written to a host directory on the local machine `/sdf` rather than the container. 
