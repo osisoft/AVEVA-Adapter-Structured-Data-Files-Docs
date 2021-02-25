@@ -4,9 +4,9 @@ uid: InstallPIAdapterForDNP3UsingDocker
 
 # Install PI Adapter for Structured Data Files using Docker
 
-Docker is a set of tools that can be used on Linux to manage application deployments. This topic provides examples of how to create a Docker container with the Structured Data Files adapter.
+Docker is a set of tools that can be used on Linux to manage application deployments. This topic provides examples of how to create a Docker container with PI Adapter for Structured Data Files.
 
-**Note:** If you want to use Docker, you must be familiar with the underlying technology and have determined that it is appropriate for your planned use of the Structured Data Files adapter. Docker is not a requirement to use the adapter.
+**Note:** If you want to use Docker, you must be familiar with the underlying technology and have determined that it is appropriate for your planned use of the adapter. Docker is not a requirement to use the adapter.
 
 ## Create a startup script for the adapter
 
@@ -19,9 +19,9 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	```bash
 	#!/bin/sh
 	if [ -z $portnum ] ; then
-			exec /SDF_linux-arm/OSIsoft.Data.System.Host
+			exec /StructuredDataFiles_linux-arm/OSIsoft.Data.System.Host
 	else
-			exec /SDF_linux-arm/OSIsoft.Data.System.Host --port:$portnum
+			exec /StructuredDataFiles_linux-arm/OSIsoft.Data.System.Host --port:$portnum
 	fi
 	```
 	
@@ -30,9 +30,9 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	```bash
 	#!/bin/sh
 	if [ -z $portnum ] ; then
-			exec /SDF_linux-arm64/OSIsoft.Data.System.Host
+			exec /StructuredDataFiles_linux-arm64/OSIsoft.Data.System.Host
 	else
-			exec /SDF_linux-arm64/OSIsoft.Data.System.Host --port:$portnum
+			exec /StructuredDataFiles_linux-arm64/OSIsoft.Data.System.Host --port:$portnum
 	fi
 	```
 	
@@ -41,9 +41,9 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	```bash
 	#!/bin/sh
 	if [ -z $portnum ] ; then
-			exec /SDF_linux-x64/OSIsoft.Data.System.Host
+			exec /StructuredDataFiles_linux-x64/OSIsoft.Data.System.Host
 	else
-			exec /SDF_linux-x64/OSIsoft.Data.System.Host --port:$portnum
+			exec /StructuredDataFiles_linux-x64/OSIsoft.Data.System.Host --port:$portnum
 	fi
 	```
 	
@@ -63,7 +63,7 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates libicu60 libssl1.1 curl
 	COPY sdfdockerstart.sh /
 	RUN chmod +x /sdfdockerstart.sh
-	ADD ./SDF_linux-arm.tar.gz .
+	ADD ./StructuredDataFiles_linux-arm.tar.gz .
 	ENTRYPOINT ["/sdfdockerstart.sh"]
 	```
 	
@@ -75,7 +75,7 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates libicu66 libssl1.1 curl
 	COPY sdfdockerstart.sh /
 	RUN chmod +x /sdfdockerstart.sh
-	ADD ./SDF_linux-arm64.tar.gz .
+	ADD ./StructuredDataFiles_linux-arm64.tar.gz .
 	ENTRYPOINT ["/sdfdockerstart.sh"]
 	```
 
@@ -87,11 +87,11 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates libicu66 libssl1.1 curl
 	COPY sdfdockerstart.sh /
 	RUN chmod +x /sdfdockerstart.sh
-	ADD ./SDF_linux-x64.tar.gz .
+	ADD ./StructuredDataFiles_linux-x64.tar.gz .
 	ENTRYPOINT ["/sdfdockerstart.sh"]
 	```
 
-2. Copy the `SDF_linux-\<platform>.tar.gz` file to the same directory as the `Dockerfile`.
+2. Copy the `StructuredDataFiles_linux-\<platform>.tar.gz` file to the same directory as the `Dockerfile`.
 
 3. Copy the `sdfdockerstart.sh` script to the same directory as the `Dockerfile`.
 
@@ -114,11 +114,11 @@ Complete the following steps to run the container:
 	docker run -d --network host sdfadapter
 	```
 
-The default port `5590` is accessible from the host and you can make REST calls to Structured Data Files adapter from applications on the local host computer. In this example, all data stored by the adapter is stored in the container itself. When the container is deleted, the data stored is also deleted.
+The default port `5590` is accessible from the host and you can make REST calls to the adapter from applications on the local host computer. In this example, all data stored by the adapter is stored in the container itself. When the container is deleted, the data stored is also deleted.
 
 ### Provide persistent storage for the Docker container
 
-Complete the following to run the container:
+Suppose you have a file-share directory "/sdf/InputDirectory" and you want to move the files to "/sdf/OutputDirectory" after processing, in order for the Docker container to access these directories as well as the storage on the host machine, you need to complete the following to run the container:
 
 1. Use the docker container image `sdfadapter` created previously.
 2. Type the following command line (you may need to use the `sudo` command):
@@ -126,12 +126,22 @@ Complete the following to run the container:
 	```bash
 	docker run -d --network host -v /sdf:/usr/share/OSIsoft/ sdfadapter
 	```
-
-The default port `5590` is accessible from the host and you can make REST calls to the Structured Data Files adapter from applications on the local host computer. In this example, data is written to a host directory on the local machine `/sdf` rather than the container. You can specify any directory.
+3. Update the InputDirectory and OutputDirectory of your DataSource Configuration to be as the following: 
+	```json
+	{
+	 
+	"InputDirectory": "/usr/share/OSIsoft/InputDirectory",
+	"OutputDirectory": "/usr/share/OSIsoft/OutputDirectory",
+	 
+	}
+	```
+	**Note:** `/sdf` is replaced by `/usr/share/OSIsoft`, the target directory inside the container.
+	
+The default port `5590` is accessible from the host and you can make REST calls to the adapter from applications on the local host computer. The data is written to a host directory on the local machine `/sdf` rather than the container. 
 
 ### Port number change
 
-To use a different port other than the default `5590`, you can specify a `portnum` variable on the `docker run` command line. For example, to start the Structured Data Files adapter using port `6000` instead of `5590`, use the following command line:
+To use a different port other than the default `5590`, you can specify a `portnum` variable on the `docker run` command line. For example, to start the adapter using port `6000` instead of `5590`, use the following command line:
 
 ```bash
 docker run -d -e portnum=6000 --network host sdfadapter
@@ -145,4 +155,4 @@ curl http://localhost:6000/api/v1/configuration
 
 ### Remove REST access to the Docker container
 
-If you remove the `--network host` option from the docker run command, REST access is not possible from outside the container. This can be valuable when you want to host an application in the same container as the Structured Data Files adapter but do not want to have external REST access enabled.
+If you remove the `--network host` option from the docker run command, REST access is not possible from outside the container. This can be valuable when you want to host another application in the same container as this adapter but do not want to have external REST access enabled.
