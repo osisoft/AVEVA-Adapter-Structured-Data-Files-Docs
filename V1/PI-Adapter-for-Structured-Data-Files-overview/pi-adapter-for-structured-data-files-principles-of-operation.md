@@ -18,7 +18,7 @@ For more information, see [PI Adapter for Structured Data Files data source conf
 
 ## Data collection
 
-When the adapter starts it scans for all files in the input directory that match the configured file name filter. These files are processed in order of their creation time. As new files are added to the input directory while the adapter is running, the files are processed in the order that they are added. Renaming a file will result in it being moved to the end of the processing queue. After a file has been processed, it will be moved to the output directory. 
+When the adapter starts it scans for all files in the input directory that match the configured file name filter. These files are processed in order of their creation time. As new files are added to the input directory while the adapter is running, the files are processed in the order that they are added. Renaming a file will result in it being moved to the end of the processing queue. After a file has been processed, it will be moved to the output directory.
 
 Opening a file in the input directory could result in the adapter being unable to open it or move it to the output directory. Therefore, it is recommended that files are not opened after being placed in the input directory.
 
@@ -67,7 +67,7 @@ Certain metadata are sent with each stream created.
 The following metadata are common for every adapter type:
 
 - **ComponentId**: Specifies the data source, for example, _SDF1_
-- **ComponentType**: Specifies the type of adapter, for example, _SDF1_
+- **ComponentType**: Specifies the type of adapter, for example, _StructuredDataFiles_
 
 Metadata specific to the Structured Data Files adapter:
 
