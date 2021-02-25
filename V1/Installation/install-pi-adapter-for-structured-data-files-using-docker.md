@@ -118,7 +118,7 @@ The default port `5590` is accessible from the host and you can make REST calls 
 
 ### Provide persistent storage for the Docker container
 
-Complete the following to run the container:
+Suppose you have a file-share directory "/sdf/InputDirectory" and you want to move the files to "/sdf/OutputDirectory" after processing, in order for the Docker container to access these directories as well as the storage on the host machine, you need to complete the following to run the container:
 
 1. Use the docker container image `sdfadapter` created previously.
 2. Type the following command line (you may need to use the `sudo` command):
@@ -126,8 +126,16 @@ Complete the following to run the container:
 	```bash
 	docker run -d --network host -v /sdf:/usr/share/OSIsoft/ sdfadapter
 	```
-
-The default port `5590` is accessible from the host and you can make REST calls to the Structured Data Files adapter from applications on the local host computer. In this example, data is written to a host directory on the local machine `/sdf` rather than the container. You can specify any directory.
+3. Update the InputDirectory and OutputDirectory of your DataSource Configuration to be as the following: 
+	```json
+	{
+	...
+	"InputDirectory": "/usr/share/OSIsoft/InputDirectory",
+	"OutputDirectory": "/usr/share/OSIsoft/OutputDirectory",
+	... 
+	}
+	```
+The default port `5590` is accessible from the host and you can make REST calls to the Structured Data Files adapter from applications on the local host computer. The data is written to a host directory on the local machine `/sdf` rather than the container. 
 
 ### Port number change
 
