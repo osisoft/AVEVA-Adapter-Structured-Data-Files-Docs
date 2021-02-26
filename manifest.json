@@ -118,7 +118,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Installation/install-pi-adapter-for-structured-data-files-using-docker.html",
-          "hash": "hIgP/1v7sceLZuL2u0FnAw=="
+          "hash": "jJVtsu1RZRkE/zxcSYSs5A=="
         }
       },
       "is_incremental": false,
@@ -148,7 +148,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/PI-Adapter-for-Structured-Data-Files-overview/pi-adapter-for-structured-data-files-principles-of-operation.html",
-          "hash": "o/I2Z1i9zaybWVbunSD64w=="
+          "hash": "6sadMuuwUJs/By6Way0Oww=="
         }
       },
       "is_incremental": false,

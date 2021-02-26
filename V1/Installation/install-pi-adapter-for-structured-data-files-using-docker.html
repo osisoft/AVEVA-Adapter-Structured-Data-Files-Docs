@@ -78,8 +78,8 @@
             <article class="content wrap" id="_content" data-uid="InstallPIAdapterForDNP3UsingDocker">
 <h1 id="install-pi-adapter-for-structured-data-files-using-docker">Install PI Adapter for Structured Data Files using Docker</h1>
 
-<p>Docker is a set of tools that can be used on Linux to manage application deployments. This topic provides examples of how to create a Docker container with the Structured Data Files adapter.</p>
-<p><strong>Note:</strong> If you want to use Docker, you must be familiar with the underlying technology and have determined that it is appropriate for your planned use of the Structured Data Files adapter. Docker is not a requirement to use the adapter.</p>
+<p>Docker is a set of tools that can be used on Linux to manage application deployments. This topic provides examples of how to create a Docker container with PI Adapter for Structured Data Files.</p>
+<p><strong>Note:</strong> If you want to use Docker, you must be familiar with the underlying technology and have determined that it is appropriate for your planned use of the adapter. Docker is not a requirement to use the adapter.</p>
 <h2 id="create-a-startup-script-for-the-adapter">Create a startup script for the adapter</h2>
 <ol>
 <li><p>Use a text editor and create a script similar to one of the following examples:</p>
@@ -87,23 +87,23 @@
 <p> <strong>ARM32</strong></p>
 <pre><code class="lang-bash">#!/bin/sh
 if [ -z $portnum ] ; then
-        exec /SDF_linux-arm/OSIsoft.Data.System.Host
+        exec /StructuredDataFiles_linux-arm/OSIsoft.Data.System.Host
 else
-        exec /SDF_linux-arm/OSIsoft.Data.System.Host --port:$portnum
+        exec /StructuredDataFiles_linux-arm/OSIsoft.Data.System.Host --port:$portnum
 fi
 </code></pre><p> <strong>ARM64</strong></p>
 <pre><code class="lang-bash">#!/bin/sh
 if [ -z $portnum ] ; then
-        exec /SDF_linux-arm64/OSIsoft.Data.System.Host
+        exec /StructuredDataFiles_linux-arm64/OSIsoft.Data.System.Host
 else
-        exec /SDF_linux-arm64/OSIsoft.Data.System.Host --port:$portnum
+        exec /StructuredDataFiles_linux-arm64/OSIsoft.Data.System.Host --port:$portnum
 fi
 </code></pre><p> <strong>AMD64</strong></p>
 <pre><code class="lang-bash">#!/bin/sh
 if [ -z $portnum ] ; then
-        exec /SDF_linux-x64/OSIsoft.Data.System.Host
+        exec /StructuredDataFiles_linux-x64/OSIsoft.Data.System.Host
 else
-        exec /SDF_linux-x64/OSIsoft.Data.System.Host --port:$portnum
+        exec /StructuredDataFiles_linux-x64/OSIsoft.Data.System.Host --port:$portnum
 fi
 </code></pre></li>
 <li><p>Name the script <code>sdfdockerstart.sh</code> and save it to the directory where you plan to create the container.</p>
@@ -119,7 +119,7 @@ WORKDIR /
 RUN apt-get update &amp;&amp; DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates libicu60 libssl1.1 curl
 COPY sdfdockerstart.sh /
 RUN chmod +x /sdfdockerstart.sh
-ADD ./SDF_linux-arm.tar.gz .
+ADD ./StructuredDataFiles_linux-arm.tar.gz .
 ENTRYPOINT [&quot;/sdfdockerstart.sh&quot;]
 </code></pre><h3 id="arm64">ARM64</h3>
 <pre><code class="lang-dockerfile">FROM ubuntu
@@ -127,7 +127,7 @@ WORKDIR /
 RUN apt-get update &amp;&amp; DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates libicu66 libssl1.1 curl
 COPY sdfdockerstart.sh /
 RUN chmod +x /sdfdockerstart.sh
-ADD ./SDF_linux-arm64.tar.gz .
+ADD ./StructuredDataFiles_linux-arm64.tar.gz .
 ENTRYPOINT [&quot;/sdfdockerstart.sh&quot;]
 </code></pre><h3 id="amd64-x64">AMD64 (x64)</h3>
 <pre><code class="lang-dockerfile">FROM ubuntu
@@ -135,10 +135,10 @@ WORKDIR /
 RUN apt-get update &amp;&amp; DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates libicu66 libssl1.1 curl
 COPY sdfdockerstart.sh /
 RUN chmod +x /sdfdockerstart.sh
-ADD ./SDF_linux-x64.tar.gz .
+ADD ./StructuredDataFiles_linux-x64.tar.gz .
 ENTRYPOINT [&quot;/sdfdockerstart.sh&quot;]
 </code></pre></li>
-<li><p>Copy the <code>SDF_linux-\&lt;platform&gt;.tar.gz</code> file to the same directory as the <code>Dockerfile</code>.</p>
+<li><p>Copy the <code>StructuredDataFiles_linux-\&lt;platform&gt;.tar.gz</code> file to the same directory as the <code>Dockerfile</code>.</p>
 </li>
 <li><p>Copy the <code>sdfdockerstart.sh</code> script to the same directory as the <code>Dockerfile</code>.</p>
 </li>
@@ -155,23 +155,31 @@ ENTRYPOINT [&quot;/sdfdockerstart.sh&quot;]
 <pre><code class="lang-bash">docker run -d --network host sdfadapter
 </code></pre></li>
 </ol>
-<p>The default port <code>5590</code> is accessible from the host and you can make REST calls to Structured Data Files adapter from applications on the local host computer. In this example, all data stored by the adapter is stored in the container itself. When the container is deleted, the data stored is also deleted.</p>
+<p>The default port <code>5590</code> is accessible from the host, and you can make REST calls to the adapter from applications on the local host computer. In this example, all data stored by the adapter is stored in the container itself. When the container is deleted, the data stored is also deleted.</p>
 <h3 id="provide-persistent-storage-for-the-docker-container">Provide persistent storage for the Docker container</h3>
-<p>Complete the following to run the container:</p>
+<p>If you have a file share directory <code>/sdf/InputDirectory</code> and you want to move the files to <code>/sdf/OutputDirectory</code> after processing, for the Docker container to access these directories and the storage on the host machine, complete the following steps to run the container:</p>
 <ol>
-<li>Use the docker container image <code>sdfadapter</code> created previously.</li>
-<li><p>Type the following command line (you may need to use the <code>sudo</code> command):</p>
+<li><p>Use the docker container image <code>sdfadapter</code> created previously.</p>
+</li>
+<li><p>Enter the following command line (you may need to use the <code>sudo</code> command):</p>
 <pre><code class="lang-bash">docker run -d --network host -v /sdf:/usr/share/OSIsoft/ sdfadapter
 </code></pre></li>
+<li><p>Update the <code>InputDirectory</code> and <code>OutputDirectory</code> of your data source configuration to following settings:</p>
+<pre><code class="lang-json">{
+  &quot;InputDirectory&quot;: &quot;/usr/share/OSIsoft/InputDirectory&quot;,
+  &quot;OutputDirectory&quot;: &quot;/usr/share/OSIsoft/OutputDirectory&quot;
+}
+</code></pre><p> <strong>Note:</strong> <code>/sdf</code> is replaced by <code>/usr/share/OSIsoft</code>, the target directory inside the container.</p>
+</li>
 </ol>
-<p>The default port <code>5590</code> is accessible from the host and you can make REST calls to the Structured Data Files adapter from applications on the local host computer. In this example, data is written to a host directory on the local machine <code>/sdf</code> rather than the container. You can specify any directory.</p>
+<p>The default port <code>5590</code> is accessible from the host and you can make REST calls to the adapter from applications on the local host computer. The data is written to a host directory on the local machine <code>/sdf</code> rather than the container.</p>
 <h3 id="port-number-change">Port number change</h3>
-<p>To use a different port other than the default <code>5590</code>, you can specify a <code>portnum</code> variable on the <code>docker run</code> command line. For example, to start the Structured Data Files adapter using port <code>6000</code> instead of <code>5590</code>, use the following command line:</p>
+<p>To use a different port other than the default <code>5590</code>, you can specify a <code>portnum</code> variable on the <code>docker run</code> command line. For example, to start the adapter using port <code>6000</code> instead of <code>5590</code>, use the following command line:</p>
 <pre><code class="lang-bash">docker run -d -e portnum=6000 --network host sdfadapter
 </code></pre><p>This command accesses the REST API with port <code>6000</code> instead of port <code>5590</code>. The following <code>curl</code> command returns the configuration for the container.</p>
 <pre><code class="lang-bash">curl http://localhost:6000/api/v1/configuration
 </code></pre><h3 id="remove-rest-access-to-the-docker-container">Remove REST access to the Docker container</h3>
-<p>If you remove the <code>--network host</code> option from the docker run command, REST access is not possible from outside the container. This can be valuable when you want to host an application in the same container as the Structured Data Files adapter but do not want to have external REST access enabled.</p>
+<p>If you remove the <code>--network host</code> option from the docker run command, REST access is not possible from outside the container. This can be valuable when you want to host another application in the same container as this adapter but do not want to have external REST access enabled.</p>
 </article>
           </div>
           
