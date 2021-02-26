@@ -6,31 +6,43 @@ uid: PIAdapterForStructuredDataFilesDataSourceConfiguration
 
 To use the adapter, you must configure the data source to receive data.
 
+**Note:** This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see [Configuration tools](xref:ConfigurationTools1-3).
+
 ## Configure Structured Data Files data source
 
-**Note:** To modify a Structured Data Files data source configuration, you must use the REST endpoints to add or edit the configuration.
+Complete the following steps to configure a Structured Data Files data source. Use the `POST` method in conjunction with the `api/v1/configuration/<ComponentId>/DataSource` REST endpoint to initialize the configuration.
 
-Complete the following steps to configure a Structured Data Files data source:
+1. Using a text editor, create an empty text file.
 
-1. Use any text editor to create a file that contains a Structured Data Files data source in the JSON format.
-    - For content structure, see [Structured Data Files data source examples](#structured-data-files-data-source-examples).
-    - For a table of all available parameters, see [Structured Data Files data source parameters](#structured-data-files-data-source-examples).
-2. Save the file. For example, `ConfigureDataSource.json`.
-3. Use any of the [Configuration tools](xref:ConfigurationTools1-3) capable of making HTTP requests to run a `PUT` command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<ComponentId>/DataSource/`
+1. Copy and paste an example configuration for a structured data files data source into the file.
 
-      **Note:** The following example uses SDF1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration1-3).
+    For sample JSON, see [Structured Data Files data source examples](#structured-data-files-data-source-examples).
 
-    `5590` is the default port number. If you selected a different port number, replace it with that value.
+1. Update the example JSON parameters for your environment.
 
-    Example using `curl`:
+    For a table of all available parameters, see [Structured Data Files data source parameters](#structured-data-files-data-source-parameters).
+
+1. Save the file as `ConfigureDataSource.json`.
+
+1. Open a command line session. Change directory to the location of `ConfigureDataSource.json`.
+
+1. Enter the following cURL command (which uses the `POST` method) to initialize the data source configuration.
 
     ```bash
-    curl -d "@ConfigureDataSource.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/SDF1/DataSource"
+    curl -d "@ConfigureDataSource.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/StructuredDataFiles1/DataSource"
     ```
 
-    **Note:** Run this command from the same directory where the file is located.
+    **Notes:**
+  
+    * If you installed the adapter to listen on a non-default port, update `5590` to the port number in use.
+    * If you use a component ID other than `StructuredDataFiles1`, update the endpoint with your chosen component ID.
+    * For a list of other REST operations you can perform, like updating or deleting a data source configuration, see [REST URLs](#rest-urls).
+    <br/>
+    <br/>
 
-4. Configure data selection. For more information, see [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForStructuredDataFilesDataSelectionConfiguration).
+1. Configure data selection.
+
+    For more information, see [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForStructuredDataFilesDataSelectionConfiguration).
 
 ## Structured Data Files data source schema
 
@@ -95,8 +107,8 @@ The following are examples of valid Structured Data Files data source configurat
 | Relative URL | HTTP verb | Action |
 | ------------ | --------- | ------ |
 | api/v1/configuration/\<ComponentId\>/DataSource  | `GET` | Retrieves the Structured Data Files data source configuration |
-| api/v1/configuration\<ComponentId\>/DataSource  | `POST` | Creates the Structured Data Files data source configuration |
+| api/v1/configuration/\<ComponentId\>/DataSource  | `POST` | Creates the Structured Data Files data source configuration |
 | api/v1/configuration/\<ComponentId\>/DataSource  | `PUT` | Configures or updates the Structured Data Files data source configuration |
 | api/v1/configuration/\<ComponentId\>/DataSource | `DELETE` | Deletes the Structured Data Files data source configuration |
 
-**Note:** Replace \<ComponentId\> with the Id of your Structured Data Files component, for example SDF1.
+**Note:** Replace `<ComponentId>` with the ID of your Structured Data Files component, for example `StructuredDataFiles1`.
