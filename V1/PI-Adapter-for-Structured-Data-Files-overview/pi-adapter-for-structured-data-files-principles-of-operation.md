@@ -66,14 +66,14 @@ The adapter creates a stream with two properties for a selected item. The proper
 Certain metadata are sent with each stream created.
 The following metadata are common for every adapter type:
 
-- **ComponentId**: Specifies the data source, for example, _SDF1_
-- **ComponentType**: Specifies the type of adapter, for example, _SDF1_
+- **ComponentId**: Specifies the data source, for example, _StructuredDataFiles1_
+- **ComponentType**: Specifies the type of adapter, for example, _StructuredDataFiles1_
 
-Metadata specific to the Structured Data Files adapter:
+Metadata specific to PI Adapter for Structured Data Files:
 
 - **InputDirectory**: Location of the source files to process.
 
-The metadata level is set in [General configuration](xref:GeneralConfiguration). For the Structured Data Files adapter, the following metadata is sent for the individual level:
+The metadata level is set in [General configuration](xref:GeneralConfiguration). For PI Adapter for Structured Data Files, the following metadata is sent for the individual level:
 
 - `None`: No metadata
 - `Low`: AdapterType (_ComponentType_) and DataSource (_ComponentId_)
