@@ -88,7 +88,7 @@
 </ul>
 <p>For more information, see <a href="xref:PIAdapterforSDFDataSourceConfiguration">PI Adapter for Structured Data Files data source configuration</a>, <a href="xref:PIAdapterforSDFtDataSelectionConfiguration">PI Adapter for Structured Data Files data selection configuration</a>, and <a class="xref" href="../main/V1/Configuration/logging-configuration.html">Logging configuration</a>.</p>
 <h2 id="data-collection">Data collection</h2>
-<p>When the adapter starts it scans for all files in the input directory that match the configured file name filter. These files are processed in order of their creation time. As new files are added to the input directory while the adapter is running, the files are processed in the order that they are added. Renaming a file will result in it being moved to the end of the processing queue. After a file has been processed, it will be moved to the output directory. </p>
+<p>When the adapter starts, it scans for all files in the input directory that match the configured file name filter. These files are processed in the order of their creation time. As new files are added to the input directory while the adapter is running, the files are processed in the order that they are added. Renaming a file will result in it being moved to the end of the processing queue. After a file has been processed, it will be moved to the output directory.</p>
 <p>Opening a file in the input directory could result in the adapter being unable to open it or move it to the output directory. Therefore, it is recommended that files are not opened after being placed in the input directory.</p>
 <p><strong>Note:</strong> If the adapter is unable to move a file to the output directory after processing it, the file will be processed again on an adapter restart unless it is manually removed from the input directory.</p>
 <p><strong>Note:</strong> If the input directory is deleted while the adapter is running, the adapter will attempt to resume data collection once the directory is recreated. In some cases, such as when the input directory is deleted and recreated within a short period of time, you may need to restart the adapter in order for data collection to continue.</p>
@@ -187,7 +187,7 @@
 The following metadata are common for every adapter type:</p>
 <ul>
 <li><strong>ComponentId</strong>: Specifies the data source, for example, <em>SDF1</em></li>
-<li><strong>ComponentType</strong>: Specifies the type of adapter, for example, <em>SDF1</em></li>
+<li><strong>ComponentType</strong>: Specifies the type of adapter, for example, <em>StructuredDataFiles</em></li>
 </ul>
 <p>Metadata specific to PI Adapter for Structured Data Files:</p>
 <ul>

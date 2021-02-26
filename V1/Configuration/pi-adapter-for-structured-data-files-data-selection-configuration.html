@@ -79,30 +79,29 @@
 <h1 id="pi-adapter-for-structured-data-files-data-selection-configuration">PI Adapter for Structured Data Files data selection configuration</h1>
 
 <p>In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data sources.</p>
+<p><strong>Note:</strong> This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see <a class="xref" href="../main/V1.3/Configuration/configuration-tools.html">Configuration tools</a>.</p>
 <h2 id="configure-structured-data-files-data-selection">Configure Structured Data Files data selection</h2>
-<p><strong>Note:</strong> You cannot modify Structured Data Files data selection configurations manually. You must use the REST endpoints to add or edit the configuration.</p>
-<p>Complete the following steps to configure the Structured Data Files data selection:</p>
+<p>Complete the following steps to configure Structured Data Files data selection. Use the <code>POST</code> method in conjunction with the <code>api/v1/configuration/&lt;ComponentId&gt;/DataSelection</code> REST endpoint to initialize the configuration.</p>
 <ol>
-<li>Use any text editor to create a file that contains a Structured Data Files data selection in the JSON format.<ul>
-<li>For content structure, see <a href="#structured-data-files-data-selection-examples">Structured Data Files data selection examples</a>.</li>
-<li>For a table of all available parameters, see <a href="#structured-data-files-data-selection-parameters">Structured Data Files data selection parameters</a>.</li>
-</ul>
+<li><p>Using a text editor, create an empty text file.</p>
 </li>
-<li>Save the file. For example, <code>ConfigureDataSelection.json</code>.</li>
-<li><p>Use any of the <a class="xref" href="../main/V1.3/Configuration/configuration-tools.html">Configuration tools</a> capable of making HTTP requests to run either a <code>POST</code> or <code>PUT</code> command to their appropriate endpoint:</p>
-<p> <strong>Note:</strong> The following examples use SDF1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1.3/Configuration/system-components-configuration.html">System components configuration</a>.</p>
-<p> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
+<li><p>Copy and paste an example configuration for data selection into the file.</p>
+<p> For sample JSON, see <a href="#structured-data-files-data-selection-examples">Structured Data Files data selection examples</a>.</p>
+</li>
+<li><p>Update the example JSON parameters for your environment.</p>
+<p> For a table of all available parameters, see <a href="#structured-data-files-data-selection-parameters">Structured Data Files data selection parameters</a>.</p>
+</li>
+<li><p>Save the file as <code>ConfigureDataSelection.json</code>.</p>
+</li>
+<li><p>Open a command line session. Change directory to the location of <code>ConfigureDataSelection.json</code>.</p>
+</li>
+<li><p>Enter the following cURL command (which uses the <code>POST</code> method) to initialize the data selection configuration.</p>
+<pre><code class="lang-bash">curl -d &quot;@ConfigureDataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X POST &quot;http://localhost:5590/api/v1/configuration/StructuredDataFiles1/DataSelection&quot;
+</code></pre><p> <strong>Notes:</strong></p>
 <ul>
-<li><p><code>POST</code> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;ComponentId&gt;/DataSelection/</code></p>
-<p>Example using <code>curl</code>:</p>
-<pre><code class="lang-bash">curl -d &quot;@ConfigureDataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X POST &quot;http://localhost:5590/api/v1/configuration/SDF1/DataSelection/&quot;
-</code></pre><p><strong>Note:</strong> Run this command from the same directory where the file is located.</p>
-</li>
-<li><p><code>PUT</code> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;ComponentId&gt;/DataSelection/&lt;StreamId&gt;</code></p>
-<p>Example using <code>curl</code>:</p>
-<pre><code class="lang-bash">curl -d &quot;@ConfigureDataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/SDF1/DataSelection/MyFileSource.Temperature&quot;
-</code></pre><p>  <strong>Note:</strong> Run this command from the same directory where the file is located.</p>
-</li>
+<li>If you installed the adapter to listen on a non-default port, update <code>5590</code> to the port number in use.</li>
+<li>If you use a component ID other than <code>StructuredDataFiles1</code>, update the endpoint with your chosen component ID.</li>
+<li>For a list of other REST operations you can perform, like updating or deleting a data selection configuration, see <a href="#rest-urls">REST URLs</a>.</li>
 </ul>
 </li>
 </ol>
@@ -155,7 +154,7 @@
 <td><strong>TimeField</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>Name of the time field. XPath and JsonPath are supported.  If no timestamp is provided in the file, the following values can be used to specify the timestamp:<br> - FileCreationTime - UTC time the file was created. <br> -  FileModifiedTime - UTC time the file was modified.<br> - AdapterGeneratedTime - UTC time the file is processed by the adapter. <br> Example: &quot;FanSpeedTimeStamp&quot;</td>
+<td>Name of the time field. XPath and JsonPath are supported.  If no timestamp is provided in the file, the following reserved values can be used to specify the timestamp:<br> - <strong>FileCreationTime</strong> - UTC time the file was created. <br> -  <strong>FileModifiedTime</strong> - UTC time the file was modified.<br> - <strong>AdapterGeneratedTime</strong> - UTC time the file is processed by the adapter. <br> Example: &quot;FanSpeedTimeStamp&quot;</td>
 </tr>
 <tr>
 <td><strong>DataType</strong></td>
@@ -249,7 +248,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Note:</strong> Replace &lt;ComponentId> with the Id of your Structured Data Files component, for example SDF1.</p>
+<p><strong>Note:</strong> Replace <code>&lt;ComponentId&gt;</code> with the ID of your Structured Data Files component, for example <code>StructuredDataFiles1</code>.</p>
 </article>
           </div>
           

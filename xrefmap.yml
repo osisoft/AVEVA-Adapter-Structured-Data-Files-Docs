@@ -295,6 +295,9 @@ references:
 - uid: StreamCount1-4
   name: Stream count
   href: V1/main/V1.4/Diagnostics/stream-count.html
+- uid: StructuredDataFilesConfiguration
+  name: Configuration
+  href: V1/Configuration/configuration.html
 - uid: System
   name: System
   href: V1/main/V1/Diagnostics/System.html
