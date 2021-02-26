@@ -44,8 +44,6 @@ Complete the following steps to configure a Structured Data Files data source. U
 
     For more information, see [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForStructuredDataFilesDataSelectionConfiguration).
 
-    **Note:** You can decide to have a default data selection file generated automatically or you can create the data selection file yourself.
-
 ## Structured Data Files data source schema
 
 The full schema definition for the Structured Data Files data source configuration is in the `StructuredDataFiles_DataSource_schema.json` file located in one of the following folders:
@@ -61,10 +59,10 @@ The following parameters are available for configuring a Structured Data Files d
 | Parameter                     | Required | Type      | Description |
 |-------------------------------|----------|-----------|-------------|
 | **FriendlyName** | Optional | `string` | The label to use for the data source. |
-| **InputDirectory** | Required | `string` | Location of the source files to process.<br><br>Example: `C:\\InputDirectory` |
-| **OutputDirectory** | Required | `string` | Location for the files to be moved to after being processed.<br><br>Example: `C:\\OutputDirectory` |
-| **FileNameFilter** | Optional | `string` | File name filter for files in the InputDirectory. Use `*` as the wildcard character.<br><br>Example: `*.csv` |
-| **HasHeader** | Optional | `bool` | Indicates if a header line is present in the file.<br><br>Default value: `false` |
+| **InputDirectory** | Required | `string` | Location of the source files to process. FTP servers are not supported.<br><br>Example: `C:\\InputDirectory` |
+| **OutputDirectory** | Required | `string` | Location for the files to be moved to after being processed. FTP servers are not supported.<br><br>Example: `C:\\OutputDirectory` |
+| **FileNameFilter** | Optional | `string` | Pattern used to match files in the **InputDirectory** for processing. If no filter is specified, the adapter will attempt to process all files in the **InputDirectory**. Use `*` as the wildcard character.<br><br>Example: `*.csv` |
+| **HasHeader** | Optional | `bool` | Indicates if a header line is present in the file. Only applies to CSV files.<br><br>Default value: `false` |
 | **Culture** | Optional | `string` | Locale setting for the input files.<br><br>Example: `en-US`<br>Default value: local culture |
 | **TimeZone** | Optional | `string` | Time zone of timestamps in the input files. If specified, the value must be a valid entry from the IANA time zone database.<br><br>Example: `America/Los_Angeles`<br>Default value: `Etc/UTC` |
 | **Format** | Optional | `string` | Input file format.<br><br>Allowed values: `Csv`, `Json`, `Xml`<br><br>Default value: `Csv` |

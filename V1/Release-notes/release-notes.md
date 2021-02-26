@@ -9,7 +9,7 @@ Adapter framework 1.3
 
 ## Overview
 
-This represents the initial release for PI Adapter for Structured Data Files. This product collects time series data afrom source files in a local or remote directory to OMF endpoints in OSIsoft Cloud Services or PI Servers. PI Adapter for Structured Data Files can also collect health and diagnostics information. It supports buffering, static and event data collection, automatic discovery of available data items on a data source, and various Windows and Linux-based operating systems as well as containerization.
+This represents the initial release for PI Adapter for Structured Data Files. This product collects time series data from source files in a local or remote directory to OMF endpoints in OSIsoft Cloud Services, Edge Data Store, or PI Servers. PI Adapter for Structured Data Files can also collect health and diagnostics information. It supports buffering, static and event data collection, and various Windows and Linux-based operating systems as well as containerization.
 
 For more information, see the [PI Adapter for Structured Data Files overview](xref:PIAdapterforSDFOverview).
 
@@ -55,7 +55,7 @@ The following table lists the known vulnerabilities and their mitigation in this
 
  Component | Version | CVE or Reference | CVSS | Mitigation
  --------- | ------- | -----------------| ------ | ----------
- json.Net | 12.0.3 | [Applications that use Newtonsoft.Json might be exposed to DOS vulnerability](https://alephsecurity.com/vulns/aleph-2018004) | 6.8 | No code paths result in json parsing and subsequent serialization resulting in DoS vulnerability.
+ json.Net | 12.0.3 | [Applications that use Newtonsoft.Json might be exposed to DOS vulnerability](https://alephsecurity.com/vulns/aleph-2018004) | 6.8 | Limit MaxDepth when parsing to 100. No code paths result in json parsing and subsequent serialization directly back to a string.
 
 ## Technical support and resources
 
