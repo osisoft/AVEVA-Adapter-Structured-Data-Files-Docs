@@ -66,8 +66,8 @@ The adapter creates a stream with two properties for a selected item. The proper
 Certain metadata are sent with each stream created.
 The following metadata are common for every adapter type:
 
-- **ComponentId**: Specifies the data source, for example, _SDF1_
-- **ComponentType**: Specifies the type of adapter, for example, _SDF1_
+- **ComponentId**: Specifies the data source, for example, _StructuredDataFiles1_
+- **ComponentType**: Specifies the type of adapter, for example, _StructuredDataFiles1_
 
 Metadata specific to PI Adapter for Structured Data Files:
 
