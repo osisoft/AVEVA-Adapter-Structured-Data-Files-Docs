@@ -10,7 +10,7 @@
   topicHref: Configuration/configuration.md
 - name: Administration
   href: main/V1.3/Administration/toc.yml
-  topicHref: main/V1/Administration/administration.md
+  topicHref: main/V1.3/Administration/administration.md
 - name: Health and diagnostics
   href: Health-and-diagnostics/toc.yml
   topicHref: main/V1.3/Health/health-and-diagnostics.md
