@@ -11,6 +11,8 @@ Adapter framework 1.3
 
 This represents the initial release for PI Adapter for Structured Data Files. This product collects time series data from source files in a local or remote directory to OMF endpoints in OSIsoft Cloud Services, Edge Data Store, or PI Servers. PI Adapter for Structured Data Files can also collect health and diagnostics information. It supports buffering, static and event data collection, and various Windows and Linux-based operating systems as well as containerization.
 
+**Note:** FTP servers are not supported for this version.
+
 For more information, see the [PI Adapter for Structured Data Files overview](xref:PIAdapterforSDFOverview).
 
 ## Known issues
