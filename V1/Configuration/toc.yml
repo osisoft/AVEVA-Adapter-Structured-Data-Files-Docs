@@ -2,7 +2,7 @@
   href: ../main/v1.3/configuration/configuration-tools.md
 - name: System components configuration
   href: ../main/v1.3/configuration/system configuration/toc.yml
-  topichref: ../main/v1.3/configuration/system-components-configuration.md
+  topicHref: ../main/v1.3/configuration/system-components-configuration.md
 - name: PI Adapter for Structured Data Files data source configuration 
   href: pi-adapter-for-structured-data-files-data-source-configuration.md
 - name: PI Adapter for Structured Data Files data selection configuration
