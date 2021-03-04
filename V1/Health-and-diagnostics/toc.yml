@@ -1,6 +1,6 @@
 - name: Adapter health
   href: health/toc.yml
-  topichref: health/adapter-health-for-structured-data-files.md
+  topicHref: health/adapter-health-for-structured-data-files.md
 - name: Adapter diagnostics
   href: ../main/v1.3/diagnostics/toc.yml
   topichref: ../main/v1.3/diagnostics/adapter-diagnostics.md
