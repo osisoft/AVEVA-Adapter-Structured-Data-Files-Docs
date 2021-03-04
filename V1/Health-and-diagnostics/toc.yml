@@ -3,6 +3,6 @@
   topicHref: health/adapter-health-for-structured-data-files.md
 - name: Adapter diagnostics
   href: ../main/v1.3/diagnostics/toc.yml
-  topichref: ../main/v1.3/diagnostics/adapter-diagnostics.md
+  topicHref: ../main/v1.3/diagnostics/adapter-diagnostics.md
 - name: Egress diagnostics
   href: ../main/v1.3/diagnostics/egress-diagnostics.md
