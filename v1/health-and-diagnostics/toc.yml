@@ -1,7 +1,7 @@
-- name: Adapter health
+- name: Health
   href: Health/toc.yml
   topicHref: Health/adapter-health-for-structured-data-files.md
-- name: Adapter diagnostics
+- name: Diagnostics
   href: ../main/V1.3/Diagnostics/toc.yml
   topicHref: ../main/V1.3/Diagnostics/adapter-diagnostics.md
 - name: Egress diagnostics
