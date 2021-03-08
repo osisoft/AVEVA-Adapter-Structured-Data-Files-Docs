@@ -17,7 +17,7 @@ For more information, see the [PI Adapter for Structured Data Files overview](xr
 
 ## Known issues
 
-There are no known issues at this time.
+The current version of the adapter does not support using file shares when the adapter is running on Linux. Work around: use an external process or script to move the files locally on the machine where the adapter is running.
 
 ## System requirements
 
