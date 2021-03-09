@@ -78,16 +78,17 @@
             <article class="content wrap" id="_content" data-uid="ReleaseNotes">
 <h1 id="release-notes">Release notes</h1>
 
-<p>PI Adapter for Structured Data Files 1.0 <br>
+<p>PI Adapter for Structured Data Files 0.1.0.56 <br>
 Adapter framework 1.3</p>
 <h2 id="overview">Overview</h2>
 <p>This represents the initial release for PI Adapter for Structured Data Files. This product collects time series data from source files in a local or remote directory to OMF endpoints in OSIsoft Cloud Services, Edge Data Store, or PI Servers. PI Adapter for Structured Data Files can also collect health and diagnostics information. It supports buffering, static and event data collection, and various Windows and Linux-based operating systems as well as containerization.</p>
 <p><strong>Note:</strong> FTP servers are not supported for this version.</p>
 <p>For more information, see the <a class="xref" href="../index.html">PI Adapter for Structured Data Files overview</a>.</p>
 <h2 id="known-issues">Known issues</h2>
-<p>There are no known issues at this time.</p>
+<p>On Linux installs, the adapter currently cannot use file shares as an input directory.</p>
+<p><strong>Workaround</strong>: Use an external process or script to copy or move the files locally on the machine where the adapter is running.</p>
 <h2 id="system-requirements">System requirements</h2>
-<p>Refer to <a class="xref" href="../Installation/system-requirements.html">System requirements</a>.</p>
+<p>Refer to <a class="xref" href="../installation/system-requirements.html">System requirements</a>.</p>
 <h2 id="installation">Installation</h2>
 <p>Refer to <a class="xref" href="../main/V1/Installation/install-the-adapter.html">Install the adapter</a>.</p>
 <h2 id="uninstallation">Uninstallation</h2>
@@ -134,7 +135,7 @@ Adapter framework 1.3</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/PI-Adapter-Structured-Data-Files-Docs/blob/master/V1/Release-notes/release-notes.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/PI-Adapter-Structured-Data-Files-Docs/blob/master/v1/release-notes/release-notes.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

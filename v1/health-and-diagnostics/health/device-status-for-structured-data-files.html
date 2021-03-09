@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Next health message expected </title>
+    <title>Device status </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Next health message expected ">
+    <meta name="title" content="Device status ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -75,16 +75,16 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="NextHealthMessageExpectedForStructuredDataFiles">
-<h1 id="next-health-message-expected">Next health message expected</h1>
+            <article class="content wrap" id="_content" data-uid="DeviceStatusForStructuredDataFiles">
+<h1 id="device-status">Device status</h1>
 
-<p>This property is similar to a heartbeat. A new value for <code>NextHealthMessageExpected</code> is sent by an individual adapter data component on a periodic basis while it is functioning properly. This value is a timestamp that indicates when the next value should be received. When monitoring, if the next value is not received by the indicated time, this likely means that there is an issue. It could be an issue with the adapter, adapter component, network connection between the health endpoint and the adapter, and so on.</p>
+<p>The device status indicates the health of this component and if it is currently communicating properly with the data source. This time-series data is stored within a PI point or OCS stream, depending on the endpoint type. During healthy steady-state operation, a value of <code>Good</code> is expected.</p>
 <table>
 <thead>
 <tr>
 <th>Property</th>
 <th>Type</th>
-<th>Description</th>
+<th>description</th>
 </tr>
 </thead>
 <tbody>
@@ -94,9 +94,52 @@
 <td>Timestamp of the event</td>
 </tr>
 <tr>
-<td><strong>NextHealthMessageExpected</strong></td>
+<td><strong>DeviceStatus</strong></td>
 <td><code>string</code></td>
-<td>Timestamp when next value is expected</td>
+<td>The value of the <code>DeviceStatus</code></td>
+</tr>
+</tbody>
+</table>
+<p>The possible statuses:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Good</code></td>
+<td>The component is connected to the data source and is successfully processing files.</td>
+</tr>
+<tr>
+<td><code>ConnectedNoData</code></td>
+<td>The component is connected to the data source, but there was an error parsing a data file or a file contained no data for selected items.</td>
+</tr>
+<tr>
+<td><code>AttemptingFailover</code></td>
+<td>The component is attempting to fail over.</td>
+</tr>
+<tr>
+<td><code>Starting</code></td>
+<td>The component is currently in the process of starting up and is not yet connected to the data source.</td>
+</tr>
+<tr>
+<td><code>DeviceInError</code></td>
+<td>The component encountered an error while connecting to the data source.</td>
+</tr>
+<tr>
+<td><code>Shutdown</code></td>
+<td>The component is in the process of shutting down or has finished.</td>
+</tr>
+<tr>
+<td><code>Removed</code></td>
+<td>The component has been removed and will no longer collect data.</td>
+</tr>
+<tr>
+<td><code>NotConfigured</code></td>
+<td>The component has been created but is not yet configured.</td>
 </tr>
 </tbody>
 </table>
@@ -108,7 +151,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/PI-Adapter-Structured-Data-Files-Docs/blob/master/V1/Health-and-diagnostics/Health/next-health-message-expected.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/PI-Adapter-Structured-Data-Files-Docs/blob/master/v1/health-and-diagnostics/health/device-status-for-structured-data-files.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -25,12 +25,12 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "V1/Configuration/configuration.md",
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/Configuration/configuration.html",
-          "hash": "pbXSkLFArW2CymdF8JZKdQ=="
+          "relative_path": "toc.html",
+          "hash": "XkzX18y/bjKadECLZICdVg=="
         }
       },
       "is_incremental": false,
@@ -38,11 +38,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Configuration/pi-adapter-for-structured-data-files-data-selection-configuration.md",
+      "source_relative_path": "v1/configuration/configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/Configuration/pi-adapter-for-structured-data-files-data-selection-configuration.html",
-          "hash": "u5MWsGXPwVkTZRAmZilZ4g=="
+          "relative_path": "v1/configuration/configuration.html",
+          "hash": "s08SQM+ehEL/+U1tWGveCg=="
         }
       },
       "is_incremental": false,
@@ -50,11 +50,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Configuration/pi-adapter-for-structured-data-files-data-source-configuration.md",
+      "source_relative_path": "v1/configuration/pi-adapter-for-structured-data-files-data-selection-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/Configuration/pi-adapter-for-structured-data-files-data-source-configuration.html",
-          "hash": "pzWVg3pzHMDqU5U/sj9gMg=="
+          "relative_path": "v1/configuration/pi-adapter-for-structured-data-files-data-selection-configuration.html",
+          "hash": "q8vvOz7efJU+27rW6PNKdA=="
         }
       },
       "is_incremental": false,
@@ -62,11 +62,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Health-and-diagnostics/Health/adapter-health-for-structured-data-files.md",
+      "source_relative_path": "v1/configuration/pi-adapter-for-structured-data-files-data-source-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/Health-and-diagnostics/Health/adapter-health-for-structured-data-files.html",
-          "hash": "sFifoHDm5eR4hxMCN+0B7Q=="
+          "relative_path": "v1/configuration/pi-adapter-for-structured-data-files-data-source-configuration.html",
+          "hash": "rM4Fkafw9w0nvOWum3QiEA=="
         }
       },
       "is_incremental": false,
@@ -74,11 +74,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Health-and-diagnostics/Health/device-status-for-structured-data-files.md",
+      "source_relative_path": "v1/health-and-diagnostics/health/adapter-health-for-structured-data-files.md",
       "output": {
         ".html": {
-          "relative_path": "V1/Health-and-diagnostics/Health/device-status-for-structured-data-files.html",
-          "hash": "p2Oa+3hT9zPO5Mwy8g3aFQ=="
+          "relative_path": "v1/health-and-diagnostics/health/adapter-health-for-structured-data-files.html",
+          "hash": "QfFOHCTsGGbbzoOKMTIXVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v1/health-and-diagnostics/health/device-status-for-structured-data-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/health-and-diagnostics/health/device-status-for-structured-data-files.html",
+          "hash": "b3CFBUoE9JhcleoFVYqPIQ=="
         }
       },
       "is_incremental": false,
@@ -90,11 +102,11 @@
         "UidNotFound"
       ],
       "type": "Conceptual",
-      "source_relative_path": "V1/Health-and-diagnostics/Health/health-and-diagnostics-for-structured-data-files.md",
+      "source_relative_path": "v1/health-and-diagnostics/health/health-and-diagnostics-for-structured-data-files.md",
       "output": {
         ".html": {
-          "relative_path": "V1/Health-and-diagnostics/Health/health-and-diagnostics-for-structured-data-files.html",
-          "hash": "0SUmCrM8Dge544zja8U+tg=="
+          "relative_path": "v1/health-and-diagnostics/health/health-and-diagnostics-for-structured-data-files.html",
+          "hash": "dRtKjvJmBYMZ6SN4+Ltrpw=="
         }
       },
       "is_incremental": false,
@@ -102,65 +114,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Health-and-diagnostics/Health/next-health-message-expected.md",
+      "source_relative_path": "v1/health-and-diagnostics/health/next-health-message-expected.md",
       "output": {
         ".html": {
-          "relative_path": "V1/Health-and-diagnostics/Health/next-health-message-expected.html",
-          "hash": "pJSCeRFxAdIcou2FsLv3EQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/Installation/install-pi-adapter-for-structured-data-files-using-docker.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/Installation/install-pi-adapter-for-structured-data-files-using-docker.html",
-          "hash": "jJVtsu1RZRkE/zxcSYSs5A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "UidNotFound"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "V1/Installation/system-requirements.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/Installation/system-requirements.html",
-          "hash": "pALpnjsbXlQ9of1d5ufUUw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "UidNotFound"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "V1/PI-Adapter-for-Structured-Data-Files-overview/pi-adapter-for-structured-data-files-principles-of-operation.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/PI-Adapter-for-Structured-Data-Files-overview/pi-adapter-for-structured-data-files-principles-of-operation.html",
-          "hash": "neOT7sC5e1yZ8KwqP2+03A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/Release-notes/release-notes.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/Release-notes/release-notes.html",
-          "hash": "lKYXQxCxI7DzwWkra7oPvg=="
+          "relative_path": "v1/health-and-diagnostics/health/next-health-message-expected.html",
+          "hash": "/q89Ae5mGPApnMFIuagR9w=="
         }
       },
       "is_incremental": false,
@@ -168,10 +126,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/images/pi-adapter-for-sdf-architecture-diagram.png",
+      "source_relative_path": "v1/images/pi-adapter-for-sdf-architecture-diagram.png",
       "output": {
         "resource": {
-          "relative_path": "V1/images/pi-adapter-for-sdf-architecture-diagram.png"
+          "relative_path": "v1/images/pi-adapter-for-sdf-architecture-diagram.png"
         }
       },
       "is_incremental": false,
@@ -179,11 +137,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/index.md",
+      "source_relative_path": "v1/index.md",
       "output": {
         ".html": {
-          "relative_path": "V1/index.html",
-          "hash": "qFtgOvGrTmGJnxBb/Gf4Yg=="
+          "relative_path": "v1/index.html",
+          "hash": "rTIs6FPTmuwSxeUMej7+Pg=="
         }
       },
       "is_incremental": false,
@@ -191,11 +149,26 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/README.MD",
+      "source_relative_path": "v1/installation/install-pi-adapter-for-structured-data-files-using-docker.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/README.html",
-          "hash": "iEo1iCSE7geJpo6dIpUezw=="
+          "relative_path": "v1/installation/install-pi-adapter-for-structured-data-files-using-docker.html",
+          "hash": "AVTBVjjjKGgXQGMATv79lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "v1/installation/system-requirements.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/installation/system-requirements.html",
+          "hash": "U+SCxqvCafXBkqfafbiJYA=="
         }
       },
       "is_incremental": false,
@@ -203,11 +176,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/Templates/Markdown Release Notes template-V1.md",
+      "source_relative_path": "v1/main/README.MD",
       "output": {
         ".html": {
-          "relative_path": "V1/main/Templates/Markdown Release Notes template-V1.html",
-          "hash": "Y/sCr9lOTWaQE+3FDy9+Tw=="
+          "relative_path": "v1/main/README.html",
+          "hash": "xhQ4/6Zi/cqOff2Kmzf5HQ=="
         }
       },
       "is_incremental": false,
@@ -215,11 +188,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Administration/administration.md",
+      "source_relative_path": "v1/main/Templates/Markdown Release Notes template-V1.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Administration/administration.html",
-          "hash": "Oln/GCgeL6hW94A/a0mN3w=="
+          "relative_path": "v1/main/Templates/Markdown Release Notes template-V1.html",
+          "hash": "X6sW6qM5XGwz+1unDx/6/g=="
         }
       },
       "is_incremental": false,
@@ -227,11 +200,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Administration/delete-an-adapter-component.md",
+      "source_relative_path": "v1/main/V1.3/Administration/administration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Administration/delete-an-adapter-component.html",
-          "hash": "4EsE856iJPP6TRIHhhEz8g=="
+          "relative_path": "v1/main/V1.3/Administration/administration.html",
+          "hash": "LnmvPKOki++3a0NWfRPwzQ=="
         }
       },
       "is_incremental": false,
@@ -239,11 +212,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Administration/retrieve-product-version-information.md",
+      "source_relative_path": "v1/main/V1.3/Administration/delete-an-adapter-component.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Administration/retrieve-product-version-information.html",
-          "hash": "ugObL7axymBhKs123O31sQ=="
+          "relative_path": "v1/main/V1.3/Administration/delete-an-adapter-component.html",
+          "hash": "LesSHo2+GLvfXRalw+qW8Q=="
         }
       },
       "is_incremental": false,
@@ -251,11 +224,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Administration/start-and-stop-an-adapter.md",
+      "source_relative_path": "v1/main/V1.3/Administration/retrieve-product-version-information.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Administration/start-and-stop-an-adapter.html",
-          "hash": "7JZcB2R/tsEHW0T+OltwCQ=="
+          "relative_path": "v1/main/V1.3/Administration/retrieve-product-version-information.html",
+          "hash": "ZTVUKzsQMHajQu4an+Y+/Q=="
         }
       },
       "is_incremental": false,
@@ -263,11 +236,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Administration/start-and-stop-ingress-component.md",
+      "source_relative_path": "v1/main/V1.3/Administration/start-and-stop-an-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Administration/start-and-stop-ingress-component.html",
-          "hash": "sJKWDQMXtlXrCDGqYOl4jQ=="
+          "relative_path": "v1/main/V1.3/Administration/start-and-stop-an-adapter.html",
+          "hash": "IKeC6i27hJjYPjzsuE4X4g=="
         }
       },
       "is_incremental": false,
@@ -275,11 +248,35 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/buffering-configuration.md",
+      "source_relative_path": "v1/main/V1.3/Administration/start-and-stop-ingress-component.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/buffering-configuration.html",
-          "hash": "51YaIYCnHUlu06/tabaT4w=="
+          "relative_path": "v1/main/V1.3/Administration/start-and-stop-ingress-component.html",
+          "hash": "cu8aNBVpxLy2BIOgC5bDHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "v1/main/V1.3/Configuration/Text-parser/All-file-types/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/V1.3/Configuration/Text-parser/All-file-types/toc.html",
+          "hash": "+oxGA9S3veLADY7S+Vw+nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "v1/main/V1.3/Configuration/Text-parser/JSONpath/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/V1.3/Configuration/Text-parser/JSONpath/toc.html",
+          "hash": "9P9otdxVR+p9WkMCVtTEBg=="
         }
       },
       "is_incremental": false,
@@ -287,11 +284,59 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/configuration-tools.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/Text-parser/jsonpath-syntax-for-value-retrieval.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/configuration-tools.html",
-          "hash": "IYXKTHSIvWlSr0vf8EqFIQ=="
+          "relative_path": "v1/main/V1.3/Configuration/Text-parser/jsonpath-syntax-for-value-retrieval.html",
+          "hash": "JJbWMcOFDnJjyYPjR38GSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v1/main/V1.3/Configuration/Text-parser/text-parser.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/V1.3/Configuration/Text-parser/text-parser.html",
+          "hash": "ezK44m3aS8f2YmUx0n/RAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v1/main/V1.3/Configuration/Text-parser/xpath-and-csv-syntax-for-value-retrieval.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/V1.3/Configuration/Text-parser/xpath-and-csv-syntax-for-value-retrieval.html",
+          "hash": "l+4lqZtgXklUGMs1+xS3hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v1/main/V1.3/Configuration/buffering-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/V1.3/Configuration/buffering-configuration.html",
+          "hash": "v81tryvRrlklHjAjqZzxOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v1/main/V1.3/Configuration/configuration-tools.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/V1.3/Configuration/configuration-tools.html",
+          "hash": "HHZHlGao5Mj7wl88dkzgqw=="
         }
       },
       "is_incremental": false,
@@ -302,11 +347,11 @@
         "DuplicateUids"
       ],
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/configure-a-network-proxy.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/configure-a-network-proxy.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/configure-a-network-proxy.html",
-          "hash": "u9u8uii8AYxcK9WgZO/zvg=="
+          "relative_path": "v1/main/V1.3/Configuration/configure-a-network-proxy.html",
+          "hash": "HIehvCaC79SgobFx/7tihw=="
         }
       },
       "is_incremental": false,
@@ -314,11 +359,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/data-filters-configuration.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/data-filters-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/data-filters-configuration.html",
-          "hash": "b1U/zKj1yywdFSE706NCow=="
+          "relative_path": "v1/main/V1.3/Configuration/data-filters-configuration.html",
+          "hash": "lzyYhC4zQCLvM6PE7mEF/g=="
         }
       },
       "is_incremental": false,
@@ -326,11 +371,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/discovery-configuration.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/discovery-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/discovery-configuration.html",
-          "hash": "W9Y+qxGYsJ6oSH9kpnMIHg=="
+          "relative_path": "v1/main/V1.3/Configuration/discovery-configuration.html",
+          "hash": "HxgzHopvmQ5mUpA2ApGxag=="
         }
       },
       "is_incremental": false,
@@ -338,11 +383,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/egress-endpoint-configuration/configure-a-network-proxy.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/egress-endpoint-configuration/configure-a-network-proxy.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/egress-endpoint-configuration/configure-a-network-proxy.html",
-          "hash": "578NqwfNofQkmjkayya3vA=="
+          "relative_path": "v1/main/V1.3/Configuration/egress-endpoint-configuration/configure-a-network-proxy.html",
+          "hash": "DxYRuDCNjk44z9UXxuWwOg=="
         }
       },
       "is_incremental": false,
@@ -350,11 +395,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/egress-endpoint-configuration/prepare-egress-destinations.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/egress-endpoint-configuration/prepare-egress-destinations.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/egress-endpoint-configuration/prepare-egress-destinations.html",
-          "hash": "q6+eEGjZezhM33+Wd3cmQg=="
+          "relative_path": "v1/main/V1.3/Configuration/egress-endpoint-configuration/prepare-egress-destinations.html",
+          "hash": "1QFQdcpGxRue0YTNmMOIHw=="
         }
       },
       "is_incremental": false,
@@ -362,11 +407,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/egress-endpoints-configuration.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/egress-endpoints-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/egress-endpoints-configuration.html",
-          "hash": "sNv6SG8ocPsp9G7kNtzWOw=="
+          "relative_path": "v1/main/V1.3/Configuration/egress-endpoints-configuration.html",
+          "hash": "p4+ge9zziXgxmKrrahkl+w=="
         }
       },
       "is_incremental": false,
@@ -374,11 +419,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/general-configuration.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/general-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/general-configuration.html",
-          "hash": "cmYaTMmyFx2D149Sc2MWTg=="
+          "relative_path": "v1/main/V1.3/Configuration/general-configuration.html",
+          "hash": "XEzM2BoUNDdXH9AGjVp9wg=="
         }
       },
       "is_incremental": false,
@@ -386,11 +431,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/health-endpoint-configuration.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/health-endpoint-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/health-endpoint-configuration.html",
-          "hash": "HBbXc/ZiaKj1pNZLtCCP7g=="
+          "relative_path": "v1/main/V1.3/Configuration/health-endpoint-configuration.html",
+          "hash": "7/WLdLiC+LYmZl/aa8LwsA=="
         }
       },
       "is_incremental": false,
@@ -398,11 +443,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/logging-configuration.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/logging-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/logging-configuration.html",
-          "hash": "koZ70I5XuVkDwFd4PkB9cA=="
+          "relative_path": "v1/main/V1.3/Configuration/logging-configuration.html",
+          "hash": "Il6+nek7NxEsUvDsFWNcuQ=="
         }
       },
       "is_incremental": false,
@@ -410,11 +455,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/schedules-configuration.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/schedules-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/schedules-configuration.html",
-          "hash": "s4GGn3UYcUqf6kTNkI0dcg=="
+          "relative_path": "v1/main/V1.3/Configuration/schedules-configuration.html",
+          "hash": "b4iLJ0+4SHba+VdF+MljgA=="
         }
       },
       "is_incremental": false,
@@ -422,11 +467,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/system-and-adapter-configuration.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/system-and-adapter-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/system-and-adapter-configuration.html",
-          "hash": "UfAzjVjQ49iJEA3dTBWuow=="
+          "relative_path": "v1/main/V1.3/Configuration/system-and-adapter-configuration.html",
+          "hash": "42FB3w8WhJMpMvCQtaRD9A=="
         }
       },
       "is_incremental": false,
@@ -434,11 +479,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Configuration/system-components-configuration.md",
+      "source_relative_path": "v1/main/V1.3/Configuration/system-components-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Configuration/system-components-configuration.html",
-          "hash": "50YNWPK8Dt+DXyMMHWdKJg=="
+          "relative_path": "v1/main/V1.3/Configuration/system-components-configuration.html",
+          "hash": "XZ1I9PKqjvwfF9ipdghwFA=="
         }
       },
       "is_incremental": false,
@@ -446,11 +491,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Diagnostics/adapter-diagnostics.md",
+      "source_relative_path": "v1/main/V1.3/Diagnostics/adapter-diagnostics.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Diagnostics/adapter-diagnostics.html",
-          "hash": "V0SJd8sbHBV/ygZJS0GrRQ=="
+          "relative_path": "v1/main/V1.3/Diagnostics/adapter-diagnostics.html",
+          "hash": "4xK8zTsahQN1cszUxWg+cg=="
         }
       },
       "is_incremental": false,
@@ -458,11 +503,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Diagnostics/egress-diagnostics.md",
+      "source_relative_path": "v1/main/V1.3/Diagnostics/egress-diagnostics.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Diagnostics/egress-diagnostics.html",
-          "hash": "xLh75y0SB0HSgaPXxIVK8A=="
+          "relative_path": "v1/main/V1.3/Diagnostics/egress-diagnostics.html",
+          "hash": "Wxee0jeQWojGE40yw4jGcA=="
         }
       },
       "is_incremental": false,
@@ -470,11 +515,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Diagnostics/error-rate.md",
+      "source_relative_path": "v1/main/V1.3/Diagnostics/error-rate.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Diagnostics/error-rate.html",
-          "hash": "utbSC3aE4V0cjIWbge4B2g=="
+          "relative_path": "v1/main/V1.3/Diagnostics/error-rate.html",
+          "hash": "Kh5llOgxTjAmTj6Y1pFhZw=="
         }
       },
       "is_incremental": false,
@@ -482,11 +527,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Diagnostics/io-rate.md",
+      "source_relative_path": "v1/main/V1.3/Diagnostics/io-rate.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Diagnostics/io-rate.html",
-          "hash": "2s7olcIBPQuU9nvSdzx94A=="
+          "relative_path": "v1/main/V1.3/Diagnostics/io-rate.html",
+          "hash": "LrevtiRQQbA5v/kLxz6e8A=="
         }
       },
       "is_incremental": false,
@@ -494,11 +539,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Diagnostics/stream-count.md",
+      "source_relative_path": "v1/main/V1.3/Diagnostics/stream-count.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Diagnostics/stream-count.html",
-          "hash": "QRMagEZXsouGW4nnXyiafw=="
+          "relative_path": "v1/main/V1.3/Diagnostics/stream-count.html",
+          "hash": "WKqqy7R//rCN6swCysWJaw=="
         }
       },
       "is_incremental": false,
@@ -506,11 +551,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Diagnostics/system.md",
+      "source_relative_path": "v1/main/V1.3/Diagnostics/system.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Diagnostics/system.html",
-          "hash": "wcdI8Flc88x+lYMmjoRPbA=="
+          "relative_path": "v1/main/V1.3/Diagnostics/system.html",
+          "hash": "nka/J29DpoPvt9bQKZlM7Q=="
         }
       },
       "is_incremental": false,
@@ -518,11 +563,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Health/adapter-health.md",
+      "source_relative_path": "v1/main/V1.3/Health/adapter-health.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Health/adapter-health.html",
-          "hash": "qqlddUT7pd7mvl59FhyHBw=="
+          "relative_path": "v1/main/V1.3/Health/adapter-health.html",
+          "hash": "SlOaZBEN2w/IjNLDP5febQ=="
         }
       },
       "is_incremental": false,
@@ -530,11 +575,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Health/device-status.md",
+      "source_relative_path": "v1/main/V1.3/Health/device-status.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Health/device-status.html",
-          "hash": "dJxzRBurAri9k54KNHUCFQ=="
+          "relative_path": "v1/main/V1.3/Health/device-status.html",
+          "hash": "7kuVtByTbqu5Lf5bBDG8JA=="
         }
       },
       "is_incremental": false,
@@ -542,11 +587,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Health/health-and-diagnostics.md",
+      "source_relative_path": "v1/main/V1.3/Health/health-and-diagnostics.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Health/health-and-diagnostics.html",
-          "hash": "afhpN+mxA07iY6JDzVjA2w=="
+          "relative_path": "v1/main/V1.3/Health/health-and-diagnostics.html",
+          "hash": "V8O7DHuJxfJIlDi71I+3bA=="
         }
       },
       "is_incremental": false,
@@ -554,11 +599,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Health/next-health-message-expected.md",
+      "source_relative_path": "v1/main/V1.3/Health/next-health-message-expected.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Health/next-health-message-expected.html",
-          "hash": "eANaCR32Qilx7tJ0f88fFg=="
+          "relative_path": "v1/main/V1.3/Health/next-health-message-expected.html",
+          "hash": "uGv0varuKqSpZLJimqx3pw=="
         }
       },
       "is_incremental": false,
@@ -566,10 +611,10 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "V1/main/V1.3/Health/toc.yml",
+      "source_relative_path": "v1/main/V1.3/Health/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Health/toc.html",
+          "relative_path": "v1/main/V1.3/Health/toc.html",
           "hash": "XfOZ2J11Vyd/ZJKzdDtoSQ=="
         }
       },
@@ -578,11 +623,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Installation/install-the-adapter.md",
+      "source_relative_path": "v1/main/V1.3/Installation/install-the-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Installation/install-the-adapter.html",
-          "hash": "t5+Q+j7xveGHTvU5mJQtgQ=="
+          "relative_path": "v1/main/V1.3/Installation/install-the-adapter.html",
+          "hash": "lqx5ekW3VQ+yE+7b69CHGg=="
         }
       },
       "is_incremental": false,
@@ -590,11 +635,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Installation/installation.md",
+      "source_relative_path": "v1/main/V1.3/Installation/installation.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Installation/installation.html",
-          "hash": "f+OGpIcGq6230LqxkF6yFA=="
+          "relative_path": "v1/main/V1.3/Installation/installation.html",
+          "hash": "MYLxPTZlWANU0se7HudkFA=="
         }
       },
       "is_incremental": false,
@@ -602,11 +647,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Installation/uninstall-the-adapter.md",
+      "source_relative_path": "v1/main/V1.3/Installation/uninstall-the-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Installation/uninstall-the-adapter.html",
-          "hash": "B2PbVCobEtsP9n3JabTYEA=="
+          "relative_path": "v1/main/V1.3/Installation/uninstall-the-adapter.html",
+          "hash": "IMO5XqPD/GQnhaSXqZxp+Q=="
         }
       },
       "is_incremental": false,
@@ -614,11 +659,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Metadata/adapter-metadata.md",
+      "source_relative_path": "v1/main/V1.3/Metadata/adapter-metadata.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Metadata/adapter-metadata.html",
-          "hash": "otIaYkhKUHNK5nRRtzJLWw=="
+          "relative_path": "v1/main/V1.3/Metadata/adapter-metadata.html",
+          "hash": "11KBcMmBqTzG3gpvpdiOig=="
         }
       },
       "is_incremental": false,
@@ -626,11 +671,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/Troubleshooting/troubleshoot-the-adapter.md",
+      "source_relative_path": "v1/main/V1.3/Troubleshooting/troubleshoot-the-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/Troubleshooting/troubleshoot-the-adapter.html",
-          "hash": "jud0AHpl8fREgEAXcmhE5g=="
+          "relative_path": "v1/main/V1.3/Troubleshooting/troubleshoot-the-adapter.html",
+          "hash": "oafAhXcQJdo4LqO9PqNqcA=="
         }
       },
       "is_incremental": false,
@@ -638,10 +683,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.3/images/Diagnostics.PNG",
+      "source_relative_path": "v1/main/V1.3/images/Diagnostics.PNG",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.3/images/Diagnostics.PNG"
+          "relative_path": "v1/main/V1.3/images/Diagnostics.PNG"
         }
       },
       "is_incremental": false,
@@ -649,10 +694,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.3/images/Metadata.png",
+      "source_relative_path": "v1/main/V1.3/images/Metadata.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.3/images/Metadata.png"
+          "relative_path": "v1/main/V1.3/images/Metadata.png"
         }
       },
       "is_incremental": false,
@@ -660,10 +705,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.3/images/adapter-health-af-hierarchy.PNG",
+      "source_relative_path": "v1/main/V1.3/images/adapter-health-af-hierarchy.PNG",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.3/images/adapter-health-af-hierarchy.PNG"
+          "relative_path": "v1/main/V1.3/images/adapter-health-af-hierarchy.PNG"
         }
       },
       "is_incremental": false,
@@ -671,10 +716,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.3/images/atlas_icon.png",
+      "source_relative_path": "v1/main/V1.3/images/atlas_icon.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.3/images/atlas_icon.png"
+          "relative_path": "v1/main/V1.3/images/atlas_icon.png"
         }
       },
       "is_incremental": false,
@@ -682,10 +727,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.3/images/configuration-folder.png",
+      "source_relative_path": "v1/main/V1.3/images/configuration-folder.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.3/images/configuration-folder.png"
+          "relative_path": "v1/main/V1.3/images/configuration-folder.png"
         }
       },
       "is_incremental": false,
@@ -693,10 +738,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.3/images/forward-proxy.png",
+      "source_relative_path": "v1/main/V1.3/images/forward-proxy.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.3/images/forward-proxy.png"
+          "relative_path": "v1/main/V1.3/images/forward-proxy.png"
         }
       },
       "is_incremental": false,
@@ -704,10 +749,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.3/images/health-data.PNG",
+      "source_relative_path": "v1/main/V1.3/images/health-data.PNG",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.3/images/health-data.PNG"
+          "relative_path": "v1/main/V1.3/images/health-data.PNG"
         }
       },
       "is_incremental": false,
@@ -715,10 +760,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.3/images/logs-folder.png",
+      "source_relative_path": "v1/main/V1.3/images/logs-folder.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.3/images/logs-folder.png"
+          "relative_path": "v1/main/V1.3/images/logs-folder.png"
         }
       },
       "is_incremental": false,
@@ -726,10 +771,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.3/images/removed-configurations.png",
+      "source_relative_path": "v1/main/V1.3/images/removed-configurations.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.3/images/removed-configurations.png"
+          "relative_path": "v1/main/V1.3/images/removed-configurations.png"
         }
       },
       "is_incremental": false,
@@ -737,10 +782,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.3/images/removed-logs.png",
+      "source_relative_path": "v1/main/V1.3/images/removed-logs.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.3/images/removed-logs.png"
+          "relative_path": "v1/main/V1.3/images/removed-logs.png"
         }
       },
       "is_incremental": false,
@@ -748,10 +793,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.3/images/reverse-proxy.png",
+      "source_relative_path": "v1/main/V1.3/images/reverse-proxy.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.3/images/reverse-proxy.png"
+          "relative_path": "v1/main/V1.3/images/reverse-proxy.png"
         }
       },
       "is_incremental": false,
@@ -759,10 +804,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.3/images/windows-network-proxy-environment-variable.png",
+      "source_relative_path": "v1/main/V1.3/images/windows-network-proxy-environment-variable.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.3/images/windows-network-proxy-environment-variable.png"
+          "relative_path": "v1/main/V1.3/images/windows-network-proxy-environment-variable.png"
         }
       },
       "is_incremental": false,
@@ -770,11 +815,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.3/technical-support-and-feedback.md",
+      "source_relative_path": "v1/main/V1.3/technical-support-and-feedback.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.3/technical-support-and-feedback.html",
-          "hash": "ricDAHQyoJnATbE6aB+Yhg=="
+          "relative_path": "v1/main/V1.3/technical-support-and-feedback.html",
+          "hash": "uqIHn0cMgpX8IgtkmXKsDg=="
         }
       },
       "is_incremental": false,
@@ -782,11 +827,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Administration/administration.md",
+      "source_relative_path": "v1/main/V1.4/Administration/administration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Administration/administration.html",
-          "hash": "ebeP9UUWkr3des2y0ZEY0w=="
+          "relative_path": "v1/main/V1.4/Administration/administration.html",
+          "hash": "2GO7+W7FUK+YmaKcFtBbgw=="
         }
       },
       "is_incremental": false,
@@ -794,11 +839,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Administration/delete-an-adapter-component.md",
+      "source_relative_path": "v1/main/V1.4/Administration/delete-an-adapter-component.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Administration/delete-an-adapter-component.html",
-          "hash": "MZNTcAiBMMbMwxTT/NgM6g=="
+          "relative_path": "v1/main/V1.4/Administration/delete-an-adapter-component.html",
+          "hash": "NK27ZMBFUVYAztVKqC3AeA=="
         }
       },
       "is_incremental": false,
@@ -806,11 +851,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Administration/retrieve-product-version-information.md",
+      "source_relative_path": "v1/main/V1.4/Administration/retrieve-product-version-information.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Administration/retrieve-product-version-information.html",
-          "hash": "ilnGKBPCO85nA5kVmb6AoQ=="
+          "relative_path": "v1/main/V1.4/Administration/retrieve-product-version-information.html",
+          "hash": "1cP9NHFjplk1bUnWUdID1Q=="
         }
       },
       "is_incremental": false,
@@ -818,11 +863,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Administration/start-and-stop-an-adapter.md",
+      "source_relative_path": "v1/main/V1.4/Administration/start-and-stop-an-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Administration/start-and-stop-an-adapter.html",
-          "hash": "ZyTglBL9HV/8n0Gv3PDrzw=="
+          "relative_path": "v1/main/V1.4/Administration/start-and-stop-an-adapter.html",
+          "hash": "/bXeY8NR/iVkpdXbKCxFMg=="
         }
       },
       "is_incremental": false,
@@ -830,11 +875,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Administration/start-and-stop-ingress-component.md",
+      "source_relative_path": "v1/main/V1.4/Administration/start-and-stop-ingress-component.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Administration/start-and-stop-ingress-component.html",
-          "hash": "yA30ph9RPMeu3b6sF+6MsA=="
+          "relative_path": "v1/main/V1.4/Administration/start-and-stop-ingress-component.html",
+          "hash": "MuN9QE5dJgK2sAbELBcIzA=="
         }
       },
       "is_incremental": false,
@@ -842,10 +887,10 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "V1/main/V1.4/Administration/toc.yml",
+      "source_relative_path": "v1/main/V1.4/Administration/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Administration/toc.html",
+          "relative_path": "v1/main/V1.4/Administration/toc.html",
           "hash": "eCsHRypIeYV97RYD0uXHAQ=="
         }
       },
@@ -854,10 +899,10 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "V1/main/V1.4/Configuration/System configuration/toc.yml",
+      "source_relative_path": "v1/main/V1.4/Configuration/System configuration/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/System configuration/toc.html",
+          "relative_path": "v1/main/V1.4/Configuration/System configuration/toc.html",
           "hash": "dTXNIHGWJbMOIk7YsdLg1g=="
         }
       },
@@ -866,11 +911,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/buffering-configuration.md",
+      "source_relative_path": "v1/main/V1.4/Configuration/buffering-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/buffering-configuration.html",
-          "hash": "ie6BUBe6EMuR8bCuaStmdQ=="
+          "relative_path": "v1/main/V1.4/Configuration/buffering-configuration.html",
+          "hash": "IoWg9RvawfvzhTgm9Dwf6A=="
         }
       },
       "is_incremental": false,
@@ -878,11 +923,47 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/configuration-tools.md",
+      "source_relative_path": "v1/main/V1.4/Configuration/configuration-tools.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/configuration-tools.html",
-          "hash": "FUmreCMK/CFdn2nOVEzMfA=="
+          "relative_path": "v1/main/V1.4/Configuration/configuration-tools.html",
+          "hash": "03p0tEoQqQpG5R/KoIRiIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v1/main/V1.4/Configuration/configure-a-network-proxy.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/V1.4/Configuration/configure-a-network-proxy.html",
+          "hash": "VqjqVRhzn0740zWwdHlOcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v1/main/V1.4/Configuration/data-filters-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/V1.4/Configuration/data-filters-configuration.html",
+          "hash": "ZAQqt9ziZelTiGcQRIkQQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v1/main/V1.4/Configuration/discovery-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/V1.4/Configuration/discovery-configuration.html",
+          "hash": "QwAy6CBn1nEOJI5Q0hb7vA=="
         }
       },
       "is_incremental": false,
@@ -893,11 +974,11 @@
         "DuplicateUids"
       ],
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/configure-a-network-proxy.md",
+      "source_relative_path": "v1/main/V1.4/Configuration/egress-endpoint-configuration/configure-a-network-proxy.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/configure-a-network-proxy.html",
-          "hash": "ze8xlE10ZvqIFYUBbXB8cQ=="
+          "relative_path": "v1/main/V1.4/Configuration/egress-endpoint-configuration/configure-a-network-proxy.html",
+          "hash": "2dth+jgiRwbg/SFRrtSnlQ=="
         }
       },
       "is_incremental": false,
@@ -905,47 +986,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/data-filters-configuration.md",
+      "source_relative_path": "v1/main/V1.4/Configuration/egress-endpoint-configuration/prepare-egress-destinations.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/data-filters-configuration.html",
-          "hash": "6G5j/OYcWBrbrRLq1coXHQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/discovery-configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/discovery-configuration.html",
-          "hash": "MGO4GmSq/aZBveMBR4WG7w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/egress-endpoint-configuration/configure-a-network-proxy.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/egress-endpoint-configuration/configure-a-network-proxy.html",
-          "hash": "Ycmy5OXk9ukDUS1FFLRYpA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/egress-endpoint-configuration/prepare-egress-destinations.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/egress-endpoint-configuration/prepare-egress-destinations.html",
-          "hash": "14iDDIFT3r/e8EeTuiSMig=="
+          "relative_path": "v1/main/V1.4/Configuration/egress-endpoint-configuration/prepare-egress-destinations.html",
+          "hash": "ZWzTjDwupH5REd2vZ2pmkA=="
         }
       },
       "is_incremental": false,
@@ -953,10 +998,10 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "V1/main/V1.4/Configuration/egress-endpoint-configuration/toc.yml",
+      "source_relative_path": "v1/main/V1.4/Configuration/egress-endpoint-configuration/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/egress-endpoint-configuration/toc.html",
+          "relative_path": "v1/main/V1.4/Configuration/egress-endpoint-configuration/toc.html",
           "hash": "uMY4ymzQL4+/TZGMvhBV1g=="
         }
       },
@@ -965,11 +1010,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/egress-endpoints-configuration.md",
+      "source_relative_path": "v1/main/V1.4/Configuration/egress-endpoints-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/egress-endpoints-configuration.html",
-          "hash": "TKkfL2mU4hzH729QRj12nA=="
+          "relative_path": "v1/main/V1.4/Configuration/egress-endpoints-configuration.html",
+          "hash": "pyf4LSyusV2m+8s1QffDEA=="
         }
       },
       "is_incremental": false,
@@ -977,11 +1022,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/general-configuration.md",
+      "source_relative_path": "v1/main/V1.4/Configuration/general-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/general-configuration.html",
-          "hash": "0dOaPmsRnRPLbCDsUZFIvA=="
+          "relative_path": "v1/main/V1.4/Configuration/general-configuration.html",
+          "hash": "TLZph9ZSWrQI1kFm0NSQrg=="
         }
       },
       "is_incremental": false,
@@ -989,11 +1034,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/health-endpoint-configuration.md",
+      "source_relative_path": "v1/main/V1.4/Configuration/health-endpoint-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/health-endpoint-configuration.html",
-          "hash": "mOu0NhfOo7Y9XSvO8bcyWQ=="
+          "relative_path": "v1/main/V1.4/Configuration/health-endpoint-configuration.html",
+          "hash": "Olj5MFUTNA4i85kwQ6o4vA=="
         }
       },
       "is_incremental": false,
@@ -1001,11 +1046,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/logging-configuration.md",
+      "source_relative_path": "v1/main/V1.4/Configuration/logging-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/logging-configuration.html",
-          "hash": "zlSWkluvQAtlFxzD6SF5Ow=="
+          "relative_path": "v1/main/V1.4/Configuration/logging-configuration.html",
+          "hash": "LIzDhDt10BOBLciP1lJVVg=="
         }
       },
       "is_incremental": false,
@@ -1013,11 +1058,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/schedules-configuration.md",
+      "source_relative_path": "v1/main/V1.4/Configuration/schedules-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/schedules-configuration.html",
-          "hash": "vLHi5w5uu2L+vmVAZcuW8g=="
+          "relative_path": "v1/main/V1.4/Configuration/schedules-configuration.html",
+          "hash": "pOmnl9yWFVhCyCvhzlFsOw=="
         }
       },
       "is_incremental": false,
@@ -1025,11 +1070,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/system-and-adapter-configuration.md",
+      "source_relative_path": "v1/main/V1.4/Configuration/system-and-adapter-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/system-and-adapter-configuration.html",
-          "hash": "/pc05D+gzIUPwRo9pO3rhg=="
+          "relative_path": "v1/main/V1.4/Configuration/system-and-adapter-configuration.html",
+          "hash": "S5LRvpuXEVrfUMkOrH0XBg=="
         }
       },
       "is_incremental": false,
@@ -1037,11 +1082,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Configuration/system-components-configuration.md",
+      "source_relative_path": "v1/main/V1.4/Configuration/system-components-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Configuration/system-components-configuration.html",
-          "hash": "e3jdNrvirnHnILgISyt6uw=="
+          "relative_path": "v1/main/V1.4/Configuration/system-components-configuration.html",
+          "hash": "wmbaG7jLlqCGubPG7/aAOg=="
         }
       },
       "is_incremental": false,
@@ -1049,11 +1094,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Diagnostics/adapter-diagnostics.md",
+      "source_relative_path": "v1/main/V1.4/Diagnostics/adapter-diagnostics.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Diagnostics/adapter-diagnostics.html",
-          "hash": "GFrGuOkGBE2acbjVIlNalQ=="
+          "relative_path": "v1/main/V1.4/Diagnostics/adapter-diagnostics.html",
+          "hash": "g4O+DDyAIcgVNUQ1takOXA=="
         }
       },
       "is_incremental": false,
@@ -1061,11 +1106,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Diagnostics/egress-diagnostics.md",
+      "source_relative_path": "v1/main/V1.4/Diagnostics/egress-diagnostics.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Diagnostics/egress-diagnostics.html",
-          "hash": "/srHOQlyjK/59ke87y2HTQ=="
+          "relative_path": "v1/main/V1.4/Diagnostics/egress-diagnostics.html",
+          "hash": "jDZCcHs00PHtldMdeOPwpQ=="
         }
       },
       "is_incremental": false,
@@ -1073,11 +1118,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Diagnostics/error-rate.md",
+      "source_relative_path": "v1/main/V1.4/Diagnostics/error-rate.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Diagnostics/error-rate.html",
-          "hash": "8gmlchHToTnGLmoscVsM4g=="
+          "relative_path": "v1/main/V1.4/Diagnostics/error-rate.html",
+          "hash": "/pJYLWMx3cxcbyCHC6WqXA=="
         }
       },
       "is_incremental": false,
@@ -1085,11 +1130,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Diagnostics/io-rate.md",
+      "source_relative_path": "v1/main/V1.4/Diagnostics/io-rate.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Diagnostics/io-rate.html",
-          "hash": "PzlpMzHpHSBXFofPXhuFEw=="
+          "relative_path": "v1/main/V1.4/Diagnostics/io-rate.html",
+          "hash": "b4Avy76/F2povOVUrUItzg=="
         }
       },
       "is_incremental": false,
@@ -1097,11 +1142,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Diagnostics/stream-count.md",
+      "source_relative_path": "v1/main/V1.4/Diagnostics/stream-count.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Diagnostics/stream-count.html",
-          "hash": "1bMkvL+iCuWB9fLRV7oG8g=="
+          "relative_path": "v1/main/V1.4/Diagnostics/stream-count.html",
+          "hash": "MC3vuTo21hLtf0935d2cIw=="
         }
       },
       "is_incremental": false,
@@ -1109,11 +1154,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Diagnostics/system.md",
+      "source_relative_path": "v1/main/V1.4/Diagnostics/system.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Diagnostics/system.html",
-          "hash": "9qreK1Xb+rpFaXMVRcHchQ=="
+          "relative_path": "v1/main/V1.4/Diagnostics/system.html",
+          "hash": "/V7ncMlUjQ169jPuYD2xqQ=="
         }
       },
       "is_incremental": false,
@@ -1121,11 +1166,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Health/adapter-health.md",
+      "source_relative_path": "v1/main/V1.4/Health/adapter-health.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Health/adapter-health.html",
-          "hash": "Dg/gONh1y1thz/Tk7YYWXQ=="
+          "relative_path": "v1/main/V1.4/Health/adapter-health.html",
+          "hash": "feaq+zGWUyU6IYoD8+kGDg=="
         }
       },
       "is_incremental": false,
@@ -1133,11 +1178,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Health/device-status.md",
+      "source_relative_path": "v1/main/V1.4/Health/device-status.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Health/device-status.html",
-          "hash": "s5dZpsCekhELWGFocD2MGQ=="
+          "relative_path": "v1/main/V1.4/Health/device-status.html",
+          "hash": "EH7qQC4vW2gkmMfo2yFGJA=="
         }
       },
       "is_incremental": false,
@@ -1145,11 +1190,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Health/health-and-diagnostics.md",
+      "source_relative_path": "v1/main/V1.4/Health/health-and-diagnostics.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Health/health-and-diagnostics.html",
-          "hash": "HHTqv1x/tS6q1Pccgdh+ZA=="
+          "relative_path": "v1/main/V1.4/Health/health-and-diagnostics.html",
+          "hash": "vj54Z1RCrW0QDqGwt4IV/A=="
         }
       },
       "is_incremental": false,
@@ -1157,11 +1202,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Health/next-health-message-expected.md",
+      "source_relative_path": "v1/main/V1.4/Health/next-health-message-expected.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Health/next-health-message-expected.html",
-          "hash": "YORW9DNikls2pJvrNLRPIg=="
+          "relative_path": "v1/main/V1.4/Health/next-health-message-expected.html",
+          "hash": "N9xw6GGsfEPil+1/bU2wqw=="
         }
       },
       "is_incremental": false,
@@ -1169,10 +1214,10 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "V1/main/V1.4/Health/toc.yml",
+      "source_relative_path": "v1/main/V1.4/Health/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Health/toc.html",
+          "relative_path": "v1/main/V1.4/Health/toc.html",
           "hash": "XfOZ2J11Vyd/ZJKzdDtoSQ=="
         }
       },
@@ -1181,11 +1226,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Installation/install-the-adapter.md",
+      "source_relative_path": "v1/main/V1.4/Installation/install-the-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Installation/install-the-adapter.html",
-          "hash": "IsHE44dJvgXN/krhF6w7+w=="
+          "relative_path": "v1/main/V1.4/Installation/install-the-adapter.html",
+          "hash": "0f+mijdE/qmfv2qymnHpwg=="
         }
       },
       "is_incremental": false,
@@ -1193,11 +1238,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Installation/installation.md",
+      "source_relative_path": "v1/main/V1.4/Installation/installation.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Installation/installation.html",
-          "hash": "vsQKATwglTH8vRILjMNvoA=="
+          "relative_path": "v1/main/V1.4/Installation/installation.html",
+          "hash": "7Zr99QOEXRAobJI5ecpLMA=="
         }
       },
       "is_incremental": false,
@@ -1205,11 +1250,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Installation/uninstall-the-adapter.md",
+      "source_relative_path": "v1/main/V1.4/Installation/uninstall-the-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Installation/uninstall-the-adapter.html",
-          "hash": "U+IeUalfwc6akWKbZrYzYw=="
+          "relative_path": "v1/main/V1.4/Installation/uninstall-the-adapter.html",
+          "hash": "KD2htFf4OUFozGdo/x2ULQ=="
         }
       },
       "is_incremental": false,
@@ -1217,11 +1262,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Metadata/adapter-metadata.md",
+      "source_relative_path": "v1/main/V1.4/Metadata/adapter-metadata.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Metadata/adapter-metadata.html",
-          "hash": "XKMGVg0Uj+K7ah2NKFSTOA=="
+          "relative_path": "v1/main/V1.4/Metadata/adapter-metadata.html",
+          "hash": "2QsFyAeY5i+W60F0dG3pmw=="
         }
       },
       "is_incremental": false,
@@ -1229,10 +1274,10 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "V1/main/V1.4/Metadata/toc.yml",
+      "source_relative_path": "v1/main/V1.4/Metadata/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Metadata/toc.html",
+          "relative_path": "v1/main/V1.4/Metadata/toc.html",
           "hash": "leRE1qeTideZPcRTOg8FZQ=="
         }
       },
@@ -1241,11 +1286,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/Troubleshooting/troubleshoot-the-adapter.md",
+      "source_relative_path": "v1/main/V1.4/Troubleshooting/troubleshoot-the-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/Troubleshooting/troubleshoot-the-adapter.html",
-          "hash": "0T44ZNgh/BXFXAGQLR/PTA=="
+          "relative_path": "v1/main/V1.4/Troubleshooting/troubleshoot-the-adapter.html",
+          "hash": "mbczkRS8iE8psHkqeaRGDg=="
         }
       },
       "is_incremental": false,
@@ -1253,10 +1298,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.4/images/Diagnostics.PNG",
+      "source_relative_path": "v1/main/V1.4/images/Diagnostics.PNG",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.4/images/Diagnostics.PNG"
+          "relative_path": "v1/main/V1.4/images/Diagnostics.PNG"
         }
       },
       "is_incremental": false,
@@ -1264,10 +1309,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.4/images/Metadata.png",
+      "source_relative_path": "v1/main/V1.4/images/Metadata.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.4/images/Metadata.png"
+          "relative_path": "v1/main/V1.4/images/Metadata.png"
         }
       },
       "is_incremental": false,
@@ -1275,10 +1320,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.4/images/adapter-health-af-hierarchy.PNG",
+      "source_relative_path": "v1/main/V1.4/images/adapter-health-af-hierarchy.PNG",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.4/images/adapter-health-af-hierarchy.PNG"
+          "relative_path": "v1/main/V1.4/images/adapter-health-af-hierarchy.PNG"
         }
       },
       "is_incremental": false,
@@ -1286,10 +1331,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.4/images/atlas_icon.png",
+      "source_relative_path": "v1/main/V1.4/images/atlas_icon.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.4/images/atlas_icon.png"
+          "relative_path": "v1/main/V1.4/images/atlas_icon.png"
         }
       },
       "is_incremental": false,
@@ -1297,10 +1342,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.4/images/configuration-folder.png",
+      "source_relative_path": "v1/main/V1.4/images/configuration-folder.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.4/images/configuration-folder.png"
+          "relative_path": "v1/main/V1.4/images/configuration-folder.png"
         }
       },
       "is_incremental": false,
@@ -1308,10 +1353,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.4/images/forward-proxy.png",
+      "source_relative_path": "v1/main/V1.4/images/forward-proxy.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.4/images/forward-proxy.png"
+          "relative_path": "v1/main/V1.4/images/forward-proxy.png"
         }
       },
       "is_incremental": false,
@@ -1319,10 +1364,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.4/images/health-data.PNG",
+      "source_relative_path": "v1/main/V1.4/images/health-data.PNG",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.4/images/health-data.PNG"
+          "relative_path": "v1/main/V1.4/images/health-data.PNG"
         }
       },
       "is_incremental": false,
@@ -1330,10 +1375,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.4/images/logs-folder.png",
+      "source_relative_path": "v1/main/V1.4/images/logs-folder.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.4/images/logs-folder.png"
+          "relative_path": "v1/main/V1.4/images/logs-folder.png"
         }
       },
       "is_incremental": false,
@@ -1341,10 +1386,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.4/images/removed-configurations.png",
+      "source_relative_path": "v1/main/V1.4/images/removed-configurations.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.4/images/removed-configurations.png"
+          "relative_path": "v1/main/V1.4/images/removed-configurations.png"
         }
       },
       "is_incremental": false,
@@ -1352,10 +1397,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.4/images/removed-logs.png",
+      "source_relative_path": "v1/main/V1.4/images/removed-logs.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.4/images/removed-logs.png"
+          "relative_path": "v1/main/V1.4/images/removed-logs.png"
         }
       },
       "is_incremental": false,
@@ -1363,10 +1408,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.4/images/reverse-proxy.png",
+      "source_relative_path": "v1/main/V1.4/images/reverse-proxy.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.4/images/reverse-proxy.png"
+          "relative_path": "v1/main/V1.4/images/reverse-proxy.png"
         }
       },
       "is_incremental": false,
@@ -1374,10 +1419,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1.4/images/windows-network-proxy-environment-variable.png",
+      "source_relative_path": "v1/main/V1.4/images/windows-network-proxy-environment-variable.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1.4/images/windows-network-proxy-environment-variable.png"
+          "relative_path": "v1/main/V1.4/images/windows-network-proxy-environment-variable.png"
         }
       },
       "is_incremental": false,
@@ -1385,11 +1430,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1.4/technical-support-and-feedback.md",
+      "source_relative_path": "v1/main/V1.4/technical-support-and-feedback.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1.4/technical-support-and-feedback.html",
-          "hash": "nzOKReWcsEUJN5+Wu0c6dQ=="
+          "relative_path": "v1/main/V1.4/technical-support-and-feedback.html",
+          "hash": "LnRu0cqIn49HL+2jGavwFA=="
         }
       },
       "is_incremental": false,
@@ -1397,11 +1442,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/ARCHIVE/Adapter diagnostics_old.md",
+      "source_relative_path": "v1/main/V1/ARCHIVE/Adapter diagnostics_old.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/ARCHIVE/Adapter diagnostics_old.html",
-          "hash": "pACrSf/JotYR9VlhL8isLQ=="
+          "relative_path": "v1/main/V1/ARCHIVE/Adapter diagnostics_old.html",
+          "hash": "A38YSNlG1FGwdbOOVi378A=="
         }
       },
       "is_incremental": false,
@@ -1409,11 +1454,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/ARCHIVE/Diagnostics configuration.md",
+      "source_relative_path": "v1/main/V1/ARCHIVE/Diagnostics configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/ARCHIVE/Diagnostics configuration.html",
-          "hash": "6+sGz+rZhvOJPHPbSj7nkg=="
+          "relative_path": "v1/main/V1/ARCHIVE/Diagnostics configuration.html",
+          "hash": "DcQnMveXv4uioJW8oxZb4w=="
         }
       },
       "is_incremental": false,
@@ -1424,11 +1469,11 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/ARCHIVE/Egress_DataEndpoints_schema.md",
+      "source_relative_path": "v1/main/V1/ARCHIVE/Egress_DataEndpoints_schema.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/ARCHIVE/Egress_DataEndpoints_schema.html",
-          "hash": "1c7MOdZt1u4RwLqqXXVsiQ=="
+          "relative_path": "v1/main/V1/ARCHIVE/Egress_DataEndpoints_schema.html",
+          "hash": "4mX0ymM8k6bpnt+LplQmNQ=="
         }
       },
       "is_incremental": false,
@@ -1436,11 +1481,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Administration/Administration.md",
+      "source_relative_path": "v1/main/V1/Administration/Administration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Administration/Administration.html",
-          "hash": "TTv+LPg3/DqhxsNZDPiHFg=="
+          "relative_path": "v1/main/V1/Administration/Administration.html",
+          "hash": "HinGZ7Pg/kyRyTQ+7xrcxA=="
         }
       },
       "is_incremental": false,
@@ -1448,11 +1493,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Administration/delete-an-adapter-component.md",
+      "source_relative_path": "v1/main/V1/Administration/delete-an-adapter-component.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Administration/delete-an-adapter-component.html",
-          "hash": "qQPvEvMyfmybX3ViqBePIg=="
+          "relative_path": "v1/main/V1/Administration/delete-an-adapter-component.html",
+          "hash": "6aQ98pGC8me6u/GvIVRltw=="
         }
       },
       "is_incremental": false,
@@ -1460,11 +1505,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Administration/retrieve-product-version-information.md",
+      "source_relative_path": "v1/main/V1/Administration/retrieve-product-version-information.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Administration/retrieve-product-version-information.html",
-          "hash": "fV3hWzHgFzzOrQ/HHbPf2g=="
+          "relative_path": "v1/main/V1/Administration/retrieve-product-version-information.html",
+          "hash": "2gNKjwEru6XIpDuG6IW5pQ=="
         }
       },
       "is_incremental": false,
@@ -1472,11 +1517,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Administration/start-and-stop-an-adapter.md",
+      "source_relative_path": "v1/main/V1/Administration/start-and-stop-an-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Administration/start-and-stop-an-adapter.html",
-          "hash": "ee61iHHyb4wjBR+z60dRQQ=="
+          "relative_path": "v1/main/V1/Administration/start-and-stop-an-adapter.html",
+          "hash": "LaSUt6lnornt58OCuQiYQg=="
         }
       },
       "is_incremental": false,
@@ -1484,11 +1529,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Administration/start-and-stop-ingress-component.md",
+      "source_relative_path": "v1/main/V1/Administration/start-and-stop-ingress-component.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Administration/start-and-stop-ingress-component.html",
-          "hash": "At/lFBvs4DiPycir611a8Q=="
+          "relative_path": "v1/main/V1/Administration/start-and-stop-ingress-component.html",
+          "hash": "Plsuq5YfUV/eAPVX8tTVkw=="
         }
       },
       "is_incremental": false,
@@ -1496,10 +1541,10 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "V1/main/V1/Administration/toc.yml",
+      "source_relative_path": "v1/main/V1/Administration/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Administration/toc.html",
+          "relative_path": "v1/main/V1/Administration/toc.html",
           "hash": "eCsHRypIeYV97RYD0uXHAQ=="
         }
       },
@@ -1508,10 +1553,10 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "V1/main/V1/Configuration/System configuration/toc.yml",
+      "source_relative_path": "v1/main/V1/Configuration/System configuration/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/System configuration/toc.html",
+          "relative_path": "v1/main/V1/Configuration/System configuration/toc.html",
           "hash": "dTXNIHGWJbMOIk7YsdLg1g=="
         }
       },
@@ -1520,11 +1565,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configuration/buffering-configuration.md",
+      "source_relative_path": "v1/main/V1/Configuration/buffering-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/buffering-configuration.html",
-          "hash": "ZXvPzPIgnbwXHrFM9d6qbQ=="
+          "relative_path": "v1/main/V1/Configuration/buffering-configuration.html",
+          "hash": "AtY2p4o6mmn5TT3sKAUMuQ=="
         }
       },
       "is_incremental": false,
@@ -1532,11 +1577,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configuration/configuration-tools.md",
+      "source_relative_path": "v1/main/V1/Configuration/configuration-tools.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/configuration-tools.html",
-          "hash": "kZVPEzxpPESmVKy5KR0ddg=="
+          "relative_path": "v1/main/V1/Configuration/configuration-tools.html",
+          "hash": "mmLjD5BgqlL60zV3MKBP0A=="
         }
       },
       "is_incremental": false,
@@ -1544,11 +1589,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configuration/data-filters-configuration.md",
+      "source_relative_path": "v1/main/V1/Configuration/data-filters-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/data-filters-configuration.html",
-          "hash": "y4r7DadlFfqs3OoMUMPoOA=="
+          "relative_path": "v1/main/V1/Configuration/data-filters-configuration.html",
+          "hash": "h9mRzkNVV9GwuUhxzMIv9Q=="
         }
       },
       "is_incremental": false,
@@ -1556,11 +1601,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configuration/egress-endpoint-configuration/prepare-egress-destinations.md",
+      "source_relative_path": "v1/main/V1/Configuration/egress-endpoint-configuration/prepare-egress-destinations.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/egress-endpoint-configuration/prepare-egress-destinations.html",
-          "hash": "YR8sdGBQpF3VUMNUVB8crw=="
+          "relative_path": "v1/main/V1/Configuration/egress-endpoint-configuration/prepare-egress-destinations.html",
+          "hash": "aJbrgv9Xr+sJrh6PYAjs1Q=="
         }
       },
       "is_incremental": false,
@@ -1568,10 +1613,10 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "V1/main/V1/Configuration/egress-endpoint-configuration/toc.yml",
+      "source_relative_path": "v1/main/V1/Configuration/egress-endpoint-configuration/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/egress-endpoint-configuration/toc.html",
+          "relative_path": "v1/main/V1/Configuration/egress-endpoint-configuration/toc.html",
           "hash": "vwgooyH61m2iYP1SdAXT0Q=="
         }
       },
@@ -1580,11 +1625,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configuration/egress-endpoints-configuration.md",
+      "source_relative_path": "v1/main/V1/Configuration/egress-endpoints-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/egress-endpoints-configuration.html",
-          "hash": "HZpm6aDjGSJgaUGmNFND2Q=="
+          "relative_path": "v1/main/V1/Configuration/egress-endpoints-configuration.html",
+          "hash": "icIvuJPXqxx+b7UcyFfwiA=="
         }
       },
       "is_incremental": false,
@@ -1592,11 +1637,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configuration/general-configuration.md",
+      "source_relative_path": "v1/main/V1/Configuration/general-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/general-configuration.html",
-          "hash": "m8nB45b1FT+f0etVDo0kaQ=="
+          "relative_path": "v1/main/V1/Configuration/general-configuration.html",
+          "hash": "/JFDgwjyI69WCT1SIZzydg=="
         }
       },
       "is_incremental": false,
@@ -1604,11 +1649,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configuration/health-endpoint-configuration.md",
+      "source_relative_path": "v1/main/V1/Configuration/health-endpoint-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/health-endpoint-configuration.html",
-          "hash": "aaGQrvV1yrOTBopMfyPljA=="
+          "relative_path": "v1/main/V1/Configuration/health-endpoint-configuration.html",
+          "hash": "fBJ2YfP1TyN9Wgve2tFpmw=="
         }
       },
       "is_incremental": false,
@@ -1616,11 +1661,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configuration/logging-configuration.md",
+      "source_relative_path": "v1/main/V1/Configuration/logging-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/logging-configuration.html",
-          "hash": "0LiKc1UHon4gDjHtlpipOQ=="
+          "relative_path": "v1/main/V1/Configuration/logging-configuration.html",
+          "hash": "s6zwrbj4wHsfnlRijVXOsg=="
         }
       },
       "is_incremental": false,
@@ -1628,11 +1673,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configuration/schedules-configuration.md",
+      "source_relative_path": "v1/main/V1/Configuration/schedules-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/schedules-configuration.html",
-          "hash": "XCi+fHojtWUvGEp1qh3ygA=="
+          "relative_path": "v1/main/V1/Configuration/schedules-configuration.html",
+          "hash": "D0svEBIPkMmX+kExIpnkiw=="
         }
       },
       "is_incremental": false,
@@ -1640,11 +1685,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configuration/system-and-adapter-configuration.md",
+      "source_relative_path": "v1/main/V1/Configuration/system-and-adapter-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/system-and-adapter-configuration.html",
-          "hash": "gPJhhLKhMqsX/9a/9vInVQ=="
+          "relative_path": "v1/main/V1/Configuration/system-and-adapter-configuration.html",
+          "hash": "qODXB5t4C7BTqC+6BYS1ew=="
         }
       },
       "is_incremental": false,
@@ -1652,11 +1697,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configuration/system-components-configuration.md",
+      "source_relative_path": "v1/main/V1/Configuration/system-components-configuration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Configuration/system-components-configuration.html",
-          "hash": "uqrbaVRawr97HhGTxoGpZw=="
+          "relative_path": "v1/main/V1/Configuration/system-components-configuration.html",
+          "hash": "fCsJhE6U8l4j/1gOBYOcNA=="
         }
       },
       "is_incremental": false,
@@ -1664,11 +1709,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Diagnostics/System.md",
+      "source_relative_path": "v1/main/V1/Diagnostics/System.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Diagnostics/System.html",
-          "hash": "uEWHZSnoeXGizFz/wZq85g=="
+          "relative_path": "v1/main/V1/Diagnostics/System.html",
+          "hash": "TPtVG+Y7FuUXyA0Mi2IjXg=="
         }
       },
       "is_incremental": false,
@@ -1676,11 +1721,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Diagnostics/adapter-diagnostics.md",
+      "source_relative_path": "v1/main/V1/Diagnostics/adapter-diagnostics.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Diagnostics/adapter-diagnostics.html",
-          "hash": "c1wE1mh77QF4n1LRGAhHSA=="
+          "relative_path": "v1/main/V1/Diagnostics/adapter-diagnostics.html",
+          "hash": "NGlJwvsdkHgmvQFq5u35Kw=="
         }
       },
       "is_incremental": false,
@@ -1688,11 +1733,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Diagnostics/egress-diagnostics.md",
+      "source_relative_path": "v1/main/V1/Diagnostics/egress-diagnostics.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Diagnostics/egress-diagnostics.html",
-          "hash": "h158NHwFSJfMTqkQ2Aj0OA=="
+          "relative_path": "v1/main/V1/Diagnostics/egress-diagnostics.html",
+          "hash": "Q8nI1Uw419xgKnH0ubE/Jw=="
         }
       },
       "is_incremental": false,
@@ -1700,11 +1745,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Diagnostics/error-rate.md",
+      "source_relative_path": "v1/main/V1/Diagnostics/error-rate.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Diagnostics/error-rate.html",
-          "hash": "jOYKTqIl7a6fmuqk+hUyGw=="
+          "relative_path": "v1/main/V1/Diagnostics/error-rate.html",
+          "hash": "BoZX9PzWPS1++N0E3jyRcA=="
         }
       },
       "is_incremental": false,
@@ -1712,11 +1757,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Diagnostics/io-rate.md",
+      "source_relative_path": "v1/main/V1/Diagnostics/io-rate.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Diagnostics/io-rate.html",
-          "hash": "xMvQRHsP/w0BSoq+kA1q7w=="
+          "relative_path": "v1/main/V1/Diagnostics/io-rate.html",
+          "hash": "brWGo7JvhvwOhq1VlRErrQ=="
         }
       },
       "is_incremental": false,
@@ -1724,11 +1769,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Diagnostics/stream-count.md",
+      "source_relative_path": "v1/main/V1/Diagnostics/stream-count.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Diagnostics/stream-count.html",
-          "hash": "NW7Tz7fU/o8V9iMBE9p1/A=="
+          "relative_path": "v1/main/V1/Diagnostics/stream-count.html",
+          "hash": "bcVS9y3ypdwiTVxoQVqV2Q=="
         }
       },
       "is_incremental": false,
@@ -1736,11 +1781,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Health/adapter-health.md",
+      "source_relative_path": "v1/main/V1/Health/adapter-health.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Health/adapter-health.html",
-          "hash": "ml34m8iYeHfrVf8qnxZbwA=="
+          "relative_path": "v1/main/V1/Health/adapter-health.html",
+          "hash": "LuSQozcfTDWZ9jWHxBE9Tw=="
         }
       },
       "is_incremental": false,
@@ -1748,11 +1793,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Health/device-status.md",
+      "source_relative_path": "v1/main/V1/Health/device-status.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Health/device-status.html",
-          "hash": "zDKgCHCwwhPiTGE8b5kV2Q=="
+          "relative_path": "v1/main/V1/Health/device-status.html",
+          "hash": "ALbBCTstpvCXElrixmV7Hw=="
         }
       },
       "is_incremental": false,
@@ -1760,11 +1805,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Health/health-and-diagnostics.md",
+      "source_relative_path": "v1/main/V1/Health/health-and-diagnostics.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Health/health-and-diagnostics.html",
-          "hash": "tI1oLiBXVkcTQMC3OMrOIw=="
+          "relative_path": "v1/main/V1/Health/health-and-diagnostics.html",
+          "hash": "jGN5czDDFceb7Fga+/H8Vw=="
         }
       },
       "is_incremental": false,
@@ -1772,11 +1817,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Health/next-health-message-expected.md",
+      "source_relative_path": "v1/main/V1/Health/next-health-message-expected.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Health/next-health-message-expected.html",
-          "hash": "fvLhFR/pw8qAnO9dupRxoA=="
+          "relative_path": "v1/main/V1/Health/next-health-message-expected.html",
+          "hash": "Lm47tYKFd0jJKD5nAS6Iag=="
         }
       },
       "is_incremental": false,
@@ -1784,10 +1829,10 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "V1/main/V1/Health/toc.yml",
+      "source_relative_path": "v1/main/V1/Health/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Health/toc.html",
+          "relative_path": "v1/main/V1/Health/toc.html",
           "hash": "bb6a87SsS/WpXMI7ybgGtA=="
         }
       },
@@ -1796,11 +1841,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Installation/Installation.md",
+      "source_relative_path": "v1/main/V1/Installation/Installation.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Installation/Installation.html",
-          "hash": "Jj78GWYkLcC0amrw4u4nOA=="
+          "relative_path": "v1/main/V1/Installation/Installation.html",
+          "hash": "YWNwAwoYiLz+mU3xnDvd/A=="
         }
       },
       "is_incremental": false,
@@ -1808,11 +1853,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Installation/install-the-adapter.md",
+      "source_relative_path": "v1/main/V1/Installation/install-the-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Installation/install-the-adapter.html",
-          "hash": "fskjR5tI9OKfMkRkSo047w=="
+          "relative_path": "v1/main/V1/Installation/install-the-adapter.html",
+          "hash": "4SNRZ7ZCeEYLYUz7PI8Q8Q=="
         }
       },
       "is_incremental": false,
@@ -1820,11 +1865,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Installation/uninstall-the-adapter.md",
+      "source_relative_path": "v1/main/V1/Installation/uninstall-the-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Installation/uninstall-the-adapter.html",
-          "hash": "+Klpp0yqRcj2UkaWPj+TKQ=="
+          "relative_path": "v1/main/V1/Installation/uninstall-the-adapter.html",
+          "hash": "NAAenDETOPmOROxCGGY2yQ=="
         }
       },
       "is_incremental": false,
@@ -1832,11 +1877,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Metadata/adapter-metadata.md",
+      "source_relative_path": "v1/main/V1/Metadata/adapter-metadata.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Metadata/adapter-metadata.html",
-          "hash": "gxTi4cvrJsnqPoRMrMU8fQ=="
+          "relative_path": "v1/main/V1/Metadata/adapter-metadata.html",
+          "hash": "kjS8ycWwmtZhDwxjeS86Iw=="
         }
       },
       "is_incremental": false,
@@ -1844,10 +1889,10 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "V1/main/V1/Metadata/toc.yml",
+      "source_relative_path": "v1/main/V1/Metadata/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Metadata/toc.html",
+          "relative_path": "v1/main/V1/Metadata/toc.html",
           "hash": "leRE1qeTideZPcRTOg8FZQ=="
         }
       },
@@ -1856,11 +1901,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Troubleshooting/troubleshoot-the-adapter.md",
+      "source_relative_path": "v1/main/V1/Troubleshooting/troubleshoot-the-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Troubleshooting/troubleshoot-the-adapter.html",
-          "hash": "w4Ke5avXzSJVTNMOd3RhrQ=="
+          "relative_path": "v1/main/V1/Troubleshooting/troubleshoot-the-adapter.html",
+          "hash": "lQC+MGSAWYPMLn38wl0JAw=="
         }
       },
       "is_incremental": false,
@@ -1868,10 +1913,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1/images/Diagnostics.PNG",
+      "source_relative_path": "v1/main/V1/images/Diagnostics.PNG",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1/images/Diagnostics.PNG"
+          "relative_path": "v1/main/V1/images/Diagnostics.PNG"
         }
       },
       "is_incremental": false,
@@ -1879,10 +1924,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1/images/Metadata.png",
+      "source_relative_path": "v1/main/V1/images/Metadata.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1/images/Metadata.png"
+          "relative_path": "v1/main/V1/images/Metadata.png"
         }
       },
       "is_incremental": false,
@@ -1890,10 +1935,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1/images/adapter-health-af-hierarchy.PNG",
+      "source_relative_path": "v1/main/V1/images/adapter-health-af-hierarchy.PNG",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1/images/adapter-health-af-hierarchy.PNG"
+          "relative_path": "v1/main/V1/images/adapter-health-af-hierarchy.PNG"
         }
       },
       "is_incremental": false,
@@ -1901,10 +1946,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1/images/atlas_icon.png",
+      "source_relative_path": "v1/main/V1/images/atlas_icon.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1/images/atlas_icon.png"
+          "relative_path": "v1/main/V1/images/atlas_icon.png"
         }
       },
       "is_incremental": false,
@@ -1912,10 +1957,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1/images/configuration-folder.png",
+      "source_relative_path": "v1/main/V1/images/configuration-folder.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1/images/configuration-folder.png"
+          "relative_path": "v1/main/V1/images/configuration-folder.png"
         }
       },
       "is_incremental": false,
@@ -1923,10 +1968,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1/images/health-data.PNG",
+      "source_relative_path": "v1/main/V1/images/health-data.PNG",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1/images/health-data.PNG"
+          "relative_path": "v1/main/V1/images/health-data.PNG"
         }
       },
       "is_incremental": false,
@@ -1934,10 +1979,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1/images/logs-folder.png",
+      "source_relative_path": "v1/main/V1/images/logs-folder.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1/images/logs-folder.png"
+          "relative_path": "v1/main/V1/images/logs-folder.png"
         }
       },
       "is_incremental": false,
@@ -1945,10 +1990,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1/images/removed-configurations.png",
+      "source_relative_path": "v1/main/V1/images/removed-configurations.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1/images/removed-configurations.png"
+          "relative_path": "v1/main/V1/images/removed-configurations.png"
         }
       },
       "is_incremental": false,
@@ -1956,10 +2001,58 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "V1/main/V1/images/removed-logs.png",
+      "source_relative_path": "v1/main/V1/images/removed-logs.png",
       "output": {
         "resource": {
-          "relative_path": "V1/main/V1/images/removed-logs.png"
+          "relative_path": "v1/main/V1/images/removed-logs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v1/main/V1/introduction-to-pi-adapters.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/V1/introduction-to-pi-adapters.html",
+          "hash": "du8fjktPnMHoqMing19A6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v1/main/V1/pi-adapter-users.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/V1/pi-adapter-users.html",
+          "hash": "sHXZPVxpCMtMKTPXl38+iQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v1/main/V1/technical-support-and-feedback.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/V1/technical-support-and-feedback.html",
+          "hash": "dx6EaXELmPbmFgCcicb3Dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v1/main/test.md",
+      "output": {
+        ".html": {
+          "relative_path": "v1/main/test.html",
+          "hash": "R9YslOSNvDgHfKIrEfDS7A=="
         }
       },
       "is_incremental": false,
@@ -1970,11 +2063,11 @@
         "UidNotFound"
       ],
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/introduction-to-pi-adapters.md",
+      "source_relative_path": "v1/pi-adapter-for-structured-data-files-overview/pi-adapter-for-structured-data-files-principles-of-operation.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/introduction-to-pi-adapters.html",
-          "hash": "ekR8ddKe3rcdZwBkFf2VWg=="
+          "relative_path": "v1/pi-adapter-for-structured-data-files-overview/pi-adapter-for-structured-data-files-principles-of-operation.html",
+          "hash": "idCQTujQ59li4ye8bUvRGA=="
         }
       },
       "is_incremental": false,
@@ -1982,35 +2075,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/pi-adapter-users.md",
+      "source_relative_path": "v1/release-notes/release-notes.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/pi-adapter-users.html",
-          "hash": "aYAPsmED69DNLIFk9vUjvA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/technical-support-and-feedback.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/technical-support-and-feedback.html",
-          "hash": "FXKhjINYWBU1lTj8/d3eMA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/test.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/test.html",
-          "hash": "R9YslOSNvDgHfKIrEfDS7A=="
+          "relative_path": "v1/release-notes/release-notes.html",
+          "hash": "5qCTnml3YsQYb3zqcrii0Q=="
         }
       },
       "is_incremental": false,
@@ -2018,23 +2087,11 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "V1/toc.yml",
+      "source_relative_path": "v1/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1/toc.html",
-          "hash": "+M5Ha/iZ2xsxdqf7fhirmg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "toc.html",
-          "hash": "5ws/7lkbJctVxk2KtRaNXw=="
+          "relative_path": "v1/toc.html",
+          "hash": "r3pdmpPoqfnRrCjSGXU2ow=="
         }
       },
       "is_incremental": false,
@@ -2055,7 +2112,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 123,
+          "total_file_count": 126,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
