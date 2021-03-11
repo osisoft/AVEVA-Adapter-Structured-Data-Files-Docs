@@ -27,6 +27,8 @@ The following JSON samples provide examples for all configurations available for
 
 ## Adapter configuration
 
+The following example is a complete configuration for the PI Adapter for Structured Data Files.
+
 ```json
 {
   "StructuredDataFiles1": {
@@ -81,7 +83,11 @@ The following JSON samples provide examples for all configurations available for
     "Buffering": {
       "BufferLocation": "C:/ProgramData/OSIsoft/Adapters/StructuredDataFiles/Buffers",
       "MaxBufferSizeMB": -1,
-      "EnableBuffering": true
+      "EnablePersistentBuffering": true
+    },
+    "General": {
+      "enableDiagnostics": true,
+      "metadataLevel": "Medium"
     }
   },
   "OmfEgress": {
@@ -110,7 +116,15 @@ The following JSON samples provide examples for all configurations available for
         "Password": "eds"
       }
     ]
-  }
+  },
+  "DataFilters": [
+    {
+      "id": "DuplicateData",
+      "absoluteDeadband": 0,
+      "percentChange": null,
+      "expirationPeriod": "1:00:00"
+    }
+  ]
 }
 ```
 
