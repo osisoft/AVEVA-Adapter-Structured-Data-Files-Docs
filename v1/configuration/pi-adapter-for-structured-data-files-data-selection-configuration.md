@@ -4,7 +4,7 @@ uid: PIAdapterForStructuredDataFilesDataSelectionConfiguration
 
 # PI Adapter for Structured Data Files data selection configuration
 
-In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data sources.
+In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data source.
 
 **Note:** This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see [Configuration tools](xref:ConfigurationTools1-3).
 
@@ -24,7 +24,7 @@ Complete the following steps to configure Structured Data Files data selection. 
 
 1. Save the file as `ConfigureDataSelection.json`.
 
-1. Open a command line session. Change directory to the location of `ConfigureDataSelection.json`.
+1. Open a command line session and change the directory to the location of `ConfigureDataSelection.json`.
 
 1. Enter the following cURL command (which uses the `POST` method) to initialize the data selection configuration.
 
@@ -35,7 +35,7 @@ Complete the following steps to configure Structured Data Files data selection. 
     **Notes:**
   
     * If you installed the adapter to listen on a non-default port, update `5590` to the port number in use.
-    * If you use a component ID other than `StructuredDataFiles1`, update the endpoint with your chosen component ID.
+    * If you use a component ID other than `StructuredDataFiles1`, update the endpoint with the component ID.
     * For a list of other REST operations you can perform, like updating or deleting a data selection configuration, see [REST URLs](#rest-urls).
 
 ## Structured Data Files data selection schema
@@ -119,4 +119,4 @@ The following are examples of valid Structured Data Files data selection configu
 | api/v1/configuration/\<ComponentId\>/DataSelection/\<StreamId\> | `PUT` | Updates or creates a new data selection with the specified **StreamId**.|
 | api/v1/configuration/\<ComponentId\>/DataSelection/\<StreamId\> | `DELETE` | Deletes a specific data selection item of the Structured Data Files data selection configuration. |
 
-**Note:** Replace `<ComponentId>` with the ID of your Structured Data Files component, for example `StructuredDataFiles1`.
+**Note:** Replace `<ComponentId>` with the ID of your Structured Data Files component, for example _StructuredDataFiles1_.<!---ID in this sentence is inconsistant with Id in the Data filters configuration topic.--->
