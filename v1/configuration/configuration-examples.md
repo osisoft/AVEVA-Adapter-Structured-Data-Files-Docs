@@ -25,7 +25,7 @@ The following JSON samples provide examples for all configurations available for
 ]
 ```
 
-## Structured Data Files adapter configuration
+## Adapter configuration
 
 ```json
 {
