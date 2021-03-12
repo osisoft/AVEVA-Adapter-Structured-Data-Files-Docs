@@ -1,5 +1,5 @@
 ---
-uid: PIAdapterForStructuredDataFilesConfigurationExamples
+uid: ConfigurationExamples
 ---
 
 # PI Adapter for Structured Data Files configuration examples
