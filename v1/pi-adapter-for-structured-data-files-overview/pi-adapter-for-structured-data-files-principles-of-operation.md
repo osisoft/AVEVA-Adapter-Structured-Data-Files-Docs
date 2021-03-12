@@ -8,11 +8,11 @@ The adapter's operations focus on data collection and stream creation.
 
 ## Adapter configuration
 
-For the adapter to start data collection, you need to configure the adapter by defining the following:
+Forp the adapter to start data collection, you need to configure the adapter by defining the following:
 
 - **Data source**: Provide the data source from which the adapter should collect data.
 - **Data selection**: Select items for which the adapter should gather data from the files.
-- **Logging**: Set up the logging attributes to manage the adapter logging behavior.
+- **Logging**: Set up the logging attributes to manage the adapter logging behavior.<!---what about buffering, health endpoints, egress, general configuration (Why isn't that refered to as diagnostic configuration?), data filters? I know these are optional for data collection, but so is logging.--->
 
 For more information, see [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterforSDFDataSourceConfiguration), [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterforSDFtDataSelectionConfiguration), and [Logging configuration](xref:LoggingConfiguration).
 
