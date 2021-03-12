@@ -108,6 +108,7 @@ The following are examples of valid Structured Data Files data selection configu
   }
 ]
 ```
+
 ## REST URLs
 
 | Relative URL | HTTP verb | Action |
@@ -119,4 +120,4 @@ The following are examples of valid Structured Data Files data selection configu
 | api/v1/configuration/\<ComponentId\>/DataSelection/\<StreamId\> | `PUT` | Updates or creates a new data selection with the specified **StreamId**.|
 | api/v1/configuration/\<ComponentId\>/DataSelection/\<StreamId\> | `DELETE` | Deletes a specific data selection item of the Structured Data Files data selection configuration. |
 
-**Note:** Replace `<ComponentId>` with the ID of your Structured Data Files component, for example _StructuredDataFiles1_.<!---ID in this sentence is inconsistant with Id in the Data filters configuration topic.--->
+**Note:** Replace `<ComponentId>` with the ID of your Structured Data Files component, for example _StructuredDataFiles1_.<!---ID in this sentence is inconsistent with Id in the Data filters configuration topic.--->

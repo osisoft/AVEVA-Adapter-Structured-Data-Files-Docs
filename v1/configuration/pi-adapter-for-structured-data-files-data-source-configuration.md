@@ -4,7 +4,7 @@ uid: PIAdapterForStructuredDataFilesDataSourceConfiguration
 
 # PI Adapter for Structured Data Files data source configuration
 
-<!---Is there a reason this heading and the Data selection configuration heading include the product name? It makes the headins really long and hard to see in the TOC. Could they just be Data source configuration and Data selection configuration? None of the other configuration topics include the product name. (I am aware this is the way this has been done in all the adapters and would need to be discussed with Tina.)--->
+<!---Is there a reason this heading and the Data selection configuration heading include the product name? It makes the headings really long and hard to see in the TOC. Could they just be Data source configuration and Data selection configuration? None of the other configuration topics include the product name. (I am aware this is the way this has been done in all the adapters and would need to be discussed with Tina.)--->
 
 To use the adapter, you must configure the data source from which the adapter receives data. <!---the data source does not receive the data. The data source tells the adapter where the data comes from. The adapter then either polls the source to get the data or opens a connection to receive data from the data source. The development team can tell you how this adapter gets the data (though from the rest of the doc, it appears that it reads the file location). --->
 
@@ -115,4 +115,4 @@ The following are examples of valid Structured Data Files data source configurat
 | api/v1/configuration/\<ComponentId\>/DataSource  | `PUT` | Configures or updates the Structured Data Files data source configuration |
 | api/v1/configuration/\<ComponentId\>/DataSource | `DELETE` | Deletes the Structured Data Files data source configuration |
 
-**Note:** Replace \<ComponentId\> with the ID of your Structured Data Files component, for example _StructuredDataFiles1_. <!---ID in this sentence is inconsistant with Id in the Data filters configuration topic.--->
+**Note:** Replace \<ComponentId\> with the ID of your Structured Data Files component, for example _StructuredDataFiles1_. <!---ID in this sentence is inconsistent with Id in the Data filters configuration topic.--->
