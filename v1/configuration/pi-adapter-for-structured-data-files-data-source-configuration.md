@@ -1,5 +1,5 @@
 ---
-uid: PIAdapterForStructuredDataFilesDataSourceConfiguration
+uid: PIAdapterForSDFDataSourceConfiguration
 ---
 
 # PI Adapter for Structured Data Files data source configuration
@@ -42,7 +42,7 @@ Complete the following steps to configure a Structured Data Files data source. U
 
 1. Configure data selection.
 
-    For more information, see [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForStructuredDataFilesDataSelectionConfiguration).
+    For more information, see [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForSDFDataSelectionConfiguration).
 
 ## Structured Data Files data source schema
 

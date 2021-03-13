@@ -55,5 +55,5 @@ This Quick Start guides you through setup of each configuration file available f
     | Configuration | Description | Required | Optional |
     |--|--|:-:|:-:|
     | [data filter](xref:DataFiltersConfiguration1-3) | A reusable file that defines what data within the data source files are received.<br/><br/>Can be used in conjunction with **data selection** configurations. |  | &#x2714; |
-    | [data selection](xref:PIAdapterForStructuredDataFilesDataSelectionConfiguration) | Defines what data within the data source files are received. | &#x2714; |  |
-    | [data source](xref:PIAdapterForStructuredDataFilesDataSourceConfiguration) | Defines the source that the adapter receives data files from. | &#x2714; |  |
+    | [data selection](xref:PIAdapterForSDFDataSelectionConfiguration) | Defines what data within the data source files are received. | &#x2714; |  |
+    | [data source](xref:PIAdapterForSDFDataSourceConfiguration) | Defines the source that the adapter receives data files from. | &#x2714; |  |

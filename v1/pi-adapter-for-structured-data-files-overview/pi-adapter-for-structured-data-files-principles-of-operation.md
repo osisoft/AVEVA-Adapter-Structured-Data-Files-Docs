@@ -14,7 +14,7 @@ For the adapter to start data collection, you need to configure the adapter by d
 - **Data selection**: Select items for which the adapter should gather data from the files.
 - **Logging**: Set up the logging attributes to manage the adapter logging behavior.
 
-For more information, see [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterforSDFDataSourceConfiguration), [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterforSDFtDataSelectionConfiguration), and [Logging configuration](xref:LoggingConfiguration).
+For more information, see [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterForSDFDataSourceConfiguration), [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForSDFDataSelectionConfiguration), and [Logging configuration](xref:LoggingConfiguration).
 
 ## Data collection
 
@@ -86,4 +86,4 @@ Each stream created for a given item has a unique identifier (stream ID). If you
 <Adapter Component ID>.<FriendlyName>.<ValueField>
 ```
 
-**Note:** The naming convention is affected by `StreamIdPrefix` and `DefaultStreamIdPattern` settings in data source configuration. For more information, see [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterforSDFDataSourceConfiguration).
+**Note:** The naming convention is affected by `StreamIdPrefix` and `DefaultStreamIdPattern` settings in data source configuration. For more information, see [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterForSDFDataSourceConfiguration).
