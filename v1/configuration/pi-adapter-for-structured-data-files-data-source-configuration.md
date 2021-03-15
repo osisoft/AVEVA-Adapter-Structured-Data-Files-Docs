@@ -26,7 +26,7 @@ Complete the following steps to configure a Structured Data Files data source. U
 
 1. Save the file as `ConfigureDataSource.json`.
 
-1. Open a command line session and change the directory to the location of `ConfigureDataSource.json`.
+1. Open a command line session and change the working directory to the location of `ConfigureDataSelection.json`.
 
 1. Enter the following cURL command (which uses the `POST` method) to initialize the data source configuration.
 
