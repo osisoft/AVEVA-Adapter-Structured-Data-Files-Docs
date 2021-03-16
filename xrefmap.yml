@@ -52,6 +52,9 @@ references:
 - uid: BufferingConfiguration1-4
   name: Buffering configuration
   href: v1/main/V1.4/Configuration/buffering-configuration.html
+- uid: ConfigurationExamples
+  name: PI Adapter for Structured Data Files configuration examples
+  href: v1/configuration/configuration-examples.html
 - uid: ConfigurationTools
   name: Configuration tools
   href: v1/main/V1/Configuration/configuration-tools.html
@@ -175,7 +178,7 @@ references:
 - uid: Installation1-4
   name: Installation
   href: v1/main/V1.4/Installation/installation.html
-- uid: InstallPIAdapterForDNP3UsingDocker
+- uid: InstallPIAdapterForSDFUsingDocker
   name: Install PI Adapter for Structured Data Files using Docker
   href: v1/installation/install-pi-adapter-for-structured-data-files-using-docker.html
 - uid: InstallTheAdapter
@@ -223,18 +226,18 @@ references:
 - uid: NextHealthMessageExpectedForStructuredDataFiles
   name: Next health message expected
   href: v1/health-and-diagnostics/health/next-health-message-expected.html
+- uid: PIAdapterForSDFDataSelectionConfiguration
+  name: PI Adapter for Structured Data Files data selection configuration
+  href: v1/configuration/pi-adapter-for-structured-data-files-data-selection-configuration.html
+- uid: PIAdapterForSDFDataSourceConfiguration
+  name: PI Adapter for Structured Data Files data source configuration
+  href: v1/configuration/pi-adapter-for-structured-data-files-data-source-configuration.html
 - uid: PIAdapterforSDFOverview
   name: PI Adapter for Structured Data Files overview
   href: v1/index.html
 - uid: PIAdapterforSDFPrinciplesOfOperation
   name: PI Adapter for Structured Data Files principles of operation
   href: v1/pi-adapter-for-structured-data-files-overview/pi-adapter-for-structured-data-files-principles-of-operation.html
-- uid: PIAdapterForStructuredDataFilesDataSelectionConfiguration
-  name: PI Adapter for Structured Data Files data selection configuration
-  href: v1/configuration/pi-adapter-for-structured-data-files-data-selection-configuration.html
-- uid: PIAdapterForStructuredDataFilesDataSourceConfiguration
-  name: PI Adapter for Structured Data Files data source configuration
-  href: v1/configuration/pi-adapter-for-structured-data-files-data-source-configuration.html
 - uid: PIAdapterUsers
   name: PI Adapter users
   href: v1/main/V1/pi-adapter-users.html
