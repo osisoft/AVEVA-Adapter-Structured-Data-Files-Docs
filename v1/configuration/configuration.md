@@ -5,7 +5,7 @@ uid: StructuredDataFilesConfiguration
 
 Before you can begin using the adapter, you must set several adapter configuration files by calling its REST API. Some configurations are required. Others are optional.
 
-The examples in the configuration topics use cURL, a commonly available tool on both Windows and Linux. You can configure the adapter with any programming language or tool that supports making REST calls or with the EdgeCmd utility. For more information, see the [EdgeCmd utility documentation](https://osisoft.github.io/Edgecmd-Docs/V1.2/edgecmd-utility.html).
+The examples in the configuration topics use cURL, a commonly available tool on both Windows and Linux. You can configure the adapter with any programming language or tool that supports making REST calls or with the EdgeCmd utility. For more information, see the [EdgeCmd utility documentation](https://osisoft.github.io/Edgecmd-Docs/v1.2/edgecmd-utility.html).
 
 To validate successful configurations, you can perform data retrieval (`GET` commands) with a browser, if available, on your device.
 
