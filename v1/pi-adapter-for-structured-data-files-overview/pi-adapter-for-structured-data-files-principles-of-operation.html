@@ -33,8 +33,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="../../V1/index.html" width="46">
-                <img id="logo" src="../../v1/main/V1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
+              <a class="navbar-brand" href="../../v1/index.html" width="46">
+                <img id="logo" src="../../v1/main/v1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -86,7 +86,7 @@
 <li><strong>Data selection</strong>: Select items for which the adapter should gather data from the files.</li>
 <li><strong>Logging</strong>: Set up the logging attributes to manage the adapter logging behavior.</li>
 </ul>
-<p>For more information, see <a class="xref" href="../configuration/pi-adapter-for-structured-data-files-data-source-configuration.html">PI Adapter for Structured Data Files data source configuration</a>, <a class="xref" href="../configuration/pi-adapter-for-structured-data-files-data-selection-configuration.html">PI Adapter for Structured Data Files data selection configuration</a>, and <a class="xref" href="../main/V1/Configuration/logging-configuration.html">Logging configuration</a>.</p>
+<p>For more information, see <a class="xref" href="../configuration/pi-adapter-for-structured-data-files-data-source-configuration.html">PI Adapter for Structured Data Files data source configuration</a>, <a class="xref" href="../configuration/pi-adapter-for-structured-data-files-data-selection-configuration.html">PI Adapter for Structured Data Files data selection configuration</a>, and <a class="xref" href="../main/v1/configuration/logging-configuration.html">Logging configuration</a>.</p>
 <h2 id="data-collection">Data collection</h2>
 <p>When the adapter starts, it scans for all files in the input directory that match the configured file name filter. These files are processed in the order of their creation time. As new files are added to the input directory while the adapter is running, the files are processed in the order that they are added. Renaming a file will result in it being moved to the end of the processing queue. After a file has been processed, it will be moved to the output directory.</p>
 <p>Opening a file in the input directory could result in the adapter being unable to open it or move it to the output directory. Therefore, it is recommended that files are not opened after being placed in the input directory.</p>
@@ -182,7 +182,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Note:</strong> If streams are deleted from an endpoint while the adapter is running, the ingress component must be restarted to recreate the streams. See <a class="xref" href="../main/V1/Administration/start-and-stop-ingress-component.html">Start and stop ingress component</a>.</p>
+<p><strong>Note:</strong> If streams are deleted from an endpoint while the adapter is running, the ingress component must be restarted to recreate the streams. See <a class="xref" href="../main/v1/administration/start-and-stop-ingress-component.html">Start and stop ingress component</a>.</p>
 <p>Certain metadata are sent with each stream created.
 The following metadata are common for every adapter type:</p>
 <ul>
@@ -193,7 +193,7 @@ The following metadata are common for every adapter type:</p>
 <ul>
 <li><strong>InputDirectory</strong>: Location of the source files to process.</li>
 </ul>
-<p>The metadata level is set in <a class="xref" href="../main/V1/Configuration/general-configuration.html">General configuration</a>. For PI Adapter for Structured Data Files, the following metadata is sent for the individual level:</p>
+<p>The metadata level is set in <a class="xref" href="../main/v1/configuration/general-configuration.html">General configuration</a>. For PI Adapter for Structured Data Files, the following metadata is sent for the individual level:</p>
 <ul>
 <li><code>None</code>: No metadata</li>
 <li><code>Low</code>: AdapterType (<em>ComponentType</em>) and DataSource (<em>ComponentId</em>)</li>
