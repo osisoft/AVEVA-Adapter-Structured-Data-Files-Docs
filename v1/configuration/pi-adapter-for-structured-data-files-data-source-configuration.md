@@ -114,4 +114,4 @@ The following are examples of valid Structured Data Files data source configurat
 | api/v1/configuration/\<ComponentId\>/DataSource  | `PUT` | Configures or updates the Structured Data Files data source configuration |
 | api/v1/configuration/\<ComponentId\>/DataSource | `DELETE` | Deletes the Structured Data Files data source configuration |
 
-**Note:** Replace \<ComponentId\> with the ID of your Structured Data Files component, for example _StructuredDataFiles1_. <!---ID in this sentence is inconsistent with Id in the Data filters configuration topic.--->
+**Note:** Replace \<ComponentId\> with the ID of your Structured Data Files component, for example _StructuredDataFiles1_.
