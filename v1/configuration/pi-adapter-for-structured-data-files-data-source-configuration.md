@@ -5,7 +5,7 @@ uid: PIAdapterForStructuredDataFilesDataSourceConfiguration
 # PI Adapter for Structured Data Files data source configuration
 
 
-To use the adapter, you must configure the data source from which the adapter receives data. <!---the data source does not receive the data. The data source tells the adapter where the data comes from. The adapter then either polls the source to get the data or opens a connection to receive data from the data source. The development team can tell you how this adapter gets the data (though from the rest of the doc, it appears that it reads the file location). --->
+To use the adapter, you must configure it to receive data from a data source.
 
 **Note:** This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see [Configuration tools](xref:ConfigurationTools1-3).
 
