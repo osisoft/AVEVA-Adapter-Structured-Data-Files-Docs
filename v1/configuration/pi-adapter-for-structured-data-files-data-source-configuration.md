@@ -41,9 +41,7 @@ Complete the following steps to configure a Structured Data Files data source. U
     <br/>
     <br/>
 
-1. Configure data selection. <!---I wouldn't make this a numbered step. I would have it be two sentences after the steps, ala a post-req. --->
-
-    For more information, see [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForStructuredDataFilesDataSelectionConfiguration).
+**Postrequisite:** Configure data selection. For more information, see [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForStructuredDataFilesDataSelectionConfiguration).
 
 ## Structured Data Files data source schema
 
