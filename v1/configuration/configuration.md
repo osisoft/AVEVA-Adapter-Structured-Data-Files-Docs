@@ -5,7 +5,7 @@ uid: StructuredDataFilesConfiguration
 
 Before you can begin using the adapter, you must configure the data source and data selection using the adapter's REST API. <!---I would really like to see the configurations listed in order here, so that I have a road map of what I need to do. You could then indicate which ones are optional and get rid of the some are required and others are optional sentences.--->
 
-The examples in the configuration topics use cURL, a commonly available tool on both Windows and Linux. You can configure the adapter with any programming language or tool that supports making REST calls or with the EdgeCmd utility. For more information, see the [EdgeCmd utility documentation](https://osisoft.github.io/Edgecmd-Docs/V1.2/edgecmd-utility.html).
+The examples in the configuration topics use cURL, a commonly available tool on both Windows and Linux. You can configure the adapter with any programming language or tool that supports making REST calls or with the EdgeCmd utility. For more information, see the [EdgeCmd utility documentation](https://osisoft.github.io/Edgecmd-Docs/v1.2/edgecmd-utility.html).
 
 To validate successful configurations, you can perform data retrieval (`GET` commands) with a browser, if available, on your device.
 
@@ -55,5 +55,5 @@ This Quick Start guides you through setup of each configuration file available f
     | Configuration | Description | Required | Optional |
     |--|--|:-:|:-:|
     | [data filter](xref:DataFiltersConfiguration1-3) | A reusable file that defines what data within the data source files are received.<br/><br/>Can be used in conjunction with **data selection** configurations. |  | &#x2714; |
-    | [data selection](xref:PIAdapterForStructuredDataFilesDataSelectionConfiguration) | Defines what data within the data source files are received. | &#x2714; |  |
-    | [data source](xref:PIAdapterForStructuredDataFilesDataSourceConfiguration) | Defines the source that the adapter receives data files from. | &#x2714; |  |
+    | [data selection](xref:PIAdapterForSDFDataSelectionConfiguration) | Defines what data within the data source files are received. | &#x2714; |  |
+    | [data source](xref:PIAdapterForSDFDataSourceConfiguration) | Defines the source that the adapter receives data files from. | &#x2714; |  |
