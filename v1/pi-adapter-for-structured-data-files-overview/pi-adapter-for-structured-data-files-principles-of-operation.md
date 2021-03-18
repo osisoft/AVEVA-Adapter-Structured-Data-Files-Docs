@@ -20,11 +20,11 @@ For more information, see [PI Adapter for Structured Data Files data source conf
 
 When the adapter starts, it scans for all files in the input directory that match the configured file name filter. These files are processed in the order of their creation time<!---oldest first?--->. As new files are added to the input directory while the adapter is running, the files are processed in the order that they are added. Renaming a file will result in it being moved to the end of the processing queue. After a file has been processed, it will be moved to the output directory.
 
-Opening a file in the input directory could result in the adapter being unable to open it or move it to the output directory. Therefore, it is recommended that files are not opened after being placed in the input directory.
+**Notes:** The following situations could adversely affect data collection:
 
-**Note:** If the adapter is unable to move a file to the output directory after processing it, the file will be processed again on an adapter restart unless it is manually removed from the input directory.
-
-**Note:** If the input directory is deleted while the adapter is running, the adapter will attempt to resume data collection once the directory is recreated. In some cases, such as when the input directory is deleted and recreated within a short period of time, you may need to restart the adapter in order for data collection to continue.
+* Opening a file in the input directory could result in the adapter being unable to open it or move it to the output directory. Therefore, it is recommended that files are not opened after being placed in the input directory.
+* If the adapter is unable to move a file to the output directory after processing it, the file will be processed again on an adapter restart unless it is manually removed from the input directory.
+* If the input directory is deleted while the adapter is running, the adapter will attempt to resume data collection once the directory is recreated. In some cases, such as when the input directory is deleted and recreated within a short period of time, you may need to restart the adapter for data collection to continue.
 <!---As a standard, we don't want two notes in a row. The paragraph before the notes also seems to be the same sort of informational note. Maybe combine all three into one note with bullet points. E.g., Note: The following situations could adversely affect data collection: ....--->
 
 ### Supported file types
