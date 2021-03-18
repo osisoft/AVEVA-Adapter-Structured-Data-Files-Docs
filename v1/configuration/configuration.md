@@ -3,7 +3,7 @@ uid: StructuredDataFilesConfiguration
 ---
 # Configuration
 
-Before you can begin using the adapter, you must set several adapter configuration files by calling its REST API. Some configurations are required. Others are optional.
+Before you can begin using the adapter, you must configure the data source and data selection using the adapter's REST API. <!---I would really like to see the configurations listed in order here, so that I have a road map of what I need to do. You could then indicate which ones are optional and get rid of the some are required and others are optional sentences.--->
 
 The examples in the configuration topics use cURL, a commonly available tool on both Windows and Linux. You can configure the adapter with any programming language or tool that supports making REST calls or with the EdgeCmd utility. For more information, see the [EdgeCmd utility documentation](https://osisoft.github.io/Edgecmd-Docs/v1.2/edgecmd-utility.html).
 
@@ -40,7 +40,7 @@ This Quick Start guides you through setup of each configuration file available f
     | [health endpoint](xref:HealthEndpointConfiguration1-3) | Defines endpoint where PI adapters produce and store health data. |  | &#x2714; |
     <br>
 
-1. **Optional:** Complete other optional configurations.
+1. **Optional:** Complete buffering and logging configurations. 
 
     | Configuration | Description | Required | Optional |
     |--|--|:-:|:-:|

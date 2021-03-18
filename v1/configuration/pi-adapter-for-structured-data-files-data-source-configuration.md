@@ -4,7 +4,8 @@ uid: PIAdapterForSDFDataSourceConfiguration
 
 # PI Adapter for Structured Data Files data source configuration
 
-To use the adapter, you must configure the data source to receive data.
+
+To use the adapter, you must configure it to receive data from a data source.
 
 **Note:** This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see [Configuration tools](xref:ConfigurationTools1-3).
 
@@ -24,7 +25,7 @@ Complete the following steps to configure a Structured Data Files data source. U
 
 1. Save the file as `ConfigureDataSource.json`.
 
-1. Open a command line session. Change directory to the location of `ConfigureDataSource.json`.
+1. Open a command line session and change the working directory to the location of `ConfigureDataSelection.json`.
 
 1. Enter the following cURL command (which uses the `POST` method) to initialize the data source configuration.
 
@@ -35,14 +36,13 @@ Complete the following steps to configure a Structured Data Files data source. U
     **Notes:**
   
     * If you installed the adapter to listen on a non-default port, update `5590` to the port number in use.
-    * If you use a component ID other than `StructuredDataFiles1`, update the endpoint with your chosen component ID.
+    * If you use a component ID other than `StructuredDataFiles1`, update the endpoint with the component ID.
     * For a list of other REST operations you can perform, like updating or deleting a data source configuration, see [REST URLs](#rest-urls).
     <br/>
     <br/>
 
-1. Configure data selection.
+**Postrequisite:** Configure data selection. For more information, see [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForStructuredDataFilesDataSelectionConfiguration).
 
-    For more information, see [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForSDFDataSelectionConfiguration).
 
 ## Structured Data Files data source schema
 
@@ -77,7 +77,7 @@ The following parameters are available for configuring a Structured Data Files d
 
 The following are examples of valid Structured Data Files data source configurations:
 
-**Note:** When copy and pasting the examples below, validate the `InputDirectory` and `OutputDirectory` path for the data source host OS: Windows or Linux.
+**Note:** When copy and pasting the examples below, validate the `InputDirectory` and `OutputDirectory` path for the data source host operating system: Windows or Linux.
 
 ### Structured Data Files data source configuration #1
 
@@ -113,4 +113,4 @@ The following are examples of valid Structured Data Files data source configurat
 | api/v1/configuration/\<ComponentId\>/DataSource  | `PUT` | Configures or updates the Structured Data Files data source configuration |
 | api/v1/configuration/\<ComponentId\>/DataSource | `DELETE` | Deletes the Structured Data Files data source configuration |
 
-**Note:** Replace \<ComponentId\> with the ID of your Structured Data Files component, for example StructuredDataFiles1.
+**Note:** Replace \<ComponentId\> with the ID of your Structured Data Files component, for example _StructuredDataFiles1_.
