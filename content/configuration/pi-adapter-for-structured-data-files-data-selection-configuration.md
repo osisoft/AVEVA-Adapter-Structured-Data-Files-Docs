@@ -6,7 +6,7 @@ uid: PIAdapterForSDFDataSelectionConfiguration
 
 In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data source.
 
-**Note:** This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see [Configuration tools](xref:ConfigurationTools1-3).
+**Note:** This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see [Configuration tools](xref:ConfigurationTools).
 
 ## Configure Structured Data Files data selection
 

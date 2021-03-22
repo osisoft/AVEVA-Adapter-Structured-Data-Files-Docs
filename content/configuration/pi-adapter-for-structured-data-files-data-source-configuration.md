@@ -7,7 +7,7 @@ uid: PIAdapterForSDFDataSourceConfiguration
 
 To use the adapter, you must configure it to receive data from a data source.
 
-**Note:** This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see [Configuration tools](xref:ConfigurationTools1-3).
+**Note:** This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see [Configuration tools](xref:ConfigurationTools).
 
 ## Configure Structured Data Files data source
 
