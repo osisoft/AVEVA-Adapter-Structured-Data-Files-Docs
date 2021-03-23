@@ -7,7 +7,7 @@ uid: PIAdapterForSDFDataSourceConfiguration
 
 To use the adapter, you must configure it to receive data from a data source.
 
-**Note:** This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see [Configuration tools](xref:ConfigurationTools1-3).
+**Note:** This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see [Configuration tools](xref:ConfigurationTools).
 
 ## Configure Structured Data Files data source
 
@@ -41,7 +41,7 @@ Complete the following steps to configure a Structured Data Files data source. U
     <br/>
     <br/>
 
-**Postrequisite:** Configure data selection. For more information, see [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForStructuredDataFilesDataSelectionConfiguration).
+**Postrequisite:** Configure data selection. For more information, see [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForSDFDataSelectionConfiguration).
 
 
 ## Structured Data Files data source schema
