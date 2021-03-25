@@ -78,7 +78,7 @@
             <article class="content wrap" id="_content" data-uid="PIAdapterForSDFDataSelectionConfiguration">
 <h1 id="pi-adapter-for-structured-data-files-data-selection-configuration">PI Adapter for Structured Data Files data selection configuration</h1>
 
-<p>In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data sources.</p>
+<p>In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data source.</p>
 <p><strong>Note:</strong> This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see <a class="xref" href="../main/v1.3/configuration/configuration-tools.html">Configuration tools</a>.</p>
 <h2 id="configure-structured-data-files-data-selection">Configure Structured Data Files data selection</h2>
 <p>Complete the following steps to configure Structured Data Files data selection. Use the <code>POST</code> method in conjunction with the <code>api/v1/configuration/&lt;ComponentId&gt;/DataSelection</code> REST endpoint to initialize the configuration.</p>
@@ -93,14 +93,14 @@
 </li>
 <li><p>Save the file as <code>ConfigureDataSelection.json</code>.</p>
 </li>
-<li><p>Open a command line session. Change directory to the location of <code>ConfigureDataSelection.json</code>.</p>
+<li><p>Open a command line session and change the working directory to the location of <code>ConfigureDataSelection.json</code>.</p>
 </li>
 <li><p>Enter the following cURL command (which uses the <code>POST</code> method) to initialize the data selection configuration.</p>
 <pre><code class="lang-bash">curl -d &quot;@ConfigureDataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X POST &quot;http://localhost:5590/api/v1/configuration/StructuredDataFiles1/DataSelection&quot;
 </code></pre><p> <strong>Notes:</strong></p>
 <ul>
 <li>If you installed the adapter to listen on a non-default port, update <code>5590</code> to the port number in use.</li>
-<li>If you use a component ID other than <code>StructuredDataFiles1</code>, update the endpoint with your chosen component ID.</li>
+<li>If you use a component ID other than <code>StructuredDataFiles1</code>, update the endpoint with the component ID.</li>
 <li>For a list of other REST operations you can perform, like updating or deleting a data selection configuration, see <a href="#rest-urls">REST URLs</a>.</li>
 </ul>
 </li>
@@ -248,7 +248,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Note:</strong> Replace <code>&lt;ComponentId&gt;</code> with the ID of your Structured Data Files component, for example <code>StructuredDataFiles1</code>.</p>
+<p><strong>Note:</strong> Replace <code>&lt;ComponentId&gt;</code> with the ID of your Structured Data Files component, for example <em>StructuredDataFiles1</em>.</p>
 </article>
           </div>
           
