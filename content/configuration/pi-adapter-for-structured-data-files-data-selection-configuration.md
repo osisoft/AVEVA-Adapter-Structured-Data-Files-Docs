@@ -10,7 +10,7 @@ In addition to the data source configuration, you need to provide a data selecti
 
 ## Configure Structured Data Files data selection
 
-Complete the following steps to configure Structured Data Files data selection. Use the `POST` method in conjunction with the `api/v1/configuration/<ComponentId>/DataSelection` REST endpoint to initialize the configuration.
+Complete the following steps to configure Structured Data Files data selection. Use the `PUT` method in conjunction with the `api/v1/configuration/<ComponentId>/DataSelection` REST endpoint to initialize the configuration.
 
 1. Using a text editor, create an empty text file.
 
@@ -26,10 +26,10 @@ Complete the following steps to configure Structured Data Files data selection. 
 
 1. Open a command line session and change the working directory to the location of `ConfigureDataSelection.json`.
 
-1. Enter the following cURL command (which uses the `POST` method) to initialize the data selection configuration.
+1. Enter the following cURL command (which uses the `PUT` method) to initialize the data selection configuration.
 
       ```bash
-      curl -d "@ConfigureDataSelection.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/StructuredDataFiles1/DataSelection"
+      curl -d "@ConfigureDataSelection.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/StructuredDataFiles1/DataSelection"
       ```
 
     **Notes:**
