@@ -81,7 +81,7 @@
 <p>To use the adapter, you must configure it to receive data from a data source.</p>
 <p><strong>Note:</strong> This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see <a class="xref" href="../main/shared-content/configuration/configuration-tools.html">Configuration tools</a>.</p>
 <h2 id="configure-structured-data-files-data-source">Configure Structured Data Files data source</h2>
-<p>Complete the following steps to configure a Structured Data Files data source. Use the <code>POST</code> method in conjunction with the <code>api/v1/configuration/&lt;ComponentId&gt;/DataSource</code> REST endpoint to initialize the configuration.</p>
+<p>Complete the following steps to configure a Structured Data Files data source. Use the <code>PUT</code> method in conjunction with the <code>api/v1/configuration/&lt;ComponentId&gt;/DataSource</code> REST endpoint to initialize the configuration.</p>
 <ol>
 <li><p>Using a text editor, create an empty text file.</p>
 </li>
@@ -95,8 +95,8 @@
 </li>
 <li><p>Open a command line session and change the working directory to the location of <code>ConfigureDataSelection.json</code>.</p>
 </li>
-<li><p>Enter the following cURL command (which uses the <code>POST</code> method) to initialize the data source configuration.</p>
-<pre><code class="lang-bash">curl -d &quot;@ConfigureDataSource.json&quot; -H &quot;Content-Type: application/json&quot; -X POST &quot;http://localhost:5590/api/v1/configuration/StructuredDataFiles1/DataSource&quot;
+<li><p>Enter the following cURL command (which uses the <code>PUT</code> method) to initialize the data source configuration.</p>
+<pre><code class="lang-bash">curl -d &quot;@ConfigureDataSource.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/StructuredDataFiles1/DataSource&quot;
 </code></pre><p> <strong>Notes:</strong></p>
 <ul>
 <li>If you installed the adapter to listen on a non-default port, update <code>5590</code> to the port number in use.</li>

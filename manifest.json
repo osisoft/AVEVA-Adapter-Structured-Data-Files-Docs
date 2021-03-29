@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "content/configuration/pi-adapter-for-structured-data-files-data-selection-configuration.html",
-          "hash": "MnLNyUAD10/Bx4AhALb/zg=="
+          "hash": "WPU1fsbLz0ptG08UiBJYeA=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "content/configuration/pi-adapter-for-structured-data-files-data-source-configuration.html",
-          "hash": "KbrI3okKEuB0FQobSVKx2Q=="
+          "hash": "7twdLWevfq8gX5aZXgJOCQ=="
         }
       },
       "is_incremental": false,
@@ -436,19 +436,7 @@
       "output": {
         ".html": {
           "relative_path": "content/main/shared-content/configuration/text-parser/jsonpath-syntax-for-value-retrieval.html",
-          "hash": "myIz1b8aVxmlOS68KGdt9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "content/main/shared-content/configuration/text-parser/jsonpath/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "content/main/shared-content/configuration/text-parser/jsonpath/toc.html",
-          "hash": "9P9otdxVR+p9WkMCVtTEBg=="
+          "hash": "8rFKlteugcpTu/2JiFweXw=="
         }
       },
       "is_incremental": false,
@@ -856,7 +844,7 @@
       "output": {
         ".html": {
           "relative_path": "content/toc.html",
-          "hash": "hkjybP9xdPaSMBbiIP2JoA=="
+          "hash": "doeikaFqe44GJeJ5N/2EOA=="
         }
       },
       "is_incremental": false,
