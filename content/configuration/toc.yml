@@ -1,5 +1,8 @@
 - name: Configuration tools
   href: ../main/shared-content/configuration/configuration-tools.md
+- name: Text Parser
+  href: ../main/shared-content/configuration/text-parser/jsonpath/toc.yml
+  topicHref: ../main/shared-content/configuration/text-parser/text-parser.md
 - name: System components configuration
   href: ../main/shared-content/configuration/system-configuration/toc.yml
   topicHref: ../main/shared-content/configuration/system-components-configuration.md
@@ -21,3 +24,5 @@
   href: ../main/shared-content/configuration/buffering-configuration.md
 - name: Logging configuration
   href: ../main/shared-content/configuration/logging-configuration.md
+- name: PI Adapter for Structured Data Files configuration examples
+  href: configuration-examples.md
