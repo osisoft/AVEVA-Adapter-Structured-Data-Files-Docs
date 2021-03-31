@@ -148,13 +148,13 @@
 <td><strong>ValueField</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>Name of the value field. XPath and JsonPath are supported.<br> Example: &quot;FanSpeed&quot;.<br> Allowed Values: Any name to represent the value.</td>
+<td>Name of the value field. JSONPath, XPath, and CSV are supported<sup>1</sup>.<br> Example: &quot;FanSpeed&quot;.<br> Allowed Values: Any name to represent the value.</td>
 </tr>
 <tr>
 <td><strong>TimeField</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>Name of the time field. XPath and JsonPath are supported.  If no timestamp is provided in the file, the following reserved values can be used to specify the timestamp:<br> - <strong>FileCreationTime</strong> - UTC time when the file was created. <br> -  <strong>FileModifiedTime</strong> - UTC time when the file was modified.<br> - <strong>AdapterGeneratedTime</strong> - UTC time the file is processed by the adapter. <br> Example: &quot;FanSpeedTimeStamp&quot;</td>
+<td>Name of the time field. JSONPath, XPath, and CSV are supported<sup>1</sup>. If no timestamp is provided in the file, the following reserved values can be used to specify the timestamp:<br> - <strong>FileCreationTime</strong> - UTC time when the file was created. <br> -  <strong>FileModifiedTime</strong> - UTC time when the file was modified.<br> - <strong>AdapterGeneratedTime</strong> - UTC time the file is processed by the adapter. <br> Example: &quot;FanSpeedTimeStamp&quot;</td>
 </tr>
 <tr>
 <td><strong>DataType</strong></td>
@@ -170,6 +170,11 @@
 </tr>
 </tbody>
 </table>
+<p><sup>1</sup><strong>Note</strong>: For full examples of how to enter JSONPath, XPath, or CSV syntax, see the following topics:</p>
+<ul>
+<li><a class="xref" href="../main/shared-content/configuration/text-parser/jsonpath-syntax-for-value-retrieval.html">JSONPath syntax for value retrieval</a></li>
+<li><a class="xref" href="../main/shared-content/configuration/text-parser/xpath-and-csv-syntax-for-value-retrieval.html">XPath and CSV syntax for value retrieval</a></li>
+</ul>
 <h2 id="structured-data-files-data-selection-examples">Structured Data Files data selection examples</h2>
 <p>The following are examples of valid Structured Data Files data selection configurations:</p>
 <h3 id="structured-data-files-data-selection-configuration-example-with-custom-timeformat">Structured Data Files data selection configuration example with custom TimeFormat</h3>
