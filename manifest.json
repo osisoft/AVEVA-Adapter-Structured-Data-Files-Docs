@@ -412,19 +412,7 @@
       "output": {
         ".html": {
           "relative_path": "content/main/shared-content/configuration/system-components-configuration.html",
-          "hash": "YHAabfq9T5mFssoroWaPrA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "content/main/shared-content/configuration/text-parser/all-file-types/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "content/main/shared-content/configuration/text-parser/all-file-types/toc.html",
-          "hash": "+oxGA9S3veLADY7S+Vw+nw=="
+          "hash": "Clhru2oR2IWlhA0NAEIfxw=="
         }
       },
       "is_incremental": false,
@@ -437,6 +425,18 @@
         ".html": {
           "relative_path": "content/main/shared-content/configuration/text-parser/jsonpath-syntax-for-value-retrieval.html",
           "hash": "8rFKlteugcpTu/2JiFweXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "content/main/shared-content/configuration/text-parser/jsonpath/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "content/main/shared-content/configuration/text-parser/jsonpath/toc.html",
+          "hash": "9P9otdxVR+p9WkMCVtTEBg=="
         }
       },
       "is_incremental": false,
@@ -460,7 +460,7 @@
       "output": {
         ".html": {
           "relative_path": "content/main/shared-content/configuration/text-parser/xpath-and-csv-syntax-for-value-retrieval.html",
-          "hash": "uDfVxAPAAKjTwsdY4mb8Sw=="
+          "hash": "CBRWNTjNf9juFn5VsJqYTQ=="
         }
       },
       "is_incremental": false,
@@ -844,7 +844,7 @@
       "output": {
         ".html": {
           "relative_path": "content/toc.html",
-          "hash": "doeikaFqe44GJeJ5N/2EOA=="
+          "hash": "shuSga8dsjyVhQ0aWc6vQg=="
         }
       },
       "is_incremental": false,
