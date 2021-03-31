@@ -54,10 +54,14 @@ Linux: `/opt/OSIsoft/Adapters/StructuredDataFiles/Schemas`
 | **DataFilterId** | Optional | `string` | The identifier of a data filter defined in the [Data filters configuration](xref:DataFiltersConfiguration). <br>By default, no filter is applied. |
 | **Selected** | Optional | `boolean` | If `true`, data for this item is collected and sent to one or more configured OMF endpoint.<br><br>Allowed value: `true` or `false`<br>Default value:`true` |
 | **StreamId** | Optional | `string` | The custom identifier used to create the streams. If not specified, the adapter generates a default value based on the **DefaultStreamIdPattern** in the [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterForSDFDataSourceConfiguration).<br>A properly configured custom stream ID follows these rules: <br> Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores `__` .<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters:<br>\/  \:  \? \#  \[  \]  \@  \!  \$  \&  \'  \(  \)  \\  \*  \+  \,  \;  \=  \%  \<  \>  \`|
-| **ValueField** | Required | `string` | Name of the value field. XPath and JsonPath are supported.<br> Example: \"FanSpeed\".<br> Allowed Values: Any name to represent the value.|
-| **TimeField** | Required | `string` | Name of the time field. XPath and JsonPath are supported.  If no timestamp is provided in the file, the following reserved values can be used to specify the timestamp:<br> - **FileCreationTime** - UTC time when the file was created. <br> -  **FileModifiedTime** - UTC time when the file was modified.<br> - **AdapterGeneratedTime** - UTC time the file is processed by the adapter. <br> Example: \"FanSpeedTimeStamp\"|
+| **ValueField** | Required | `string` | Name of the value field. JSONPath, XPath, and CSV are supported<sup>1</sup>.<br> Example: \"FanSpeed\".<br> Allowed Values: Any name to represent the value.|
+| **TimeField** | Required | `string` | Name of the time field. JSONPath, XPath, and CSV are supported<sup>1</sup>. If no timestamp is provided in the file, the following reserved values can be used to specify the timestamp:<br> - **FileCreationTime** - UTC time when the file was created. <br> -  **FileModifiedTime** - UTC time when the file was modified.<br> - **AdapterGeneratedTime** - UTC time the file is processed by the adapter. <br> Example: \"FanSpeedTimeStamp\"|
 | **DataType** | Required | `string` | Data type of the values specified in the **ValueField** parameter.<br> Example: "Int32" <br> Allowed values: SByte, Byte, Int16, UInt16, Int32, UInt32, Int64, UInt64, Single, Double, Decimal, Boolean, DateTime, String |
 | **TimeFormat**| Optional | `string` | Time format of the timestamp specified in the **TimeField** parameter.<br> Default value: null.<br> Example: \"mm\/dd\/yy\".|
+
+<sup>1</sup>**Note**: For full examples of how to enter JSONPath, XPath, or CSV syntax, see the following topics:
+* <xref:JSONPathSyntaxForValueRetrieval>
+* <xref:XPathAndCSVSyntaxForValueRetrieval>
 
 ## Structured Data Files data selection examples
 
