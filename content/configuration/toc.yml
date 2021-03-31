@@ -1,7 +1,7 @@
 - name: Configuration tools
   href: ../main/shared-content/configuration/configuration-tools.md
 - name: Text Parser
-  href: ../main/shared-content/configuration/text-parser/jsonpath/toc.yml
+  href: ../main/shared-content/configuration/text-parser/all-file-types/toc.yml
   topicHref: ../main/shared-content/configuration/text-parser/text-parser.md
 - name: System components configuration
   href: ../main/shared-content/configuration/system-configuration/toc.yml
