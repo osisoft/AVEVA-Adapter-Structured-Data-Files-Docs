@@ -117,11 +117,11 @@ The following are examples of valid Structured Data Files data selection configu
 
 | Relative URL | HTTP verb | Action |
 | ------------ | --------- | ------ |
-| api/v1/configuration/\<ComponentId\>/DataSelection  | `GET` | Retrieves the Structured Data Files data selection configuration |
-| api/v1/configuration/\<ComponentId\>/DataSelection  | `PUT` | Configures or updates the Structured Data Files data selection configuration |
-| api/v1/configuration/\<ComponentId\>/DataSelection | `DELETE` | Deletes the Structured Data Files data selection configuration |
-| api/v1/configuration/\<ComponentId\>/DataSelection | `PATCH` | Allows partial updating of configured data selection items. <br>**Note:** The request must be an array containing one or more data selection items. Each data selection item in the array must include its **StreamId**. |
-| api/v1/configuration/\<ComponentId\>/DataSelection/\<StreamId\> | `PUT` | Updates or creates a new data selection with the specified **StreamId**.|
-| api/v1/configuration/\<ComponentId\>/DataSelection/\<StreamId\> | `DELETE` | Deletes a specific data selection item of the Structured Data Files data selection configuration. |
+| api/v1/configuration/\<ComponentId\>/DataSelection  | `GET` | Retrieves the data selection configuration, including all data selection items. |
+| api/v1/configuration/\<ComponentId\>/DataSelection  | `PUT` | Configures or updates the data selection configuration. The adapter starts collecting data for each data selection item after the request is received. |
+| api/v1/configuration/\<ComponentId\>/DataSelection | `DELETE` | Deletes the active data selection configuration. The adapter stops collecting data for all items included in the configuration. |
+| api/v1/configuration/\<ComponentId\>/DataSelection | `PATCH` | Allows partial updates of configured data selection items.<br>**Note:** The request must be an array containing one or more data selection items. Each item in the array must include its **StreamId**. |
+| api/v1/configuration/\<ComponentId\>/DataSelection/\<StreamId\> | `PUT` | Updates or creates a new data selection item with the specified **StreamId**. For new items, the adapter starts collecting data after the request is received. |
+| api/v1/configuration/\<ComponentId\>/DataSelection/\<StreamId\> | `DELETE` | Deletes a data selection item from the configuration by **StreamId**. The adapter stops collecting data for the deleted item. |
 
 **Note:** Replace `<ComponentId>` with the ID of your Structured Data Files component, for example _StructuredDataFiles1_.
