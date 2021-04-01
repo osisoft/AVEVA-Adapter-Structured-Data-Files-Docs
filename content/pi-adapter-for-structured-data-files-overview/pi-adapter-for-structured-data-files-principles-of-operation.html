@@ -82,13 +82,13 @@
 <h2 id="adapter-configuration">Adapter configuration</h2>
 <p>For the adapter to start data collection, you need to configure the adapter by defining the following:</p>
 <ul>
-<li><strong>Data source</strong>: Provide the data source from which the adapter should collect data.<!---is this where you specify the input directory?---></li>
+<li><strong>Data source</strong>: Provide the data source from which the adapter should collect data.</li>
 <li><strong>Data selection</strong>: Select items for which the adapter should gather data from the files.</li>
-<li><strong>Logging</strong>: Set up the logging attributes to manage the adapter logging behavior.<!---what about buffering, health endpoints, egress, general configuration (Why isn't that referred to as diagnostic configuration?), data filters? I know these are optional for data collection, but so is logging.---></li>
+<li><strong>Logging</strong>: Set up the logging attributes to manage the adapter logging behavior.</li>
 </ul>
 <p>For more information, see <a class="xref" href="../configuration/pi-adapter-for-structured-data-files-data-source-configuration.html">PI Adapter for Structured Data Files data source configuration</a>, <a class="xref" href="../configuration/pi-adapter-for-structured-data-files-data-selection-configuration.html">PI Adapter for Structured Data Files data selection configuration</a>, and <a class="xref" href="../main/shared-content/configuration/logging-configuration.html">Logging configuration</a>.</p>
 <h2 id="data-collection">Data collection</h2>
-<p>When the adapter starts, it scans for all files in the input directory that match the configured file name filter. These files are processed in the order of their creation time<!---oldest first?--->. As new files are added to the input directory while the adapter is running, the files are processed in the order that they are added. Renaming a file will result in it being moved to the end of the processing queue. After a file has been processed, it will be moved to the output directory.</p>
+<p>When the adapter starts, it scans for all files in the input directory that match the configured file name filter. These files are processed in the order of their creation time. As new files are added to the input directory while the adapter is running, the files are processed in the order that they are added. Renaming a file will result in it being moved to the end of the processing queue. After a file has been processed, it will be moved to the output directory.</p>
 <p><strong>Notes:</strong> The following situations could adversely affect data collection:</p>
 <ul>
 <li>Opening a file in the input directory could result in the adapter being unable to open it or move it to the output directory. Therefore, it is recommended that files are not opened after being placed in the input directory.</li>

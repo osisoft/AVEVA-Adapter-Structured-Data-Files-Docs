@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "content/configuration/configuration.html",
-          "hash": "RBiB/EhYn8yy9Tnk71XmdQ=="
+          "hash": "BH1NPo419MVPUzx0dQMZJA=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "content/configuration/pi-adapter-for-structured-data-files-data-selection-configuration.html",
-          "hash": "VOMfsUpSEHH1ipaOvLOPIg=="
+          "hash": "lIgKde+s9xOgirV48m1wlg=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "content/configuration/pi-adapter-for-structured-data-files-data-source-configuration.html",
-          "hash": "7twdLWevfq8gX5aZXgJOCQ=="
+          "hash": "ZwDfctE8eKKBeZcaQhZcRg=="
         }
       },
       "is_incremental": false,
@@ -148,7 +148,7 @@
       "output": {
         ".html": {
           "relative_path": "content/index.html",
-          "hash": "mi5S99/IWP+0rihie5q32w=="
+          "hash": "YARQ6n1mQYRr2mjKiLHX1w=="
         }
       },
       "is_incremental": false,
@@ -820,7 +820,7 @@
       "output": {
         ".html": {
           "relative_path": "content/pi-adapter-for-structured-data-files-overview/pi-adapter-for-structured-data-files-principles-of-operation.html",
-          "hash": "VOJrp4xhlk6upnzhaONj3w=="
+          "hash": "rG8PmGv1mYsXrgXm7jwR6A=="
         }
       },
       "is_incremental": false,
