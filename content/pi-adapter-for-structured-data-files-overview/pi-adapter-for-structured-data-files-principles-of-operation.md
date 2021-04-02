@@ -13,16 +13,13 @@ For the adapter to start data collection, you need to configure the adapter by d
 - **Data source**: Provide the data source from which the adapter should collect data.<!---is this where you specify the input directory?--->
 - **Data selection**: Select items for which the adapter should gather data from the files.
 
-For more information, see [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterForSDFDataSourceConfiguration), [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForSDFDataSelectionConfiguration).
+For more information, see [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterForSDFDataSourceConfiguration) and [PI Adapter for Structured Data Files data selection configuration](xref:PIAdapterForSDFDataSelectionConfiguration).
 
 ## Data collection
 
 When the adapter starts, it begins scanning for files in the input directory that match the configured file name filter. These files are processed in the order of their creation time starting with the oldest. After a file has been processed, it will be moved to the output directory. If the input directory is empty when scanned by the adapter, the adapter will wait five seconds before rescanning. 
 
-**Notes:** The following situations could adversely affect data collection:
-
-* Opening a file in the input directory could result in the adapter being unable to open it or move it to the output directory. If this occurs, the adapter will stop processing new files until the problem is resolved. Therefore, it is recommended that files are not opened after being placed in the input directory.
-* If the adapter is unable to move a file to the output directory after processing it, the adapter will stop processing new files until the problem is resolved.
+**Note:** If the adapter is not able to open a file from the input directory or move a file to the output directory after processing it, new files will not be processed until the problem is resolved. Do not open a file once it has been placed in the input directory as this could prevent the adapter from opening or moving it.
 
 ### Supported file types
 
