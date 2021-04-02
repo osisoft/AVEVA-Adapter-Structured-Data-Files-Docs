@@ -1,8 +1,5 @@
 - name: Configuration tools
   href: ../main/shared-content/configuration/configuration-tools.md
-- name: Text Parser
-  href: ../main/shared-content/configuration/text-parser/all-file-types/toc.yml
-  topicHref: ../main/shared-content/configuration/text-parser/text-parser.md
 # configure system components
 - name: System components configuration
   href: ../main/shared-content/configuration/system-configuration/toc.yml
@@ -14,9 +11,9 @@
 # configure health endpoints
 - name: General configuration
   href: ../main/shared-content/metadata/toc.yml
+  topicHref: ../main/shared-content/configuration/general-configuration.md
 - name: Health endpoint configuration
   href: ../main/shared-content/configuration/health-endpoint-configuration.md
-  topicHref: ../main/shared-content/configuration/general-configuration.md
 # configure buffering and logging
 - name: Buffering configuration
   href: ../main/shared-content/configuration/buffering-configuration.md
