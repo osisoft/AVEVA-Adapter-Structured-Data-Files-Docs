@@ -8,8 +8,6 @@ PI Adapter for Structured Data Files is a data-collection component that transfe
 
 ![PI Adapter for Structured Data Files architecture](images/pi-adapter-for-sdf-architecture-diagram.png)
 
-<!---The conceptual information is very light. What type of files? Where do they come from? What sorts of scenarios would this be used in? I wouldn't expect to see installation and configuration information in the main overview page. It seems too detailed. I realize this is what is done on the other apater documents, but I would question it there, too.--->
-
 ## Adapter installation
 
 You can install the adapter with a download kit that you can obtain from the OSIsoft Customer Portal. You can install the adapter on devices running either Windows or Linux operating systems.
