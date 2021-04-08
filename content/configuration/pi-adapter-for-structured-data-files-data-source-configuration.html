@@ -248,12 +248,12 @@
 <tr>
 <td>api/v1/configuration/&lt;ComponentId>/DataSource</td>
 <td><code>POST</code></td>
-<td>Creates the data source configuration. After the request is received, the adapter starts collecting data.</td>
+<td>Creates the data source configuration. The adapter starts collecting data after the following conditions are met:<br><br>&bull; The data source configuration <code>POST</code> request is received.<br>&bull; A data selection configuration is active.</td>
 </tr>
 <tr>
 <td>api/v1/configuration/&lt;ComponentId>/DataSource</td>
 <td><code>PUT</code></td>
-<td>Configures or updates the data source configuration. Overwrites any active data source configuration. If no configuration is active, the adapter starts collecting data after it receives the request.</td>
+<td>Configures or updates the data source configuration. Overwrites any active data source configuration. If no configuration is active, the adapter starts collecting data after the following conditions are met:<br><br>&bull; The data source configuration <code>PUT</code> request is received.<br>&bull; A data selection configuration is active.</td>
 </tr>
 <tr>
 <td>api/v1/configuration/&lt;ComponentId>/DataSource</td>

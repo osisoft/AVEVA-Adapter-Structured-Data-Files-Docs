@@ -148,13 +148,13 @@
 <td><strong>ValueField</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>Name of the value field. JSONPath, XPath, and CSV are supported<sup>1</sup>.<br> Example: &quot;FanSpeed&quot;.<br> Allowed Values: Any name to represent the value.</td>
+<td>Name of the value field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (<code>1</code> being the first column) should be specified.<br> Example: &quot;FanSpeed&quot;.<br> Allowed Values: Any name to represent the value.</td>
 </tr>
 <tr>
 <td><strong>TimeField</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>Name of the time field. JSONPath, XPath, and CSV are supported<sup>1</sup>. If no timestamp is provided in the file, the following reserved values can be used to specify the timestamp:<br> - <strong>FileCreationTime</strong> - UTC time when the file was created. <br> -  <strong>FileModifiedTime</strong> - UTC time when the file was modified.<br> - <strong>AdapterGeneratedTime</strong> - UTC time the file is processed by the adapter. <br> Example: &quot;FanSpeedTimeStamp&quot;</td>
+<td>Name of the time field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (<code>1</code> being the first column) should be specified. If no timestamp is provided in the file, the following reserved values can be used to specify the timestamp:<br> - <strong>FileCreationTime</strong> - UTC time when the file was created. <br> -  <strong>FileModifiedTime</strong> - UTC time when the file was modified.<br> - <strong>AdapterGeneratedTime</strong> - UTC time the file is processed by the adapter. <br> Example: &quot;FanSpeedTimeStamp&quot;</td>
 </tr>
 <tr>
 <td><strong>DataType</strong></td>
@@ -200,17 +200,6 @@
     &quot;DataType&quot;: &quot;Int16&quot;
   }
 ]
-</code></pre><h3 id="structured-data-files-data-selection-configuration-example-using-xpath-in-the-valuefield">Structured Data Files data selection configuration example using XPath in the ValueField</h3>
-<pre><code class="lang-json">[
-  {
-    &quot;Selected&quot;: true,
-    &quot;Name&quot;: &quot;Name&quot;,
-    &quot;StreamId&quot;: &quot;StreamId&quot;,
-    &quot;ValueField&quot;: &quot;/bookstore/book/title&quot;,
-    &quot;TimeField&quot;: &quot;bookStoreTimeStamp&quot;,
-    &quot;DataType&quot;: &quot;String&quot;
-  }
-]
 </code></pre><h2 id="rest-urls">REST URLs</h2>
 <table>
 <thead>
@@ -229,17 +218,17 @@
 <tr>
 <td>api/v1/configuration/&lt;ComponentId>/DataSelection</td>
 <td><code>PUT</code></td>
-<td>Configures or updates the data selection configuration. The adapter starts collecting data for each data selection item after the request is received.</td>
+<td>Configures or updates the data selection configuration. The adapter starts collecting data for each data selection item when the following conditions are met:<br><br>&bull; The data selection configuration <code>PUT</code> request is received.<br>&bull; A data source configuration is active.</td>
 </tr>
 <tr>
 <td>api/v1/configuration/&lt;ComponentId>/DataSelection</td>
 <td><code>DELETE</code></td>
-<td>Deletes the active data selection configuration. The adapter stops collecting data for all items included in the configuration.</td>
+<td>Deletes the active data selection configuration. The adapter stops collecting data.</td>
 </tr>
 <tr>
 <td>api/v1/configuration/&lt;ComponentId>/DataSelection</td>
 <td><code>PATCH</code></td>
-<td>Allows partial updates of configured data selection items.<br><strong>Note:</strong> The request must be an array containing one or more data selection items. Each item in the array must include its <strong>StreamId</strong>.</td>
+<td>Allows partial updates of configured data selection items.<br><br><strong>Note:</strong> The request must be an array containing one or more data selection items. Each item in the array must include its <strong>StreamId</strong>.</td>
 </tr>
 <tr>
 <td>api/v1/configuration/&lt;ComponentId>/DataSelection/&lt;StreamId></td>

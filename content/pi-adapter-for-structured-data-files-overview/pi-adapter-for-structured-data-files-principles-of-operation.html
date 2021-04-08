@@ -84,17 +84,11 @@
 <ul>
 <li><strong>Data source</strong>: Provide the data source from which the adapter should collect data.</li>
 <li><strong>Data selection</strong>: Select items for which the adapter should gather data from the files.</li>
-<li><strong>Logging</strong>: Set up the logging attributes to manage the adapter logging behavior.</li>
 </ul>
-<p>For more information, see <a class="xref" href="../configuration/pi-adapter-for-structured-data-files-data-source-configuration.html">PI Adapter for Structured Data Files data source configuration</a>, <a class="xref" href="../configuration/pi-adapter-for-structured-data-files-data-selection-configuration.html">PI Adapter for Structured Data Files data selection configuration</a>, and <a class="xref" href="../main/shared-content/configuration/logging-configuration.html">Logging configuration</a>.</p>
+<p>For more information, see <a class="xref" href="../configuration/pi-adapter-for-structured-data-files-data-source-configuration.html">PI Adapter for Structured Data Files data source configuration</a> and <a class="xref" href="../configuration/pi-adapter-for-structured-data-files-data-selection-configuration.html">PI Adapter for Structured Data Files data selection configuration</a>.</p>
 <h2 id="data-collection">Data collection</h2>
-<p>When the adapter starts, it scans for all files in the input directory that match the configured file name filter. These files are processed in the order of their creation time. As new files are added to the input directory while the adapter is running, the files are processed in the order that they are added. Renaming a file will result in it being moved to the end of the processing queue. After a file has been processed, it will be moved to the output directory.</p>
-<p><strong>Notes:</strong> The following situations could adversely affect data collection:</p>
-<ul>
-<li>Opening a file in the input directory could result in the adapter being unable to open it or move it to the output directory. Therefore, it is recommended that files are not opened after being placed in the input directory.</li>
-<li>If the adapter is unable to move a file to the output directory after processing it, the file will be processed again on an adapter restart unless it is manually removed from the input directory.</li>
-<li>If the input directory is deleted while the adapter is running, the adapter will attempt to resume data collection once the directory is recreated. In some cases, such as when the input directory is deleted and recreated within a short period of time, you may need to restart the adapter for data collection to continue.</li>
-</ul>
+<p>When the adapter starts, it begins scanning for files in the input directory that match the configured file name filter. These files are processed in the order of their creation time starting with the oldest. After a file has been processed, it will be moved to the output directory. If the input directory is empty when scanned by the adapter, the adapter will wait five seconds before rescanning. </p>
+<p><strong>Note:</strong> If the adapter is not able to open a file from the input directory or move a file to the output directory after processing it, new files will not be processed until the problem is resolved. Do not open a file once it has been placed in the input directory as this could prevent the adapter from opening or moving it.</p>
 <h3 id="supported-file-types">Supported file types</h3>
 <p>The adapter supports files that are in CSV, JSON, or XML format. The raw data files can be uncompressed or compressed as a zip, gzip, tar, or tar.gzip files. The files can have UTF-8, ASCII, or Unicode encoding.</p>
 <p><strong>Note:</strong> Compression is only supported at the individual file level. The adapter does not support compressed archives that contain multiple files.</p>
