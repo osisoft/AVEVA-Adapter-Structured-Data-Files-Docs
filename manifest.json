@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/agent/_work/1/s",
+  "source_base_path": "C:/Agent/_work/1/s",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "content/configuration/pi-adapter-for-structured-data-files-data-selection-configuration.html",
-          "hash": "vgON2h/6ylU0mm5JvUFWIg=="
+          "hash": "atMrC5fZ5APSX2ZEJu+5pQ=="
         }
       },
       "is_incremental": false,
@@ -448,7 +448,7 @@
       "output": {
         ".html": {
           "relative_path": "content/main/shared-content/configuration/text-parser/text-parser.html",
-          "hash": "zhfxbbqU24ctlbrTPCiqmA=="
+          "hash": "/G2cTYkWJjx/aLgZsfFygw=="
         }
       },
       "is_incremental": false,
