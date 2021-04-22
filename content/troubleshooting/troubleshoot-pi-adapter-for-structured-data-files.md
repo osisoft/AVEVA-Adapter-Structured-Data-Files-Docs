@@ -12,24 +12,127 @@ Incorrect configurations can interrupt data flow and cause errors in values and 
 
 1. Navigate to [data source configuration](xref:PIAdapterForSDFDataSourceConfiguration) and verify that the value entered for each parameter is correct.
 
-    * **InputDirectory:** The input directory containing structured data files is valid.
-    * **OutputDirectory:** The output directory for processed structured data files is valid.
-    * **FileNameFilter**: The pattern value matches files intended for processing. If the value is intended, the adapter will not process the correct files.
-    * **HasHeader**: If processing CSV files that include a header line, verify that this parameter is set to `true`.
-    * **Culture**: Verify that the intended culture is set.
-    * **TimeZone**: Verify that the intended timezone is set.
-    * **Format**: Verify that the value matches the file type for processing.
-    * **Compression**: If processing files that are compressed, verify that the value is set to correct format.
-    * **Encoding**: Verify that the value is set to the correct encoding.
-    * **FieldSeparator**: If processing CSV files, verify that the correct delineation character is set.
-    * **LineSeparator**: If processing CSV files, verify that the correct character for separating lines is set.<br><br>
+    <!-- Mark Bishop 4/22: Requesting SME assistance on:
+
+    1. Which parameters to check when troubleshooting. We should omit any parameters on this last won't "break" data collection.
+    2. For parameters that will "break" data collection, list how the misconfigured value affects data collection. Examples from Modbus:
+
+        * DeviceId - The referenced device exists in the data source configuration.
+
+            A non-existent or incorrect DeviceId causes the adapter to not find the data source device.
+
+        * UnitId - The correct UnitId number is referenced.
+
+            An incorrect UnitId number can cause the adapter to request data from a different or non-existent device.
+
+    -->
+
+    * **FriendlyName:**
+
+        <!-- SWAG: Omit parameter -->
+
+    * **InputDirectory:**
+
+        <!-- SWAG: The input directory containing structured data files is valid. -->
+
+    * **OutputDirectory:**
+
+        <!-- SWAG: The output directory for processed structured data files is valid. -->
+
+    * **FileNameFilter**:
+
+        <!-- SWAG: The pattern value matches files intended for processing. If the value is intended, the adapter will not process the correct files. -->
+
+    * **HasHeader**:
+
+        <!-- SWAG: If processing CSV files that include a header line, verify that this parameter is set to `true`. -->
+
+    * **Culture**:
+
+        <!-- SWAG: Verify that the intended culture is set. -->
+
+    * **TimeZone**:
+
+        <!-- SWAG: Verify that the intended timezone is set. -->
+
+    * **Format**:
+
+        <!-- SWAG:  Verify that the value matches the file type for processing. -->
+
+    * **Compression**:
+
+        <!-- SWAG: If processing files that are compressed, verify that the value is set to correct format. -->
+
+    * **Encoding**:
+
+        <!-- SWAG: Verify that the value is set to the correct encoding. -->
+
+    * **FieldSeparator**:
+
+        <!-- SWAG: If processing CSV files, verify that the correct delineation character is set. -->
+
+    * **LineSeparator**:
+
+        <!-- SWAG: If processing CSV files, verify that the correct character for separating lines is set. -->
+
+    * **StreamIdPrefix:**
+
+        <!-- SWAG: Omit parameter -->
+
+    * **DefaultStreamIdPattern:**
+
+        <!-- SWAG: Omit parameter -->
+
 
 2. Navigate to [data selection configuration](xref:PIAdapterForSDFDataSelectionConfiguration) and verify that the value entered for each parameter is correct.
 
-    * **ValueField**: The JSONPath, XPath, or CSV expression is valid. With an invalid expression, the adapter cannot extract a data value.
-    * **TimeField**: The JSONPath, XPath, or CSV expression is valid. With an invalid expression, the adapter cannot extract a timestamp.
-    * **DataType**: The correct data type is referenced. An incorrect data type causes data conversion to fail.
-    * **TimeFormat**: The correct time format is referenced. A time format that does not match the value from **TimeField** means that the adapter cannot convert the timestamp.<br/><br/>
+    <!-- Mark Bishop 4/22: Requesting SME assistance on:
+
+    1. Which parameters to check when troubleshooting. We should omit any parameters on this last won't "break" data collection. 
+    2. For parameters that will "break" data collection, list how the misconfigured value affects data collection. Examples from Modbus:
+
+        * DeviceId - The referenced device exists in the data source configuration.
+
+            A non-existent or incorrect DeviceId causes the adapter to not find the data source device.
+
+        * UnitId - The correct UnitId number is referenced.
+
+            An incorrect UnitId number can cause the adapter to request data from a different or non-existent device.
+
+    -->
+
+    * **Name:**
+
+        <!-- SWAG: omit parameter -->
+
+    * **DataFilterId:**
+
+        <!-- SWAG: omit parameter -->
+
+    * **Selected:**
+
+        <!-- SWAG: omit parameter -->
+
+    * **StreamId:**
+
+        <!-- SWAG: omit parameter -->
+
+    * **ValueField**:
+
+        <!-- SWAG: The JSONPath, XPath, or CSV expression is valid. With an invalid expression, the adapter cannot extract a data value. -->
+
+    * **TimeField**:
+
+        <!-- SWAG: The JSONPath, XPath, or CSV expression is valid. With an invalid expression, the adapter cannot extract a timestamp. -->
+
+    * **DataType**:
+
+        <!-- SWAG: The correct data type is referenced. An incorrect data type causes data conversion to fail. -->
+
+    * **TimeFormat**:
+
+        <!-- SWAG: The correct time format is referenced. A time format that does not match the value from **TimeField** means that the adapter cannot convert the timestamp.<br/><br/> -->
+
 
 3. Navigate to [egress endpoints configuration](xref:EgressEndpointsConfiguration) and verify each configured endpoint's **Endpoint** property and credentials are correct.
 
