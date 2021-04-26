@@ -4,7 +4,7 @@ uid: TroubleshootPiAdapterForStructuredDataFiles
 
 # Troubleshoot PI Adapter for Structured Data Files
 
-PI Adapter for Structured Data Files provides troubleshooting features that enable you to verify adapter configuration, confirm connectivity, and view message logs. If you are unable to resolve issues with the adapter or need additional guidance, contact OSIsoft Technical Support through the [OSIsoft Customer Portal](https://my.osisoft.com/).
+If the adapter is not working as expected, you can troubleshoot by viewing message logs and verifying adapter configuration and connectivity. If you are unable to resolve issues with the adapter or need additional guidance, contact OSIsoft Technical Support through the [OSIsoft Customer Portal](https://my.osisoft.com/).
 
 ## Check configurations
 
