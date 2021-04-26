@@ -70,7 +70,7 @@ The following parameters are available for configuring a Structured Data Files d
 | **Encoding** | Optional | `string` | Character encoding used in the input files. <br><br>Allowed value: `UTF8`, `ASCII`, `Unicode`<br>Default value: `UTF8` |
 | **FieldSeparator** | Optional | `string` | Character used to delineate fields in the input files. Only applies to CSV files.<br><br>Default value: `,` |
 | **LineSeparator** | Optional | `string` | Character(s) used to separate lines in the input files. Only applies to CSV files.<br><br>Default value: `\n` |
-| **StreamIdPrefix** | Optional | `string` | The stream ID prefix applied to all data items collected from the data source. <br><br>Default value: `{ComponentId}` |
+| **StreamIdPrefix** | Optional | `string` | The stream ID prefix applied to all data items collected from the data source. <br><br>**Note:** If you change the **StreamIdPrefix** of a configured adapter, for example when you delete and add a data source, you need to restart the adapter for the changes to take place. New streams are created on adapter restart and pre-existing streams are no longer updated.<br><br>Default value: `{ComponentId}` |
 | **DefaultStreamIdPattern** | Optional | `string` | Specifies the default stream ID pattern to use.<br><br>Possible parameters: `{FriendlyName}`, `{ValueField}`<br>Default pattern: `{FriendlyName}.{ValueField}` |
 
 ## Structured Data Files data source examples
