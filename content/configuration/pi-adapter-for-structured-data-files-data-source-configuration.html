@@ -200,7 +200,7 @@
 <td><strong>StreamIdPrefix</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>The stream ID prefix applied to all data items collected from the data source. <br><br>Default value: <code>{ComponentId}</code></td>
+<td>The stream ID prefix applied to all data items collected from the data source. <br><br><strong>Note:</strong> If you change the <strong>StreamIdPrefix</strong> of a configured adapter, for example when you delete and add a data source, you need to restart the adapter for the changes to take place. New streams are created on adapter restart and pre-existing streams are no longer updated.<br><br>Default value: <code>{ComponentId}</code></td>
 </tr>
 <tr>
 <td><strong>DefaultStreamIdPattern</strong></td>

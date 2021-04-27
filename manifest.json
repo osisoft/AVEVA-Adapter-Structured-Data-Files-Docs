@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/agent/_work/1/s",
+  "source_base_path": "C:/Agent/_work/1/s",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "content/configuration/pi-adapter-for-structured-data-files-data-source-configuration.html",
-          "hash": "hSXwHbOuz++oBEskEilGIQ=="
+          "hash": "HiUcTBi5N7fJXcQvwhPYqw=="
         }
       },
       "is_incremental": false,
@@ -820,7 +820,7 @@
       "output": {
         ".html": {
           "relative_path": "content/pi-adapter-for-structured-data-files-overview/pi-adapter-for-structured-data-files-principles-of-operation.html",
-          "hash": "2WtaU6kTEPkk/lLWTTLP3g=="
+          "hash": "8Cg9lV7dBpxPdkcRPqhdrw=="
         }
       },
       "is_incremental": false,
@@ -832,7 +832,7 @@
       "output": {
         ".html": {
           "relative_path": "content/release-notes/release-notes.html",
-          "hash": "LSJLQ/sXCyOhSUtXHDtKwg=="
+          "hash": "wM6ZfL1bCX0Fl3pOfvpM7Q=="
         }
       },
       "is_incremental": false,
