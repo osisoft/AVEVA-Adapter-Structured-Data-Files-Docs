@@ -10,8 +10,6 @@ The adapter's operations focus on data collection and stream creation.
 
 For the adapter to start data collection, you need to configure the adapter by defining the following:
 
-Provide the data source input directory from which the adapter should collect data and an output directory which the adapter copies processed files to
-
 - **Data source**: Provide an input directory that the adapter collects data from. An output directory must also be provided, which is where the adapter moves processed files.
 - **Data selection**: Select items for which the adapter should gather data from the files.
 
