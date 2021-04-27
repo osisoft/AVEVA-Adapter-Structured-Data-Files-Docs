@@ -59,8 +59,8 @@ The following parameters are available for configuring a Structured Data Files d
 | Parameter                     | Required | Type      | Description |
 |-------------------------------|----------|-----------|-------------|
 | **FriendlyName** | Optional | `string` | The label to use for the data source. |
-| **InputDirectory** | Required | `string` | Location of the source files to process. FTP servers are not supported.<br><br>Example: `C:\\InputDirectory` |
-| **OutputDirectory** | Required | `string` | Location for the files to be moved to after being processed. FTP servers are not supported.<br><br>Example: `C:\\OutputDirectory` |
+| **InputDirectory** | Required | `string` | Location of the source files to process. FTP servers are not supported.<br><br>Example: `C:\\InputDirectory`<br><br>**Note:** For the adapter to process data, the adapter service account must have read and write permissions for the input directory. |
+| **OutputDirectory** | Required | `string` | Location for the files to be moved to after being processed. FTP servers are not supported.<br><br>Example: `C:\\OutputDirectory`<br><br>**Note:** For the adapter to process data, the adapter service account must have write permissions for the output directory. |
 | **FileNameFilter** | Optional | `string` | Pattern used to match files in the **InputDirectory** for processing. If no filter is specified, the adapter will attempt to process all files in the **InputDirectory**. Use `*` as the wildcard character.<br><br>Example: `*.csv` |
 | **HasHeader** | Optional | `bool` | Indicates if a header line is present in the file. Only applies to CSV files.<br><br>Default value: `false` |
 | **Culture** | Optional | `string` | Locale setting for the input files.<br><br>Example: `en-US`<br>Default value: local culture |
@@ -70,7 +70,7 @@ The following parameters are available for configuring a Structured Data Files d
 | **Encoding** | Optional | `string` | Character encoding used in the input files. <br><br>Allowed value: `UTF8`, `ASCII`, `Unicode`<br>Default value: `UTF8` |
 | **FieldSeparator** | Optional | `string` | Character used to delineate fields in the input files. Only applies to CSV files.<br><br>Default value: `,` |
 | **LineSeparator** | Optional | `string` | Character(s) used to separate lines in the input files. Only applies to CSV files.<br><br>Default value: `\n` |
-| **StreamIdPrefix** | Optional | `string` | The stream ID prefix applied to all data items collected from the data source. <br><br>Default value: `{ComponentId}` |
+| **StreamIdPrefix** | Optional | `string` | The stream ID prefix applied to all data items collected from the data source. <br><br>**Note:** If you change the **StreamIdPrefix** of a configured adapter, for example when you delete and add a data source, you need to restart the adapter for the changes to take place. New streams are created on adapter restart and pre-existing streams are no longer updated.<br><br>Default value: `{ComponentId}` |
 | **DefaultStreamIdPattern** | Optional | `string` | Specifies the default stream ID pattern to use.<br><br>Possible parameters: `{FriendlyName}`, `{ValueField}`<br>Default pattern: `{FriendlyName}.{ValueField}` |
 
 ## Structured Data Files data source examples
