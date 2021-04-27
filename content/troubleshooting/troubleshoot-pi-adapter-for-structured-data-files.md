@@ -143,7 +143,7 @@ Incorrect configurations can interrupt data flow and cause errors in values and 
 
 Perform the following steps to verify active connections to the data source and egress endpoints.
 
-1. Start PI Web API and verify that the PI point values are  updating or start OCS and verify that the stream values are updating.
+1. Start PI Web API and verify that the PI point values are updating or verify within OCS that the stream values are updating.
 
 2. If configured, use a health endpoint to determine the status of the adapter.
 
