@@ -123,6 +123,7 @@ The following are examples of valid Structured Data Files data source configurat
   "streamIdPrefix": null,
   "defaultStreamIdPattern": "{FriendlyName}.{ValueField}"
 }
+```
 
 ## REST URLs
 
