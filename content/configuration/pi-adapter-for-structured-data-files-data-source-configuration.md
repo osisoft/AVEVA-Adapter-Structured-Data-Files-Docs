@@ -104,7 +104,7 @@ The following are examples of valid Structured Data Files data source configurat
 }
 ```
 
-### Structured Data Files data source configuration #3
+### Structured Data Files data source configuration #3 for Linux
 
 ```json
 { 
@@ -113,14 +113,11 @@ The following are examples of valid Structured Data Files data source configurat
   "fileNameFilter": "*",
   "outputDirectory": "/usr/mnt/OutputDir/",
   "hasHeader": true,
-  "culture": null,
-  "timeZone": null,
   "format": "Csv",
   "compression": "None",
   "encoding": "UTF8",
   "fieldSeparator": ",",
   "lineSeparator": "\n",
-  "streamIdPrefix": null,
   "defaultStreamIdPattern": "{FriendlyName}.{ValueField}"
 }
 ```
