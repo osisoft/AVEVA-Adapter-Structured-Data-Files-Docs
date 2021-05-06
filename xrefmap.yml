@@ -145,6 +145,9 @@ references:
 - uid: TextParser
   name: Text parser
   href: content/main/shared-content/configuration/text-parser/text-parser.html
+- uid: TroubleshootPiAdapterForStructuredDataFiles
+  name: Troubleshoot PI Adapter for Structured Data Files
+  href: content/troubleshooting/troubleshoot-pi-adapter-for-structured-data-files.html
 - uid: TroubleshootTheAdapter
   name: Troubleshoot the adapter
   href: content/main/shared-content/troubleshooting/troubleshoot-the-adapter.html

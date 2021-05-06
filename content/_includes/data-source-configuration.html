@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PI Adapter for Structured Data Files configuration examples </title>
+    <title>Data source configuration with required parameters </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="PI Adapter for Structured Data Files configuration examples ">
+    <meta name="title" content="Data source configuration with required parameters ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -75,126 +75,9 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ConfigurationExamples">
-<h1 id="pi-adapter-for-structured-data-files-configuration-examples">PI Adapter for Structured Data Files configuration examples</h1>
-
-<p>The following JSON samples provide examples for all configurations available for PI Adapter for Structured Data Files.</p>
-<h2 id="system-components-configuration-with-two-structured-data-files-adapter-instances">System components configuration with two Structured Data Files adapter instances</h2>
-<pre><code class="lang-json">[
-  {
-    &quot;ComponentId&quot;: &quot;StructuredDataFiles1&quot;,
-    &quot;ComponentType&quot;: &quot;StructuredDataFiles&quot;
-  },
-  {
-    &quot;ComponentId&quot;: &quot;StructuredDataFiles2&quot;,
-    &quot;ComponentType&quot;: &quot;StructuredDataFiles&quot;
-  },
-  {
-    &quot;ComponentId&quot;: &quot;OmfEgress&quot;,
-    &quot;ComponentType&quot;: &quot;OmfEgress&quot;
-  }
-]
-</code></pre><h2 id="adapter-configuration">Adapter configuration</h2>
-<p>The following example is a complete configuration for the PI Adapter for Structured Data Files.</p>
-<pre><code class="lang-json">{
-  &quot;StructuredDataFiles1&quot;: {
-    &quot;Logging&quot;: {
-      &quot;logLevel&quot;: &quot;Information&quot;,
-      &quot;logFileSizeLimitBytes&quot;: 34636833,
-      &quot;logFileCountLimit&quot;: 31
-    },
-    &quot;DataSource&quot;: {
-      &quot;FriendlyName&quot;: &quot;Weather&quot;,
-      &quot;InputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
-      &quot;FileNameFilter&quot;: &quot;*.csv&quot;,
-      &quot;OutputDirectory&quot;: &quot;C:\\OutputDirectory&quot;,
-      &quot;HasHeader&quot;: true,
-      &quot;Culture&quot;: &quot;fr-FR&quot;,
-      &quot;TimeZone&quot;: &quot;Europe/Paris&quot;,
-      &quot;Compression&quot;: &quot;Zip&quot;,
-      &quot;FieldSeparator&quot;: &quot;|&quot;
-    },
-    &quot;DataSelection&quot;: [
-      {
-        &quot;Selected&quot;: true,
-        &quot;Name&quot;: &quot;Name&quot;,
-        &quot;StreamId&quot;: &quot;StreamId&quot;,
-        &quot;ValueField&quot;: &quot;FanSpeed&quot;,
-        &quot;TimeField&quot;: &quot;FileCreationTime&quot;,
-        &quot;TimeFormat&quot;: &quot;mm/dd/yy&quot;,
-        &quot;DataType&quot;: &quot;Int32&quot;
-      }
-    ]
-  },
-  &quot;System&quot;: {
-    &quot;Logging&quot;: {
-      &quot;logLevel&quot;: &quot;Information&quot;,
-      &quot;logFileSizeLimitBytes&quot;: 34636833,
-      &quot;logFileCountLimit&quot;: 31
-    },
-    &quot;HealthEndpoints&quot;: [],
-    &quot;Diagnostics&quot;: {
-      &quot;enableDiagnostics&quot;: true
-    },
-    &quot;Components&quot;: [
-      {
-        &quot;componentId&quot;: &quot;Egress&quot;,
-        &quot;componentType&quot;: &quot;OmfEgress&quot;
-      },
-      {
-        &quot;componentId&quot;: &quot;StructuredDataFiles1&quot;,
-        &quot;componentType&quot;: &quot;StructuredDataFiles&quot;
-      }
-    ],
-    &quot;Buffering&quot;: {
-      &quot;BufferLocation&quot;: &quot;C:/ProgramData/OSIsoft/Adapters/StructuredDataFiles/Buffers&quot;,
-      &quot;MaxBufferSizeMB&quot;: -1,
-      &quot;EnablePersistentBuffering&quot;: true
-    },
-    &quot;General&quot;: {
-      &quot;enableDiagnostics&quot;: true,
-      &quot;metadataLevel&quot;: &quot;Medium&quot;
-    }
-  },
-  &quot;OmfEgress&quot;: {
-    &quot;Logging&quot;: {
-      &quot;logLevel&quot;: &quot;Information&quot;,
-      &quot;logFileSizeLimitBytes&quot;: 34636833,
-      &quot;logFileCountLimit&quot;: 31
-    },
-    &quot;DataEndpoints&quot;: [
-      {
-        &quot;id&quot;: &quot;WebAPI EndPoint&quot;,
-        &quot;endpoint&quot;: &quot;https://PIWEBAPIServer/piwebapi/omf&quot;,
-        &quot;userName&quot;: &quot;USERNAME&quot;,
-        &quot;password&quot;: &quot;PASSWORD&quot;
-      },
-      {
-        &quot;id&quot;: &quot;OCS Endpoint&quot;,
-        &quot;endpoint&quot;: &quot;https://OCSEndpoint/omf&quot;,
-        &quot;clientId&quot;: &quot;CLIENTID&quot;,
-        &quot;clientSecret&quot;: &quot;CLIENTSECRET&quot;
-      },
-      {
-        &quot;Id&quot;: &quot;EDS&quot;,
-        &quot;Endpoint&quot;: &quot;http://localhost:/api/v1/tenants/default/namespaces/default/omf&quot;,
-        &quot;UserName&quot;: &quot;eds&quot;,
-        &quot;Password&quot;: &quot;eds&quot;
-      }
-    ]
-  },
-  &quot;DataFilters&quot;: [
-    {
-      &quot;id&quot;: &quot;DuplicateData&quot;,
-      &quot;absoluteDeadband&quot;: 0,
-      &quot;percentChange&quot;: null,
-      &quot;expirationPeriod&quot;: &quot;1:00:00&quot;
-    }
-  ]
-}
-</code></pre><h2 id="data-source-configuration">Data source configuration</h2>
-<p>The following are representations of data source configurations for the Structured Data Files adapter.</p>
+            <article class="content wrap" id="_content" data-uid="">
 <h3 id="data-source-configuration-with-required-parameters">Data source configuration with required parameters</h3>
+
 <pre><code class="lang-json">{
   &quot;InputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
   &quot;OutputDirectory&quot;: &quot;C:\\OutputDirectory&quot;
@@ -233,7 +116,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/PI-Adapter-Structured-Data-Files-Docs/blob/main/content/configuration/configuration-examples.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/PI-Adapter-Structured-Data-Files-Docs/blob/main/content/_includes/data-source-configuration.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

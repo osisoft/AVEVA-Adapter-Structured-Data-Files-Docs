@@ -26,11 +26,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "content/_includes/data-source-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/_includes/data-source-configuration.html",
+          "hash": "nTLv93Op0sltHNRVU5Cw5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "content/configuration/configuration-examples.md",
       "output": {
         ".html": {
           "relative_path": "content/configuration/configuration-examples.html",
-          "hash": "VbWehVB2KPAl1UrkkvCCyQ=="
+          "hash": "5L6Tk07aqI8191rDfqvMhA=="
         }
       },
       "is_incremental": false,
@@ -66,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "content/configuration/pi-adapter-for-structured-data-files-data-source-configuration.html",
-          "hash": "HiUcTBi5N7fJXcQvwhPYqw=="
+          "hash": "n1wogWNWX9qjnZ6Xsx6z4Q=="
         }
       },
       "is_incremental": false,
@@ -304,7 +316,7 @@
       "output": {
         ".html": {
           "relative_path": "content/main/shared-content/configuration/discovery-configuration.html",
-          "hash": "LLx457ZHqgiiemWP4BRD2w=="
+          "hash": "giQ/NFdODMfunTIjr+T0zg=="
         }
       },
       "is_incremental": false,
@@ -844,7 +856,19 @@
       "output": {
         ".html": {
           "relative_path": "content/toc.html",
-          "hash": "qRBWZoZ2oYEtn0feVgeE1Q=="
+          "hash": "6oObVYM0FPJjlcqZeGsghg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/troubleshooting/troubleshoot-pi-adapter-for-structured-data-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/troubleshooting/troubleshoot-pi-adapter-for-structured-data-files.html",
+          "hash": "tZ+kNKEiX9zsOmi7Yz8GUw=="
         }
       },
       "is_incremental": false,
@@ -877,7 +901,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 54,
+          "total_file_count": 56,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

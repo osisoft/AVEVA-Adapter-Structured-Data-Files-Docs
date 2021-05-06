@@ -213,12 +213,12 @@
 <h2 id="structured-data-files-data-source-examples">Structured Data Files data source examples</h2>
 <p>The following are examples of valid Structured Data Files data source configurations:</p>
 <p><strong>Note:</strong> When copy and pasting the examples below, validate the <code>InputDirectory</code> and <code>OutputDirectory</code> path for the data source host operating system: Windows or Linux.</p>
-<h3 id="structured-data-files-data-source-configuration-1">Structured Data Files data source configuration #1</h3>
+<h3 id="data-source-configuration-with-required-parameters">Data source configuration with required parameters</h3>
 <pre><code class="lang-json">{
   &quot;InputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
   &quot;OutputDirectory&quot;: &quot;C:\\OutputDirectory&quot;
 }
-</code></pre><h3 id="structured-data-files-data-source-configuration-2">Structured Data Files data source configuration #2</h3>
+</code></pre><h3 id="data-source-configuration-with-optional-parameters-windows">Data source configuration with optional parameters (Windows)</h3>
 <pre><code class="lang-json">{
   &quot;FriendlyName&quot;: &quot;Weather&quot;,
   &quot;InputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
@@ -229,6 +229,20 @@
   &quot;TimeZone&quot;: &quot;Europe/Paris&quot;,
   &quot;Compression&quot;: &quot;Zip&quot;,
   &quot;FieldSeparator&quot;: &quot;|&quot;
+}
+</code></pre><h3 id="data-source-configuration-with-optional-parameters-linux">Data source configuration with optional parameters (Linux)</h3>
+<pre><code class="lang-json">{ 
+  &quot;friendlyName&quot;: &quot;NA-Pumps&quot;,
+  &quot;inputDirectory&quot;: &quot;/usr/mnt/InputDir/&quot;,
+  &quot;fileNameFilter&quot;: &quot;*&quot;,
+  &quot;outputDirectory&quot;: &quot;/usr/mnt/OutputDir/&quot;,
+  &quot;hasHeader&quot;: true,
+  &quot;format&quot;: &quot;Csv&quot;,
+  &quot;compression&quot;: &quot;None&quot;,
+  &quot;encoding&quot;: &quot;UTF8&quot;,
+  &quot;fieldSeparator&quot;: &quot;,&quot;,
+  &quot;lineSeparator&quot;: &quot;\n&quot;,
+  &quot;defaultStreamIdPattern&quot;: &quot;{FriendlyName}.{ValueField}&quot;
 }
 </code></pre><h2 id="rest-urls">REST URLs</h2>
 <table>
