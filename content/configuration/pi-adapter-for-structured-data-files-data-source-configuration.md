@@ -79,48 +79,7 @@ The following are examples of valid Structured Data Files data source configurat
 
 **Note:** When copy and pasting the examples below, validate the `InputDirectory` and `OutputDirectory` path for the data source host operating system: Windows or Linux.
 
-### Structured Data Files data source configuration #1
-
-```json
-{
-  "InputDirectory": "C:\\InputDirectory",
-  "OutputDirectory": "C:\\OutputDirectory"
-}
-```
-
-### Structured Data Files data source configuration #2
-
-```json
-{
-  "FriendlyName": "Weather",
-  "InputDirectory": "C:\\InputDirectory",
-  "FileNameFilter": "*.csv",
-  "OutputDirectory": "C:\\OutputDirectory",
-  "HasHeader": true,
-  "Culture": "fr-FR",
-  "TimeZone": "Europe/Paris",
-  "Compression": "Zip",
-  "FieldSeparator": "|"
-}
-```
-
-### Structured Data Files data source configuration #3 for Linux
-
-```json
-{ 
-  "friendlyName": "NA-Pumps",
-  "inputDirectory": "/usr/mnt/InputDir/",
-  "fileNameFilter": "*",
-  "outputDirectory": "/usr/mnt/OutputDir/",
-  "hasHeader": true,
-  "format": "Csv",
-  "compression": "None",
-  "encoding": "UTF8",
-  "fieldSeparator": ",",
-  "lineSeparator": "\n",
-  "defaultStreamIdPattern": "{FriendlyName}.{ValueField}"
-}
-```
+[!include[Data source configurations](../_includes/data-source-configuration.md)]
 
 ## REST URLs
 
