@@ -104,6 +104,24 @@ The following are examples of valid Structured Data Files data source configurat
 }
 ```
 
+### Structured Data Files data source configuration #3 for Linux
+
+```json
+{ 
+  "friendlyName": "NA-Pumps",
+  "inputDirectory": "/usr/mnt/InputDir/",
+  "fileNameFilter": "*",
+  "outputDirectory": "/usr/mnt/OutputDir/",
+  "hasHeader": true,
+  "format": "Csv",
+  "compression": "None",
+  "encoding": "UTF8",
+  "fieldSeparator": ",",
+  "lineSeparator": "\n",
+  "defaultStreamIdPattern": "{FriendlyName}.{ValueField}"
+}
+```
+
 ## REST URLs
 
 | Relative URL | HTTP verb | Action |
