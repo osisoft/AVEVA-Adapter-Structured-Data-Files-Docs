@@ -1,22 +1,57 @@
-- name: PI Adapter for Structured Data Files overview
-  href: pi-adapter-for-structured-data-files-overview/toc.yml
-  topicHref: index.md
-- name: Installation
-  href: installation/toc.yml
-  topicHref: main/shared-content/installation/installation.md
-- name: Configuration
-  href: configuration/toc.yml
-  topicHref: configuration/configuration.md
-- name: Administration
-  href: main/shared-content/administration/toc.yml
-  topicHref: main/shared-content/administration/administration.md
-- name: Health and diagnostics
-  href: Health-and-diagnostics/toc.yml
-  topicHref: main/shared-content/health/health-and-diagnostics.md
-- name: Troubleshooting
-  href: troubleshooting/toc.yml
-  topicHref: main/shared-content/troubleshooting/troubleshoot-the-adapter.md
-- name: Release notes
-  href: release-notes/release-notes.md
-- name: Technical support and feedback
-  href: main/shared-content/technical-support-and-feedback.md
+- topicUid: PIAdapterforSDFOverview
+  items:
+  - topicUid: PIAdapterforSDFPrinciplesOfOperation
+  - topicUid: TextParser
+    items:
+    - topicUid: JSONPathSyntaxForValueRetrieval
+    - topicUid: XPathAndCSVSyntaxForValueRetrieval
+- topicUid: Installation
+  items:
+  - topicUid: SystemRequirements
+  - topicUid: InstallTheAdapter
+  - topicUid: InstallPIAdapterForSDFUsingDocker
+  - topicUid: UninstallTheAdapter
+- topicUid: StructuredDataFilesConfiguration
+  items:
+  - topicUid: ConfigurationTools
+  - topicUid: SystemComponentsConfiguration
+    items:
+    - topicUid: SystemAndAdapterConfiguration
+  - topicUid: EgressEndpointsConfiguration
+    items:
+    - topicUid: PrepareEgressDestinations
+    - topicUid: ConfigureANetworkProxy
+  - topicUid: GeneralConfiguration
+    items:
+    - topicUid: AdapterMetadata
+  - topicUid: HealthEndpointConfiguration
+  - topicUid: BufferingConfiguration
+  - topicUid: LoggingConfiguration
+  - topicUid: DataFiltersConfiguration
+  - topicUid: PIAdapterForSDFDataSelectionConfiguration
+  - topicUid: PIAdapterForSDFDataSourceConfiguration
+  - topicUid: ConfigurationExamples
+- topicUid: Administration
+  items:
+  - topicUid: StartAndStopAnAdapter
+  - topicUid: StartAndStopIngressComponent
+  - topicUid: RetrieveProductVersionInformation
+  - topicUid: DeleteAnAdapterComponent
+- topicUid: HealthAndDiagnostics
+  items:
+  - topicUid: AdapterHealthForStructuredDataFiles
+    items:
+    - topicUid: DeviceStatusForStructuredDataFiles
+    - topicUid: NextHealthMessageExpectedForStructuredDataFiles
+  - topicUid: AdapterDiagnostics
+    items:
+    - topicUid: System
+    - topicUid: StreamCount
+    - topicUid: IORate
+    - topicUid: ErrorRate
+  - topicUid: EgressDiagnostics
+- topicUid: TroubleshootTheAdapter
+  items: 
+  - topicUid: TroubleshootPiAdapterForStructuredDataFiles
+- topicUid: ReleaseNotes
+- topicUid: TechnicalSupportAndFeedback
