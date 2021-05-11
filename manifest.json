@@ -443,18 +443,6 @@
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "content/main/shared-content/configuration/text-parser/jsonpath/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "content/main/shared-content/configuration/text-parser/jsonpath/toc.html",
-          "hash": "9P9otdxVR+p9WkMCVtTEBg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "content/main/shared-content/configuration/text-parser/text-parser.md",
       "output": {
@@ -556,7 +544,7 @@
       "output": {
         ".html": {
           "relative_path": "content/main/shared-content/health/adapter-health.html",
-          "hash": "VYjAZvq5hHA0o+BldMfrIg=="
+          "hash": "YaIfYCHDUG1mzdj0/jKmVQ=="
         }
       },
       "is_incremental": false,
@@ -568,7 +556,7 @@
       "output": {
         ".html": {
           "relative_path": "content/main/shared-content/health/device-status.html",
-          "hash": "+Lrws4jT04Ynu57utJvY5w=="
+          "hash": "YibgZEO1aO6UD1BxTF/4OQ=="
         }
       },
       "is_incremental": false,
@@ -592,19 +580,7 @@
       "output": {
         ".html": {
           "relative_path": "content/main/shared-content/health/next-health-message-expected.html",
-          "hash": "UYs3ATAZ0y0IDxjLXqoE0Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "content/main/shared-content/health/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "content/main/shared-content/health/toc.html",
-          "hash": "H9NBmOusFSL1Sryu8K7DeQ=="
+          "hash": "QPPUYDdD8DJH9E8fekXjRg=="
         }
       },
       "is_incremental": false,
@@ -856,7 +832,7 @@
       "output": {
         ".html": {
           "relative_path": "content/toc.html",
-          "hash": "6oObVYM0FPJjlcqZeGsghg=="
+          "hash": "xb3n+uS82iCeTlnCIJmGsg=="
         }
       },
       "is_incremental": false,
