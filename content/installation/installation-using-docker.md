@@ -2,7 +2,7 @@
 uid: InstallPIAdapterForSDFUsingDocker
 ---
 
-# Install PI Adapter for Structured Data Files using Docker
+# Installation using Docker
 
 Docker is a set of tools that can be used on Linux to manage application deployments. This topic provides examples of how to create a Docker container with PI Adapter for Structured Data Files.
 
