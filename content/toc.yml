@@ -17,26 +17,26 @@
   - topicUid: SystemComponentsConfiguration
     items:
     - topicUid: SystemAndAdapterConfiguration
+  - topicUid: PIAdapterForSDFDataSourceConfiguration
+  - topicUid: PIAdapterForSDFDataSelectionConfiguration
+  - topicUid: DataFiltersConfiguration
+  - topicUid: GeneralConfiguration
+    items:
+    - topicUid: AdapterMetadata
+  - topicUid: BufferingConfiguration
+  - topicUid: LoggingConfiguration
   - topicUid: EgressEndpointsConfiguration
     items:
     - topicUid: PrepareEgressDestinations
     - topicUid: ConfigureANetworkProxy
-  - topicUid: GeneralConfiguration
-    items:
-    - topicUid: AdapterMetadata
   - topicUid: HealthEndpointConfiguration
-  - topicUid: BufferingConfiguration
-  - topicUid: LoggingConfiguration
-  - topicUid: DataFiltersConfiguration
-  - topicUid: PIAdapterForSDFDataSelectionConfiguration
-  - topicUid: PIAdapterForSDFDataSourceConfiguration
   - topicUid: ConfigurationExamples
 - topicUid: Administration
   items:
   - topicUid: StartAndStopAnAdapter
   - topicUid: StartAndStopIngressComponent
-  - topicUid: RetrieveProductVersionInformation
   - topicUid: DeleteAnAdapterComponent
+  - topicUid: RetrieveProductVersionInformation
 - topicUid: HealthAndDiagnostics
   items:
   - topicUid: AdapterHealthForStructuredDataFiles
@@ -49,7 +49,7 @@
     - topicUid: StreamCount
     - topicUid: IORate
     - topicUid: ErrorRate
-  - topicUid: EgressDiagnostics
+    - topicUid: EgressDiagnostics
 - topicUid: TroubleshootTheAdapter
   items: 
   - topicUid: TroubleshootPiAdapterForStructuredDataFiles

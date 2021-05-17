@@ -2,8 +2,7 @@
 uid: PIAdapterForSDFDataSourceConfiguration
 ---
 
-# PI Adapter for Structured Data Files data source configuration
-
+# Data source
 
 To use the adapter, you must configure it to receive data from a data source.
 
