@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PI Adapter for Structured Data Files data selection configuration </title>
+    <title>Data selection </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="PI Adapter for Structured Data Files data selection configuration ">
+    <meta name="title" content="Data selection ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -76,7 +76,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="PIAdapterForSDFDataSelectionConfiguration">
-<h1 id="pi-adapter-for-structured-data-files-data-selection-configuration">PI Adapter for Structured Data Files data selection configuration</h1>
+<h1 id="data-selection">Data selection</h1>
 
 <p>In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data source.</p>
 <p><strong>Note:</strong> This document uses cURL commands to demonstrate data selection configuration, but other options are available. For more information, see <a class="xref" href="../main/shared-content/configuration/configuration-tools.html">Configuration tools</a>.</p>
@@ -130,7 +130,7 @@
 <td><strong>DataFilterId</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>The identifier of a data filter defined in the <a class="xref" href="../main/shared-content/configuration/data-filters-configuration.html">Data filters configuration</a>. <br>By default, no filter is applied.<br><strong>Note:</strong> If the specified <strong>DataFilterId</strong> does not exist, unfiltered data is sent until that <strong>DataFilterId</strong> is created.</td>
+<td>The identifier of a data filter defined in the <a class="xref" href="../main/shared-content/configuration/data-filters.html">Data filters configuration</a>. <br>By default, no filter is applied.<br><strong>Note:</strong> If the specified <strong>DataFilterId</strong> does not exist, unfiltered data is sent until that <strong>DataFilterId</strong> is created.</td>
 </tr>
 <tr>
 <td><strong>Selected</strong></td>
@@ -142,7 +142,7 @@
 <td><strong>StreamId</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>The custom identifier used to create the streams. If not specified, the adapter generates a default value based on the <strong>DefaultStreamIdPattern</strong> in the <a class="xref" href="pi-adapter-for-structured-data-files-data-source-configuration.html">PI Adapter for Structured Data Files data source configuration</a>.<br>A properly configured custom stream ID follows these rules: <br> Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores <code>__</code> .<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters:<br>/  :  ? #  [  ]  @  !  $  &amp;  &#39;  (  )  \  *  +  ,  ;  =  %  &lt;  >  `</td>
+<td>The custom identifier used to create the streams. If not specified, the adapter generates a default value based on the <strong>DefaultStreamIdPattern</strong> in the <a class="xref" href="data-source.html">PI Adapter for Structured Data Files data source configuration</a>.<br>A properly configured custom stream ID follows these rules: <br> Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores <code>__</code> .<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters:<br>/  :  ? #  [  ]  @  !  $  &amp;  &#39;  (  )  \  *  +  ,  ;  =  %  &lt;  >  `</td>
 </tr>
 <tr>
 <td><strong>ValueField</strong></td>
@@ -251,7 +251,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/PI-Adapter-Structured-Data-Files-Docs/blob/main/content/configuration/pi-adapter-for-structured-data-files-data-selection-configuration.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/PI-Adapter-Structured-Data-Files-Docs/blob/main/content/configuration/data-selection.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
