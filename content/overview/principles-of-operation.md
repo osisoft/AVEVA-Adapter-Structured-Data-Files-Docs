@@ -2,7 +2,7 @@
 uid: PIAdapterforSDFPrinciplesOfOperation
 ---
 
-# PI Adapter for Structured Data Files principles of operation
+# Principles of operation
 
 The adapter's operations focus on data collection and stream creation.
 

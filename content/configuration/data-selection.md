@@ -2,7 +2,7 @@
 uid: PIAdapterForSDFDataSelectionConfiguration
 ---
 
-# PI Adapter for Structured Data Files data selection configuration
+# Data selection
 
 In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data source.
 
