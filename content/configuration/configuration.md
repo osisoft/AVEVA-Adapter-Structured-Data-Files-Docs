@@ -3,7 +3,7 @@ uid: StructuredDataFilesConfiguration
 ---
 # Configuration
 
-Before you can begin using the adapter, you must configure the data source and data selection using the adapter's REST API. <!---I would really like to see the configurations listed in order here, so that I have a road map of what I need to do. You could then indicate which ones are optional and get rid of the some are required and others are optional sentences.--->
+Before you can begin using the adapter, you must configure the data source and data selection using the adapter's REST API. <!--I would really like to see the configurations listed in order here, so that I have a road map of what I need to do. You could then indicate which ones are optional and get rid of the some are required and others are optional sentences.-->
 
 The examples in the configuration topics use cURL, a commonly available tool on both Windows and Linux. You can configure the adapter with any programming language or tool that supports making REST calls or with the EdgeCmd utility. For more information, see the [EdgeCmd utility documentation](https://docs.osisoft.com/bundle/edgecmd/page/index.html).
 
