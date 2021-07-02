@@ -18,6 +18,9 @@
     items:
     - topicUid: SystemAndAdapterConfiguration
   - topicUid: PIAdapterForSDFDataSourceConfiguration
+  - topicUid: DiscoveryConfiguration
+    items:
+    - topicUid: PIAdapterForSDFDataSourceDiscovery
   - topicUid: PIAdapterForSDFDataSelectionConfiguration
   - topicUid: DataFiltersConfiguration
   - topicUid: GeneralConfiguration
