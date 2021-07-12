@@ -23,10 +23,14 @@ When the adapter starts, it begins scanning for files in the input directory tha
 
 * You must assign the following permissions to the adapter service account to successfully process structured data files:
 
-    | Directory        | Read     | Write    |
-    |------------------|:--------:|:--------:|
-    | input directory  | &#x2714; | &#x2714; |
-    | output directory |          | &#x2714; |
+    | Directory        | Read     | Write    | Delete   |
+    |------------------|:--------:|:--------:|:--------:|
+    | input directory  | &#x2714; | &#x2714; | &#x2714; |
+    | output directory | &#x2714; | &#x2714; | &#x2714; |
+
+* Once the adapter's data source has been configured, it will perform verification of the above permissions on the input and output directories. This is accomplished by creating a temporary file, named __testpermissions.txt, in each directory and removing it when permission verificaton is complete. If the permissions set for these directories are incorrect, it is possible for these temporary files to remain in the directories and not be removed, e.g., when a directory does not have the delete permission. These files are safe to remove and can be done so manually.
+
+* If the directory permissions are modified outside of the scope of the adapter, e.g., an automated or manual process updates the directory permissions incorrectly without updating the adapter's data source configuration, then the adapter will have no way of knowing that the directory permissions were modified. The adapter is only aware of changes to the directory permissions during data source configuration. This will cause improper processing of files until correct directory permissions are restored.
 
 * If the adapter is not able to open a file from the input directory or move a file to the output directory after processing it, new files will not be processed until the problem is resolved. Do not open a file once it has been placed in the input directory as this could prevent the adapter from opening or moving it.
 
