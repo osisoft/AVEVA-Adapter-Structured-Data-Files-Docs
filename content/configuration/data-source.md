@@ -71,6 +71,7 @@ The following parameters are available for configuring a Structured Data Files d
 | **LineSeparator** | Optional | `string` | Character(s) used to separate lines in the input files. Only applies to CSV files.<br><br>Default value: `\n` |
 | **StreamIdPrefix** | Optional | `string` | The stream ID prefix applied to all data items collected from the data source. <br><br>**Note:** If you change the **StreamIdPrefix** of a configured adapter, for example when you delete and add a data source, you need to restart the adapter for the changes to take place. New streams are created on adapter restart and pre-existing streams are no longer updated.<br><br>Default value: `{ComponentId}` |
 | **DefaultStreamIdPattern** | Optional | `string` | Specifies the default stream ID pattern to use.<br><br>Possible parameters: `{FriendlyName}`, `{ValueField}`<br>Default pattern: `{FriendlyName}.{ValueField}` |
+| **PurgeDelay** | Optional | `string` | Specifies a time after which processed files will be removed from the output directory to save disk space. | <br><br>Allowed value: A valid time span string (minimum of `0.00:00:00.0000000`) or `null`<br>Default value: `10.00:00:00.0000000`
 
 ## Structured Data Files data source examples
 
