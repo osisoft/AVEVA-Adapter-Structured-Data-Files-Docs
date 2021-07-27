@@ -20,7 +20,8 @@
   "Culture": "fr-FR",
   "TimeZone": "Europe/Paris",
   "Compression": "Zip",
-  "FieldSeparator": "|"
+  "FieldSeparator": "|",
+  "PurgeDelay": "5.04:03:02.0000000"
 }
 ```
 
@@ -38,6 +39,7 @@
   "encoding": "UTF8",
   "fieldSeparator": ",",
   "lineSeparator": "\n",
-  "defaultStreamIdPattern": "{FriendlyName}.{ValueField}"
+  "defaultStreamIdPattern": "{FriendlyName}.{ValueField}",
+  "purgeDelay": "5.04:03:02.0000000"
 }
 ```
