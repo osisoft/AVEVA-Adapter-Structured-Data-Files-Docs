@@ -68,8 +68,9 @@ The query parameter must be specified in the following form:
     "Name": "Name",
     "StreamId": "StreamId",
     "ValueField": "Pressure",
-    "TimeField": "PressureTimeStamp",
-    "DataType": "Int16"
+    "IndexField": "PressureTimeStamp",
+    "IndexFormat": null,
+    "DataType": "int16"
   }
 ]
 ```
