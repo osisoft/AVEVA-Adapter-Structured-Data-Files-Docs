@@ -21,12 +21,15 @@ When the adapter starts, it begins scanning for files in the input directory tha
 
 **Notes:**
 
-* You must assign the following permissions to the adapter service account to successfully process structured data files:
+* You must assign the following permissions to the adapter service account to successfully process structured data files: 
 
-    | Directory        | Read     | Write    |
-    |------------------|:--------:|:--------:|
-    | input directory  | &#x2714; | &#x2714; |
-    | output directory |          | &#x2714; |
+    | Directory        | Read     | Write    | Delete   |
+    |------------------|:--------:|:--------:|:--------:|
+    | input directory  | &#x2714; | &#x2714; | &#x2714; |
+    | output directory | &#x2714; | &#x2714; | &#x2714; |
+    | discovery directory | &#x2714; | &#x2714; | &#x2714; |
+
+* To use discovery, the read, write, and delete permissions must also be assigned to the adapter service account on the discovery directory.
 
 * If the adapter is not able to open a file from the input directory or move a file to the output directory after processing it, new files will not be processed until the problem is resolved. Do not open a file once it has been placed in the input directory as this could prevent the adapter from opening or moving it.
 
