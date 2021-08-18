@@ -46,19 +46,18 @@ The following table lists value data types that the adapter supports for data co
 
 | Value data type | Stream data type |
 |-----------------|------------------|
-| SByte     | `Int16`  |
-| Byte     | `Int16`  |
+| Boolean     | `Boolean`  |
 | Int16     | `Int16`  |
 | UInt16     | `UInt16`  |
 | Int32     | `Int32`  |
 | UInt32     | `UInt32`  |
 | Int64     | `Int64`  |
 | UInt64     | `UInt64`  |
-| Single     | `Single`  |
-| Double     | `Double`  |
-| Decimal     | `Single`  |
-| DateTime     | `DateTime`  |
+| Float16     | `Single`  |
+| Float32     | `Single`  |
+| Float64     | `Double`  |
 | String     | `String`  |
+| Date-Time     | `DateTime`  |
 
 ## Stream creation
 
