@@ -8,14 +8,14 @@ A discovery against the data source of a Structured Data Files adapter allows yo
 
 ## Structured Data Files query string
 
-The string of the **query** parameter may contain none, any, or all string items in the following form: <br>INCLUDEDATATYPE=<DATA_TYPE_1>,<DATA_TYPE_2>;EXCLUDEDATATYPE=<DATA_TYPE_1>,<DATA_TYPE_2>;INCLUDEFIELD=<FIELD_1>,<FIELD_2>;EXCLUDEFIELD=<FIELD_1>,<FIELD_2>;<br><br>
+The string of the **query** parameter may contain none, any, or all string items in the following form: <br>`INCLUDEDATATYPE=<DATA_TYPE_1>,<DATA_TYPE_2>;EXCLUDEDATATYPE=<DATA_TYPE_1>,<DATA_TYPE_2>;INCLUDEFIELD=<FIELD_1>,<FIELD_2>;EXCLUDEFIELD=<FIELD_1>,<FIELD_2>;`<br><br>
 
 | String item      | Required | Description |
 |------------------|----------|-------------|
-| INCLUDEDATATYPE  | Optional | Supported data types to include during discovery. Discovery looks for the specified data types in the file(s) found in the Discovery directory in the Data source configuration. |
-| EXCLUDEDATATYPE  | Optional | Supported data types to exclude during discovery. Discovery ignores the specified data types in the file(s) found in the Discovery directory in the Data source configuration. |
-| INCLUDEFIELD  | Optional | Name of the fields to include during discovery. Discovery looks for the specified fields in the file(s) found in the Discovery directory in the Data source configuration. |
-| EXCLUDEFIELD  | Optional | Name of the fields to exclude during discovery. Discovery ignores the specified fields in the file(s) found in the Discovery directory in the Data source configuration. |
+| `INCLUDEDATATYPE`  | Optional | Supported data types to include during discovery. Discovery looks for the specified data types in the files found in the discovery directory in the data source configuration. |
+| `EXCLUDEDATATYPE`  | Optional | Supported data types to exclude during discovery. Discovery ignores the specified data types in the files found in the discovery directory in the data source configuration. |
+| `INCLUDEFIELD`  | Optional | Name of the fields to include during discovery. Discovery looks for the specified fields in the files found in the discovery directory in the data source configuration. |
+| `EXCLUDEFIELD`  | Optional | Name of the fields to exclude during discovery. Discovery ignores the specified fields in the files found in the discovery directory in the data source configuration. |
 
 ### Query rules
 
@@ -31,7 +31,7 @@ The following rules apply for specifying the query string:
 ## Discovery query example
 
 The query parameter must be specified in the following form:
-<!-- Query string -->
+`INCLUDEDATATYPE=<DATA_TYPE_1>,<DATA_TYPE_2>;EXCLUDEDATATYPE=<DATA_TYPE_1>,<DATA_TYPE_2>;INCLUDEFIELD=<FIELD_1>,<FIELD_2>;EXCLUDEFIELD=<FIELD_1>,<FIELD_2>;`
 
 ### Structured Data Files data source discovery initiation
 
