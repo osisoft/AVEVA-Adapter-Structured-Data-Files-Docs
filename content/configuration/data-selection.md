@@ -55,9 +55,9 @@ Linux: `/opt/OSIsoft/Adapters/StructuredDataFiles/Schemas`
 | **Selected** | Optional | `boolean` | If `true`, data for this item is collected and sent to one or more configured OMF endpoint.<br><br>Allowed value: `true` or `false`<br>Default value: `true` |
 | **StreamId** | Optional | `string` | The custom identifier used to create the streams. If not specified, the adapter generates a default value based on the **DefaultStreamIdPattern** in the [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterForSDFDataSourceConfiguration).<br>A properly configured custom stream ID follows these rules: <br> Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores `__` .<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters:<br>\/  \:  \? \#  \[  \]  \@  \!  \$  \&  \'  \(  \)  \\  \*  \+  \,  \;  \=  \%  \<  \>  \`|
 | **ValueField** | Required | `string` | Name of the value field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (`1` being the first column) should be specified.<br><br> Example: \"FanSpeed\".<br> Allowed Values: Any name to represent the value.|
-| **TimeField** | Required | `string` | Name of the time field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (`1` being the first column) should be specified. If no timestamp is provided in the file, the following reserved values can be used to specify the timestamp:<br> - **FileCreationTime** - UTC time when the file was created. <br> -  **FileModifiedTime** - UTC time when the file was modified.<br> - **AdapterGeneratedTime** - UTC time the file is processed by the adapter.<br><br>Example: \"FanSpeedTimeStamp\"|
-| **DataType** | Required | `string` | Data type of the values specified in the **ValueField** parameter.<br><br>Example: "Int32" <br>Allowed values: SByte, Byte, Int16, UInt16, Int32, UInt32, Int64, UInt64, Single, Double, Decimal, Boolean, DateTime, String |
-| **TimeFormat**| Optional | `string` | Time format of the timestamp specified in the **TimeField** parameter.<br><br>Default value: `null`.<br/>Example: `MM/dd/yyyy H:mm:ss zzz`.<br><br>**Note:** For more examples of time format syntax, see [Date and time processing](xref:TextParser#date-and-time-processing). |
+| **IndexField** | Required | `string` | Name of the time field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (`1` being the first column) should be specified. If no timestamp is provided in the file, the following reserved values can be used to specify the timestamp:<br> - **FileCreationTime** - UTC time when the file was created. <br> -  **FileModifiedTime** - UTC time when the file was modified.<br> - **AdapterGeneratedTime** - UTC time the file is processed by the adapter.<br><br>Example: \"FanSpeedTimeStamp\"|
+| **DataType** | Required | `string` | Data type of the values specified in the **ValueField** parameter.<br><br>Example: "Int32" <br>Allowed values: Boolean, Int16, UInt16, Int32, UInt32, Int64, UInt64, Float16, Float32, Float64, String, Date-Time |
+| **IndexFormat**| Optional | `string` | Time format of the timestamp specified in the **IndexField** parameter.<br><br>Default value: `null`.<br/>Example: `MM/dd/yyyy H:mm:ss zzz`.<br><br>**Note:** For more examples of time format syntax, see [Date and time processing](xref:TextParser#date-and-time-processing). |
 
 <sup>1</sup>**Note**: For full examples of how to enter JSONPath, XPath, or CSV syntax, see the following topics:
 * <xref:JSONPathSyntaxForValueRetrieval>
@@ -67,7 +67,7 @@ Linux: `/opt/OSIsoft/Adapters/StructuredDataFiles/Schemas`
 
 The following are examples of valid Structured Data Files data selection configurations:
 
-### Structured Data Files data selection configuration example with custom TimeFormat
+### Structured Data Files data selection configuration example with custom IndexFormat
 
 ```json
 [
@@ -76,8 +76,8 @@ The following are examples of valid Structured Data Files data selection configu
     "Name": "Name",
     "StreamId": "StreamId",
     "ValueField": "FanSpeed",
-    "TimeField": "FileCreationTime",
-    "TimeFormat": "mm/dd/yy",
+    "IndexField": "FileCreationTime",
+    "IndexFormat": "mm/dd/yy",
     "DataType": "Int32"
   }
 ]
@@ -92,7 +92,7 @@ The following are examples of valid Structured Data Files data selection configu
     "Name": "Name",
     "StreamId": "StreamId",
     "ValueField": "Pressure",
-    "TimeField": "PressureTimeStamp",
+    "IndexField": "PressureTimeStamp",
     "DataType": "Int16"
   }
 ]

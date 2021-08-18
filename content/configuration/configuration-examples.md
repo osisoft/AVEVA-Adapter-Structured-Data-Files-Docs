@@ -54,8 +54,8 @@ The following example is a complete configuration for the PI Adapter for Structu
         "Name": "Name",
         "StreamId": "StreamId",
         "ValueField": "FanSpeed",
-        "TimeField": "FileCreationTime",
-        "TimeFormat": "mm/dd/yy",
+        "IndexField": "FileCreationTime",
+        "IndexFormat": "mm/dd/yy",
         "DataType": "Int32"
       }
     ]
