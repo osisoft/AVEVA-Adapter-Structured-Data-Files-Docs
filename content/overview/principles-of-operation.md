@@ -52,9 +52,8 @@ The following table lists value data types that the adapter supports for data co
 | UInt32     | `UInt32`  |
 | Int64     | `Int64`  |
 | UInt64     | `UInt64`  |
-| Float16     | `Single`  |
-| Float32     | `Single`  |
-| Float64     | `Double`  |
+| Float32     | `Float32`  |
+| Float64     | `Float64`  |
 | String     | `String`  |
 | Date-Time     | `DateTime`  |
 
