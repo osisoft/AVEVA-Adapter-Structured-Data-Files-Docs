@@ -59,24 +59,24 @@ Linux: `/opt/OSIsoft/Adapters/StructuredDataFiles/Schemas`
 | **DataType** | Required | `string` | Data type of the values specified in the **ValueField** parameter.<br><br>Example: "Int32" <br>Allowed values: Boolean, Int16, UInt16, Int32, UInt32, Int64, UInt64, Float32, Float64, String, Date-Time |
 | **IndexFormat**| Optional | `string` | Time format of the timestamp specified in the **IndexField** parameter.<br><br>Default value: `null`.<br/>Example: `MM/dd/yyyy H:mm:ss zzz`.<br><br>**Note:** For more examples of time format syntax, see [Date and time processing](xref:TextParser#date-and-time-processing). |
 
-### <sup>1</sup> Special characters
+### <sup>1</sup> Special characters encoding
 
-Special characters are automatically replaced as follows:
+The adapter encodes special characters used in the **StreamId** parameter string before sending it to configured endpoints. The encoded characters look as follows:
 
-Special character | Replacement character |
----------|----------|
- `*` | empty string |
- `\'` | empty string |
-`` ` `` | empty string |
-`"` | empty string |
- `?` | empty string |
-`;` | `-`|
-`\|` | `-` |
-`\\` | `-` |
-`{` | `(`|
-`}` | `)` |
-`[` | `(`|
-`]` | `)` |
+| Special character | Encoded character |
+|-------------------|-----------------------|
+| `*`               | `%2a`                 |
+| `'`              | `%27`                 |
+| `` ` ``           | `%60`                 |
+| `"`               | `%22`                 |
+| `?`               | `%3f`                 |
+| `;`               | `%3b`                 |
+| `\|`               | `%7c`                 |
+| `\`              | `%5c`                 |
+| `{`               | `%7b`                 |
+| `}`               | `%7d`                 |
+| `[`               | `%5b`                 |
+| `]`               | `%5d`                 |
 
 <sup>2</sup> **Note**: For full examples of how to enter JSONPath, XPath, or CSV syntax, see the following topics:
 * <xref:JSONPathSyntaxForValueRetrieval>

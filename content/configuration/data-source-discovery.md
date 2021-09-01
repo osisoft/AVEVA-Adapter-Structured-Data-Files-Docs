@@ -28,24 +28,24 @@ The following rules apply for specifying the query string:
 
 **Note:** The data source might contain tens of thousands of metrics. Ensure that the query will only return data for the selection items you are interested in.
 
-#### Special characters
+#### Special characters encoding
 
-Special characters used in the **StreamId** parameter of data selection are automatically replaced as follows:
+The adapter encodes special characters used in the **StreamId** parameter string before sending it to configured endpoints. The encoded characters look as follows:
 
-Special character | Replacement character |
----------|----------|
- `*` | empty string |
- `\'` | empty string |
-`` ` `` | empty string |
-`"` | empty string |
- `?` | empty string |
-`;` | `-`|
-`|` | `-` |
-`\\` | `-` |
-`{` | `(`|
-`}` | `)` |
-`[` | `(`|
-`]` | `)` |
+| Special character | Encoded character |
+|-------------------|-----------------------|
+| `*`               | `%2a`                 |
+| `'`              | `%27`                 |
+| `` ` ``           | `%60`                 |
+| `"`               | `%22`                 |
+| `?`               | `%3f`                 |
+| `;`               | `%3b`                 |
+| `\|`               | `%7c`                 |
+| `\`              | `%5c`                 |
+| `{`               | `%7b`                 |
+| `}`               | `%7d`                 |
+| `[`               | `%5b`                 |
+| `]`               | `%5d`                 |
 
 ## Discovery query example
 
