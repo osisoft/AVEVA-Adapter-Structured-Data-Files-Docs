@@ -25,27 +25,9 @@ The following rules apply for specifying the query string:
 - Pairs are separated with a semicolon (`;`).
 - Keys and values are separated with an equals (`=`).
 - Multiple values per key are supported. These values are separated with a comma (`,`).
+- - Special characters are replaced by the text parser. For more information, see [Text parser](xref:TextParser#special-characters-support)
 
 **Note:** The data source might contain tens of thousands of metrics. Ensure that the query will only return data for the selection items you are interested in.
-
-#### Special characters encoding
-
-The adapter encodes special characters used in the **StreamId** parameter string before sending it to configured endpoints. The encoded characters look as follows:
-
-| Special character | Encoded character |
-|-------------------|-----------------------|
-| `*`               | `%2a`                 |
-| `'`              | `%27`                 |
-| `` ` ``           | `%60`                 |
-| `"`               | `%22`                 |
-| `?`               | `%3f`                 |
-| `;`               | `%3b`                 |
-| `\|`               | `%7c`                 |
-| `\`              | `%5c`                 |
-| `{`               | `%7b`                 |
-| `}`               | `%7d`                 |
-| `[`               | `%5b`                 |
-| `]`               | `%5d`                 |
 
 ## Discovery query example
 
