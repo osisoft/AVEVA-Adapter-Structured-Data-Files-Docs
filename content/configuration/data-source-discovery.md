@@ -28,6 +28,25 @@ The following rules apply for specifying the query string:
 
 **Note:** The data source might contain tens of thousands of metrics. Ensure that the query will only return data for the selection items you are interested in.
 
+#### Special characters
+
+Special characters used in the **StreamId** parameter of data selection are automatically replaced as follows:
+
+Special character | Replacement character |
+---------|----------|
+ `*` | empty string |
+ `\'` | empty string |
+`` ` `` | empty string |
+`"` | empty string |
+ `?` | empty string |
+`;` | `-`|
+`|` | `-` |
+`\\` | `-` |
+`{` | `(`|
+`}` | `)` |
+`[` | `(`|
+`]` | `)` |
+
 ## Discovery query example
 
 The query parameter must be specified in the following form:
