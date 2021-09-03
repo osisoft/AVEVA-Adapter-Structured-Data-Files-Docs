@@ -25,7 +25,7 @@ The following rules apply for specifying the query string:
 - Pairs are separated with a semicolon (`;`).
 - Keys and values are separated with an equals (`=`).
 - Multiple values per key are supported. These values are separated with a comma (`,`).
-- - Special characters are replaced by the text parser. For more information, see [Text parser](xref:TextParser#special-characters-support)
+- Special characters are replaced by the text parser. For more information, see [Text parser](xref:TextParser#special-characters-support)
 
 **Note:** The data source might contain tens of thousands of metrics. Ensure that the query will only return data for the selection items you are interested in.
 
