@@ -53,32 +53,13 @@ Linux: `/opt/OSIsoft/Adapters/StructuredDataFiles/Schemas`
 | **Name** | Optional | `string` | The optional friendly name of the data item collected from the data source. If not configured, data endpoints use the **StreamId** value as the **Name**.<br><br>Default value: `null`|
 | **DataFilterId** | Optional | `string` | The identifier of a data filter defined in the [Data filters configuration](xref:DataFiltersConfiguration). <br>By default, no filter is applied.<br>**Note:** If the specified **DataFilterId** does not exist, unfiltered data is sent until that **DataFilterId** is created. |
 | **Selected** | Optional | `boolean` | If `true`, data for this item is collected and sent to one or more configured OMF endpoint.<br><br>Allowed value: `true` or `false`<br>Default value: `true` |
-| **StreamId** | Optional | `string` | The custom identifier used to create the streams. If not specified or `null`, the adapter generates a default value based on the **DefaultStreamIdPattern** in the [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterForSDFDataSourceConfiguration).<br><br>A properly configured custom stream ID follows these rules: <sup>1</sup> <br> Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores `__` .<br>Can contain a maximum of 100 characters.|
-| **ValueField** | Required | `string` | Name of the value field. JSONPath, XPath, and CSV are supported<sup>2</sup>. For CSV files without a header, the column index (`1` being the first column) should be specified.<br><br> Example: \"FanSpeed\".<br> Allowed Values: Any name to represent the value.|
-| **IndexField** | Optional | `string` | Name of the time field. JSONPath, XPath, and CSV are supported<sup>2</sup>. For CSV files without a header, the column index (`1` being the first column) should be specified.<br><br>Default value<br>(also when `null`, empty string, or only whitespace characters): **AdapterGeneratedTime** - UTC time the file is processed by the adapter.<br><br>Allowed values if no timestamp is provided in the file:<br>- **AdapterGeneratedTime** <br>  - **FileCreationTime** - UTC time when the file was created. <br> - **FileModifiedTime** - UTC time when the file was modified.<br> - Any valid JSONPath, XPath, or CSV column number or header<br><br>Example: \"FanSpeedTimeStamp\"|
+| **StreamId** | Optional | `string` | The custom identifier used to create the streams. If not specified or `null`, the adapter generates a default value based on the **DefaultStreamIdPattern** in the [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterForSDFDataSourceConfiguration).<br><br>A properly configured custom stream ID follows these rules:<br> Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores `__` .<br>Can contain a maximum of 100 characters.<br><br>For more information on how the adapter encodes special characters in the **StreamId**, see [Egress endpoints](xref:EgressEndpointsConfiguration#special-characters-encoding).|
+| **ValueField** | Required | `string` | Name of the value field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (`1` being the first column) should be specified.<br><br> Example: \"FanSpeed\".<br> Allowed Values: Any name to represent the value.|
+| **IndexField** | Optional | `string` | Name of the time field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (`1` being the first column) should be specified.<br><br>Default value<br>(also when `null`, empty string, or only whitespace characters): **AdapterGeneratedTime** - UTC time the file is processed by the adapter.<br><br>Allowed values if no timestamp is provided in the file:<br>- **AdapterGeneratedTime** <br>  - **FileCreationTime** - UTC time when the file was created. <br> - **FileModifiedTime** - UTC time when the file was modified.<br> - Any valid JSONPath, XPath, or CSV column number or header<br><br>Example: \"FanSpeedTimeStamp\"|
 | **DataType** | Required | `string` | Data type of the values specified in the **ValueField** parameter.<br><br>Example: "Int32" <br>Allowed values: Boolean, Int16, UInt16, Int32, UInt32, Int64, UInt64, Float32, Float64, String, Date-Time |
 | **IndexFormat**| Optional | `string` | Time format of the timestamp specified in the **IndexField** parameter.<br><br>Default value: `null`.<br/>Example: `MM/dd/yyyy H:mm:ss zzz`.<br><br>**Note:** For more examples of time format syntax, see [Date and time processing](xref:TextParser#date-and-time-processing). |
 
-### <sup>1</sup> Special characters encoding
-
-The adapter encodes special characters used in the **StreamId** parameter string before sending it to configured endpoints. The encoded characters look as follows:
-
-| Special character | Encoded character |
-|-------------------|-----------------------|
-| `*`               | `%2a`                 |
-| `'`              | `%27`                 |
-| `` ` ``           | `%60`                 |
-| `"`               | `%22`                 |
-| `?`               | `%3f`                 |
-| `;`               | `%3b`                 |
-| `\|`               | `%7c`                 |
-| `\`              | `%5c`                 |
-| `{`               | `%7b`                 |
-| `}`               | `%7d`                 |
-| `[`               | `%5b`                 |
-| `]`               | `%5d`                 |
-
-<sup>2</sup> **Note**: For full examples of how to enter JSONPath, XPath, or CSV syntax, see the following topics:
+<sup>1</sup> **Note**: For full examples of how to enter JSONPath, XPath, or CSV syntax, see the following topics:
 * <xref:JSONPathSyntaxForValueRetrieval>
 * <xref:XPathAndCSVSyntaxForValueRetrieval>
 
