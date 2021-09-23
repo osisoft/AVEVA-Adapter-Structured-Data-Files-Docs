@@ -1,10 +1,10 @@
 - topicUid: PIAdapterforSDFOverview
   items:
   - topicUid: PIAdapterforSDFPrinciplesOfOperation
-  - topicUid: TextParser
+  - topicUid: TextParserSDF
     items:
-    - topicUid: JSONPathSyntaxForValueRetrieval
-    - topicUid: XPathAndCSVSyntaxForValueRetrieval
+    - topicUid: JSONPathSyntaxForValueRetrievalSDF
+    - topicUid: XPathAndCSVSyntaxForValueRetrievalSDF
 - topicUid: Installation
   items:
   - topicUid: SystemRequirements
