@@ -47,20 +47,17 @@ The following syntax is used to extract values from JSON documents.
 ]
 ```
 
-The following JSONPath configuration reads a series of values:
+The following data selection item configuration with JSONPath reads a series of values:
 
 ```json
-{
-    "Id": "DoubleValue",
-    "FieldDefinition": "value",
-    "DataType": "Double"
-},
-{
-    "Id": "Timestamp",
-    "FieldDefinition": "time",
-    "DataType": "DateTime",
-    "IsIndex": true
-}
+[
+    {
+        "valueField": "$[*].value",
+        "indexField": "$[*].time",
+        "dataType": "float64",
+        "selected": true
+    }
+]
 ```
 
 ## JSON - Complex JSONPath examples
@@ -134,20 +131,30 @@ The following example reads specific values from a JSON array:
 }
 ```
 
-The following JSONPath configuration reads all the `TPPrototype.uflsample.value_time` values from the JSON above:
+The following data selection item configuration with JSONPath reads all the `TPPrototype.uflsample.value_time` values from the JSON above:
 
 ```json
-{
-    "Id": "Value",
-    "DataType": "Double",
-    "FieldDefinition": "$['StreamData'].['TPPrototype.uflsample.value_time'][*].Value"
-},
-{
-    "Id": "Time",
-    "DataType": "DateTime",
-    "FieldDefinition": "$['StreamData'].['TPPrototype.uflsample.value_time'][*].Timestamp",
-    "IsIndex": true
-}
+[
+    {
+        "valueField": "$['StreamData'].['TPPrototype.uflsample.value_time'][*].Value",
+        "indexField": "$['StreamData'].['TPPrototype.uflsample.value_time'][*].Timestamp",
+        "dataType": "float64",
+        "selected": true
+    }
+]
+```
+
+The following data selection item configuration with JSONPath uses a filter expression to read all the `TPPrototype.uflsample.value_time` values with a value greater than 340 from the JSON above:
+
+```json
+[
+    {
+        "valueField": "$.StreamData.['TPPrototype.uflsample.value_time'][?(@.Value>340)].Value",
+        "indexField": "$.StreamData.['TPPrototype.uflsample.value_time'][?(@.Value>340)].Timestamp",
+        "dataType": "float64",
+        "selected": true
+    }
+]
 ```
 
 The following example reads specific value from complex nested JSON:
@@ -463,20 +470,17 @@ The following example reads specific value from complex nested JSON:
 }
 ```
 
-The following JSONPath configuration reads Sunday Average Indoor Temperature. The timestamp comes from Adapter local time.
+The following data selection item configuration with JSONPath reads Sunday Average Indoor Temperature from the JSON above. The timestamp comes from Adapter local time.
 
 ```json
-{
-    "Id": "Temperature",
-    "DataType": "Double",
-    "FieldDefinition": "$.result.table.series[3].data[2]"
-},
-{
-    "Id": "Timestamp",
-    "DataType": "DateTime",
-    "Format": "Adapter",
-    "IsIndex": true
-}
+[
+    {
+        "valueField": "$.result.table.series[3].data[2]",
+        "indexField": null,
+        "dataType": "float64",
+        "selected": true
+    }
+]
 ```
 
 ## Error handling
