@@ -5,7 +5,7 @@ uid: ReleaseNotes
 # Release notes
 
 PI Adapter for Structured Data Files 0.1.0.106 <br>
-Adapter framework 1.3
+Adapter framework 1.4
 
 ## Overview
 
@@ -21,15 +21,17 @@ On Linux installs, the adapter currently cannot use file shares as an input dire
 
 **Workaround**: Use an external process or script to copy or move the files locally on the machine where the adapter is running.
 
-## System requirements
+## Setup
+
+### System requirements
 
 Refer to [System requirements](xref:SystemRequirements).
 
-## Installation
+### Installation and upgrade
 
 Refer to [Install the adapter](xref:InstallTheAdapter).
 
-## Uninstallation
+### Uninstallation
 
 Refer to [Uninstall the adapter](xref:UninstallTheAdapter).
 
@@ -60,6 +62,10 @@ The following table lists the known vulnerabilities and their mitigation in this
  Component | Version | CVE or Reference | CVSS | Mitigation
  --------- | ------- | -----------------| ------ | ----------
  json.Net | 12.0.3 | [Applications that use Newtonsoft.Json might be exposed to DOS vulnerability](https://alephsecurity.com/vulns/aleph-2018004) | 6.8 | Limit MaxDepth when parsing to 100. No code paths result in json parsing and subsequent serialization directly back to a string.
+
+## Documentation overview
+
+**EdgeCmd utility:** Provides an overview on how to configure and administer PI adapters on Linux and Windows using command line arguments.
 
 ## Technical support and resources
 
