@@ -50,20 +50,105 @@ The following syntaxes are used to extract values from XML or CSV documents.
 </values>
 ```
 
-The following XPath configuration reads a series of values:
+The following data selection item configuration with XPath reads a series of values:
 
 ```json
-{
-    "Id": "DoubleValue",
-    "FieldDefinition": "./values/value/value",
-    "DataType": "Double"
-},
-{
-     "Id": "Timestamp",
-    "FieldDefinition": "./values/value/time",
-    "DataType": "DateTime",
-    "IsIndex": true
-}
+[
+    {
+        "valueField": "./values/value/value",
+        "indexField": "./values/value/time",
+        "dataType": "float64",
+        "selected": true
+    }
+]
+```
+
+### XML - Complex XPath example
+
+```xml
+<sample>
+  <success>true</success>
+  <result>
+    <id>964879</id>
+    <name>Home</name>
+    <latitude>null</latitude>
+    <longitude>null</longitude>
+    <child>
+      <data>
+        <items>
+          <item>
+            <id>1603836</id>
+            <name>Thermostat1</name>
+            <feature>
+              <name>thermostat</name>
+              <temperature>70</temperature>
+              <scale>f</scale>
+              <heat_min>55</heat_min>
+              <heat_max>90</heat_max>
+              <cool_min>60</cool_min>
+              <cool_max>99</cool_max>
+              <datetime>2021-09-06T17:00:00Z</datetime>
+            </feature>
+          </item>
+          <item>
+            <id>1603836</id>
+            <name>Thermostat1</name>
+            <feature>
+              <name>thermostat</name>
+              <temperature>71</temperature>
+              <scale>f</scale>
+              <heat_min>56</heat_min>
+              <heat_max>91</heat_max>
+              <cool_min>59</cool_min>
+              <cool_max>99</cool_max>
+              <datetime>2021-09-06T17:01:00Z</datetime>
+            </feature>
+          </item>
+          <item>
+            <id>1603836</id>
+            <name>Thermostat1</name>
+            <feature>
+              <name>thermostat</name>
+              <temperature>69</temperature>
+              <scale>f</scale>
+              <heat_min>54</heat_min>
+              <heat_max>92</heat_max>
+              <cool_min>58</cool_min>
+              <cool_max>99</cool_max>
+              <datetime>2021-09-06T17:02:00Z</datetime>
+            </feature>
+          </item>
+        </items>
+      </data>
+    </child>
+  </result>
+</sample>
+```
+
+The following data selection item configuration with XPath reads all the `heat_min` values from the XML above:
+
+```json
+[
+    {
+        "valueField": "./sample/result/child/data/items/item/feature/heat_min",
+        "indexField": "./sample/result/child/data/items/item/feature/datetime",
+        "dataType": "float64",
+        "selected": true
+    }
+]
+```
+
+The following data selection item configuration with XPath uses a predicate to read all the `heat_min` values with a value greater than or equal to 55 from the XML above:
+
+```json
+[
+    {
+        "valueField": "./sample/result/child/data/items/item/feature[heat_min>=55]/heat_min",
+        "indexField": "./sample/result/child/data/items/item/feature[heat_min>=55]/datetime",
+        "dataType": "float64",
+        "selected": true
+    }
+]
 ```
 
 ### CSV - Simple CSV column index example
@@ -79,20 +164,17 @@ The following XPath configuration reads a series of values:
 2020-08-10T12:10:53.0928791Z,123456789.0
 ```
 
-The following CSV column index configuration requires the text parser be configured with `HasHeader=false`. The column indexes are 1 based and configured as strings.
+The following data selection item configuration using the CSV column index requires the data source configuration be configured with `HasHeader=false`. The column indexes are 1 based and configured as strings.
 
 ```json
-{
-    "Id": "DoubleValue",
-    "FieldDefinition": "2",
-    "DataType": "Double"
-},
-{
-    "Id": "Timestamp",
-    "FieldDefinition": "1",
-    "DataType": "DateTime",
-    "IsIndex": true
-}
+[
+    {
+        "valueField": "2",
+        "indexField": "1",
+        "dataType": "float64",
+        "selected": true
+    }
+]
 ```
 
 ### CSV - Simple CSV column header example
@@ -109,18 +191,15 @@ Date,Value
 2020-08-10T12:10:53.0928791Z,123456789.0
 ```
 
-The following CSV column header configuration requires the text parser be configured with `HasHeader=true`.
+The following data selection item configuration using the CSV column header requires the data source configuration be configured with `HasHeader=true`.
 
 ```json
-{
-    "Id": "DoubleValue",
-    "FieldDefinition": "Value",
-    "DataType": "Double"
-},
-{
-    "Id": "Timestamp",
-    "FieldDefinition": "Date",
-    "DataType": "DateTime",
-    "IsIndex": true
-}
+[
+    {
+        "valueField": "Value",
+        "indexField": "Date",
+        "dataType": "float64",
+        "selected": true
+    }
+]
 ```
