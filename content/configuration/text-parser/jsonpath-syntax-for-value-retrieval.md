@@ -157,6 +157,73 @@ The following data selection item configuration with JSONPath uses a filter expr
 ]
 ```
 
+The following example reads specific values from a JSON array:
+
+```json
+{
+    "powerDateValuesList": {
+        "timeUnit": "QUARTER_OF_AN_HOUR",
+        "unit": "Wh",
+        "count": 1,
+        "siteEnergyList": [
+            {
+                "siteId": 1338075,
+                "powerDataValueSeries": {
+                    "measuredBy": "METER",
+                    "values": [
+                        {
+                            "date": "2021-09-23 06:00:00",
+                            "value": 0.0
+                        },
+                        {
+                            "date": "2021-09-23 06:15:00",
+                            "value": 0.0
+                        },
+                        {
+                            "date": "2021-09-23 06:30:00",
+                            "value": null
+                        },
+                        {
+                            "date": "2021-09-23 06:45:00",
+                            "value": null
+                        },
+                        {
+                            "date": "2021-09-23 07:00:00",
+                            "value": 35.29568
+                        },
+                        {
+                            "date": "2021-09-23 07:15:00",
+                            "value": 280.98932
+                        },
+                        {
+                            "date": "2021-09-23 07:30:00",
+                            "value": 541.07477
+                        },
+                        {
+                            "date": "2021-09-23 07:45:00",
+                            "value": 508.92096
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+```
+
+The following data selection item configuration with JSONPath uses a filter expression to read all values that are not null from the JSON above:
+
+```json
+[
+    {
+        "valueField": "$..siteEnergyList[0].powerDataValueSeries.values[?(@.value!=null)].value",
+        "indexField": "$..siteEnergyList[0].powerDataValueSeries.values[?(@.value!=null)].date",
+        "dataType": "float64",
+        "selected": true
+    }
+]
+```
+
 The following example reads specific value from complex nested JSON:
 
 ```json
