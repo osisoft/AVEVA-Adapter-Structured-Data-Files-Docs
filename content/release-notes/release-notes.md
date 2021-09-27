@@ -61,7 +61,7 @@ The following table lists the known vulnerabilities and their mitigation in this
 
  Component | Version | CVE or Reference | CVSS | Mitigation
  --------- | ------- | -----------------| ------ | ----------
- json.Net | 12.0.3 | [Applications that use Newtonsoft.Json might be exposed to DOS vulnerability](https://alephsecurity.com/vulns/aleph-2018004) | 6.8 | Limit MaxDepth when parsing to 100. No code paths result in json parsing and subsequent serialization directly back to a string.
+ json.Net | 13.01 | [Applications that use Newtonsoft.Json might be exposed to DOS vulnerability](https://alephsecurity.com/vulns/aleph-2018004) | 6.8 | Limit MaxDepth when parsing to 64. No code paths result in json parsing and subsequent serialization directly back to a string.
 
 ## Documentation overview
 
