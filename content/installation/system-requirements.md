@@ -14,3 +14,5 @@ PI Adapter for Structured Data Files is supported on a variety of platforms and 
 | Debian 10 <br>Ubuntu 18.04, 20.04 | ARM64 | `SDF_linux-arm64.deb`  | Arm 64-bit processors |
 
 Alternatively, you can use tar.gz files with binaries to build your own custom installers for containers on Linux. For more information on installation of the PI Adapter for Structured Data Files with a Docker container, see [Install PI Adapter for Structured Data Files using Docker](xref:InstallPIAdapterForSDFUsingDocker).
+
+`Note:` Larger file sizes will require more system memory. For example a 250MB CSV file requires 8 GB of System Memory.
