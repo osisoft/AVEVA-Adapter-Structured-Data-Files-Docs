@@ -4,7 +4,7 @@ uid: ReleaseNotes
 
 # Release notes
 
-PI Adapter for Structured Data Files 0.1.0.106 <br>
+PI Adapter for Structured Data Files 1.0.0.120 <br>
 Adapter framework 1.4
 
 ## Overview
