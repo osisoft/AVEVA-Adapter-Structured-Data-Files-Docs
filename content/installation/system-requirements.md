@@ -15,4 +15,4 @@ PI Adapter for Structured Data Files is supported on a variety of platforms and 
 
 Alternatively, you can use tar.gz files with binaries to build your own custom installers for containers on Linux. For more information on installation of the PI Adapter for Structured Data Files with a Docker container, see [Install PI Adapter for Structured Data Files using Docker](xref:InstallPIAdapterForSDFUsingDocker).
 
-**Note:** Larger file sizes will require more system memory, where large is defined as any file exceeding 100MB.
+**Note:** Any file exceeding 100MB requires more system memory.
