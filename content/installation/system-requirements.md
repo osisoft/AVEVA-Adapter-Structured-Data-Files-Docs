@@ -16,3 +16,7 @@ PI Adapter for Structured Data Files is supported on a variety of platforms and 
 Alternatively, you can use tar.gz files with binaries to build your own custom installers for containers on Linux. For more information on installation of the PI Adapter for Structured Data Files with a Docker container, see [Install PI Adapter for Structured Data Files using Docker](xref:InstallPIAdapterForSDFUsingDocker).
 
 **Note:** Any file exceeding 100MB requires more system memory.
+
+## PI Web API compatibility
+
+This version of PI Adapter for OPC UA is compatible with PI Web API 2021 and later.
