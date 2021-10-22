@@ -72,13 +72,13 @@ The following are examples of valid Structured Data Files data selection configu
 ```json
 [
   {
-    "Selected": true,
+    "Selected": false,
     "Name": "Name",
     "StreamId": "StreamId",
-    "ValueField": "FanSpeed",
-    "IndexField": "FileCreationTime",
+    "ValueField": "Pressure",
+    "IndexField": "PressureTimeStamp",
     "IndexFormat": "mm/dd/yy",
-    "DataType": "Int32"
+    "DataType": "Int16"
   }
 ]
 ```
@@ -88,12 +88,12 @@ The following are examples of valid Structured Data Files data selection configu
 ```json
 [
   {
-    "Selected": false,
+    "Selected": true,
     "Name": "Name",
     "StreamId": "StreamId",
-    "ValueField": "Pressure",
-    "IndexField": "PressureTimeStamp",
-    "DataType": "Int16"
+    "ValueField": "FanSpeed",
+    "IndexField": "FileCreationTime",
+    "DataType": "Int32"
   }
 ]
 ```
