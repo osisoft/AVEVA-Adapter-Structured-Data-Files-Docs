@@ -19,4 +19,4 @@ Alternatively, you can use tar.gz files with binaries to build your own custom i
 
 ## PI Web API compatibility
 
-This version of PI Adapter for OPC UA is compatible with PI Web API 2021 and later.
+This version of PI Adapter for Structured Data Files compatible with PI Web API 2021 and later.
