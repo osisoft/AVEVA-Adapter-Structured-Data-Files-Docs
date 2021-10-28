@@ -13,7 +13,7 @@ For more information on PI Adapter configuration tools, see [Configuration tools
 
 ## Quick Start
 
-This Quick Start guides you through setup of each configuration file available for the PI Adapter for Structured Data Files. As you complete each step, perform each **Required** configuration to establish a data flow from a data source to one or more endpoints. Some configurations are optional.
+This Quick Start guides you through setup of each configuration file available for the PI Adapter for Structured Data Files. As you complete each step, perform each configuration to establish a data flow from a data source to one or more endpoints. Some configurations are optional.
 
 **Important:** If you want to complete the optional configurations in each step below, complete those tasks _before_ the required tasks.
 
