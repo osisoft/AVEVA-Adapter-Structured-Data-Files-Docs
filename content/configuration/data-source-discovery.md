@@ -4,7 +4,7 @@ uid: PIAdapterForSDFDataSourceDiscovery
 
 # Data source discovery
 
-A discovery against the data source of a Structured Data Files adapter allows you to specify the optional **query** parameter. The query discovers the contents of the data source and narrows down the scope of the discovery. You can add the discovered items to the data selection.
+A discovery against the data source of a Structured Data Files adapter allows you to specify the optional **query** parameter. The query discovers the contents of the data source and narrows the scope of the discovery. You can add the discovered items to the data selection.
 
 ## Structured Data Files query string
 
