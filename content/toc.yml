@@ -14,7 +14,7 @@
 - topicUid: StructuredDataFilesConfiguration
   items:
   - topicUid: ConfigurationTools
-  - topicUid: SystemComponentsConfiguration
+  - topicUid: PIAdapterForSDFSystemComponentsConfiguration
     items:
     - topicUid: SystemAndAdapterConfiguration
   - topicUid: PIAdapterForSDFDataSourceConfiguration
