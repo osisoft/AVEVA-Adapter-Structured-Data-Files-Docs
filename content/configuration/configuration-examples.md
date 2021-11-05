@@ -108,12 +108,6 @@ The following example is a complete configuration for the PI Adapter for Structu
         "endpoint": "https://OCSEndpoint/omf",
         "clientId": "CLIENTID",
         "clientSecret": "CLIENTSECRET"
-      },
-      {
-        "Id": "EDS",
-        "Endpoint": "http://localhost:/api/v1/tenants/default/namespaces/default/omf",
-        "UserName": "eds",
-        "Password": "eds"
       }
     ]
   },
