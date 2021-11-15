@@ -55,7 +55,7 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 
     **Note:** `Dockerfile` is the required name of the file. Use the variation according to your operating system.
 
-    ### ARM32
+    **ARM32**
 
     ```dockerfile
     FROM ubuntu
@@ -67,7 +67,7 @@ Docker is a set of tools that can be used on Linux to manage application deploym
     ENTRYPOINT ["/sdfdockerstart.sh"]
     ```
     
-    ### ARM64
+    **ARM64**
 
     ```dockerfile
     FROM ubuntu
@@ -79,7 +79,7 @@ Docker is a set of tools that can be used on Linux to manage application deploym
     ENTRYPOINT ["/sdfdockerstart.sh"]
     ```
 
-    ### AMD64 (x64)
+    **AMD64 (x64)**
 
     ```dockerfile
     FROM ubuntu
@@ -108,6 +108,7 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 Complete the following steps to run the container:
 
 1. Use the docker container image `sdfadapter` that you created previously.
+
 2. Type the following command line (you may need to use the `sudo` command):
 
     ```bash
