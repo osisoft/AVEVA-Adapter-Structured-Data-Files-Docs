@@ -2,8 +2,8 @@
 
 ```json
 {
-  "InputDirectory": "C:\\InputDirectory",
-  "OutputDirectory": "C:\\OutputDirectory"
+  "inputDirectory": "C:\\InputDirectory",
+  "outputDirectory": "C:\\OutputDirectory"
 }
 
 ```
@@ -12,16 +12,16 @@
 
 ```json
 {
-  "FriendlyName": "Weather",
-  "InputDirectory": "C:\\InputDirectory",
-  "FileNameFilter": "*.csv",
-  "OutputDirectory": "C:\\OutputDirectory",
-  "HasHeader": true,
-  "Culture": "fr-FR",
-  "TimeZone": "Europe/Paris",
-  "Compression": "Zip",
-  "FieldSeparator": "|",
-  "PurgeDelay": "5.04:03:02.0000000"
+  "friendlyName": "Weather",
+  "inputDirectory": "C:\\InputDirectory",
+  "fileNameFilter": "*.csv",
+  "outputDirectory": "C:\\OutputDirectory",
+  "hasHeader": true,
+  "culture": "fr-FR",
+  "timeZone": "Europe/Paris",
+  "compression": "Zip",
+  "fieldSeparator": "|",
+  "purgeDelay": "5.04:03:02.0000000"
 }
 ```
 
