@@ -60,8 +60,8 @@ Linux: `/opt/OSIsoft/Adapters/StructuredDataFiles/Schemas`
 | **IndexFormat**| Optional | `string` | Time format of the timestamp specified in the **IndexField** parameter. When **IndexField** is `null`, **IndexFormat** is passed as `Adapter`.<br><br>Default value: `null`.<br/>Example: `MM/dd/yyyy H:mm:ss zzz`.<br><br>**Note:** For more examples of time format syntax, see [Date and time processing](xref:TextParser#date-and-time-processing). |
 
 <sup>1</sup> **Note**: For full examples of how to enter JSONPath, XPath, or CSV syntax, see the following topics:
-* <xref:JSONPathSyntaxForValueRetrieval>
-* <xref:XPathAndCSVSyntaxForValueRetrieval>
+* <xref:JSONPathSyntaxForValueRetrievalSDF>
+* <xref:XPathAndCSVSyntaxForValueRetrievalSDF>
 
 ## Structured Data Files data selection examples
 
