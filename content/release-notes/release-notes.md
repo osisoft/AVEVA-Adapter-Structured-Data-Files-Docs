@@ -5,7 +5,7 @@ uid: ReleaseNotes
 # Release notes
 
 [!include[product-name](../main/shared-content/_includes/inline/product-name.md)] [!include[product-version](../main/shared-content/_includes/inline/product-version.md)]<br>
-[!include[framework-version](../main/shared-content/_includes/inline/framework-version.md)]
+Adapter framework [!include[framework-version](../main/shared-content/_includes/inline/framework-version.md)]
 
 ## Overview
 
