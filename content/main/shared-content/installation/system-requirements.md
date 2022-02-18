@@ -14,3 +14,9 @@ uid: SystemRequirements
 | Debian 10<br>Ubuntu 20.04 | ARM64 | <code>[!include[installer](../_includes/inline/installer-name.md)]-arm64_.deb</code>  | ARM 64-bit processors |
 
 Alternatively, you can use tar.gz files with binaries to build your own custom installers or containers for Linux. For more information on installing the adapter with Docker containers, see <xref:InstallUsingDocker>.
+
+**Note:** Any file exceeding 100MB requires more system memory.
+
+## PI Web API compatibility
+
+This version of PI Adapter for Structured Data Files compatible with PI Web API 2021 and later.
