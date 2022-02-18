@@ -1,1 +1,1 @@
-<Componenent Type>
+StructuredDataFiles1

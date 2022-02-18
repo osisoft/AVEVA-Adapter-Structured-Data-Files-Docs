@@ -1,1 +1,1 @@
-<Component ID>
+StructuredDataFiles1
