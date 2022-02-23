@@ -9,7 +9,7 @@ Adapter framework [!include[framework-version](../main/shared-content/_includes/
 
 ## Overview
 
-This represents the initial release for PI Adapter for Structured Data Files. This product collects time series data from source files in a local or remote directory to OMF endpoints in OSIsoft Cloud Services or PI Servers. PI Adapter for Structured Data Files can also collect health and diagnostics information. It supports buffering, static and event data collection, and various Windows and Linux-based operating systems as well as containerization.
+This represents the initial release for PI Adapter for Structured Data Files. This product collects time series data from source files in a local or remote directory to OSIsoft Message Format (OMF) endpoints in OSIsoft Cloud Services or PI Servers. PI Adapter for Structured Data Files can also collect health and diagnostics information. It supports buffering, static and event data collection, and various Windows and Linux-based operating systems as well as containerization.
 
 **Note:** FTP servers are not supported for this version.
 
