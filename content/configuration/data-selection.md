@@ -54,15 +54,17 @@ Linux: `/opt/OSIsoft/Adapters/StructuredDataFiles/Schemas`
 | **DataFilterId** | Optional | `string` | The identifier of a data filter defined in the [Data filters configuration](xref:DataFiltersConfiguration). <br>By default, no filter is applied.<br>**Note:** If the specified **DataFilterId** does not exist, unfiltered data is sent until that **DataFilterId** is created. |
 | **Selected** | Optional | `boolean` | If `true`, data for this item is collected and sent to one or more configured OMF endpoint.<br><br>Allowed value: `true` or `false`<br>Default value: `true` |
 | **StreamId** | Optional | `string` | The custom identifier used to create the streams. If not specified or `null`, the adapter generates a default value based on the **DefaultStreamIdPattern** in the [PI Adapter for Structured Data Files data source configuration](xref:PIAdapterForSDFDataSourceConfiguration).<br><br>A properly configured custom stream ID follows these rules:<br> Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores `__` .<br>Can contain a maximum of 100 characters.<br><br>For more information on how the adapter encodes special characters in the **StreamId**, see [Egress endpoints](xref:EgressEndpointsConfiguration#special-characters-encoding).|
-| **ValueField** | Required | `string` | Name of the value field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (`1` being the first column) should be specified.<br><br> Example: \"FanSpeed\".<br> Allowed Values: Any name to represent the value.|
+| **ValueField** | Required<sup>2</sup> | `string` | Name of the value field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (`1` being the first column) should be specified.<br><br> Example: \"FanSpeed\".<br> Allowed Values: Any name to represent the value.|
 | **IndexField** | Optional | `string` | Name of the time field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (`1` being the first column) should be specified.<br><br>Default value (also when empty string, or only whitespace characters):<br> `null` - UTC time the file is processed by the adapter.<br><br>Allowed values if no timestamp is provided in the file:<br>- `null` <br>  - `FileCreationTime` - UTC time when the file was created. <br> - `FileModifiedTime` - UTC time when the file was modified.<br> - Any valid JSONPath, XPath, or CSV column number or header<br><br>Example: \"FanSpeedTimeStamp\"|
 | **DataType** | Required | `string` | Data type of the values specified in the **ValueField** parameter.<br><br>Example: "Int32" <br>Allowed values: Boolean, Int16, UInt16, Int32, UInt32, Int64, UInt64, Float32, Float64, String, Date-Time |
-| **DataFields** | Required | `string` | < need to add content > |
 | **IndexFormat**| Optional | `string` | Time format of the timestamp specified in the **IndexField** parameter. When **IndexField** is `null`, **IndexFormat** is passed as `Adapter`.<br><br>Default value: `null`.<br/>Example: `MM/dd/yyyy H:mm:ss zzz`.<br><br>**Note:** For more examples of time format syntax, see [Date and time processing](xref:TextParser#date-and-time-processing). |
+| **DataFields** | Required<sup>2</sup> | dictionary<string, string> | A dictionary of values with key-value pairs. The keys are specific fields for a complex type and the values are a JSONPath, XPath, or CSV to the value field<sup>1</sup>. For CSV files without a header, the column index (`1` being the first column) should be specified <br><br>Allowed keys: `Latitude`, `Longitude`, `x`, `y`, `z`<br>Default value: `null` |
 
 <sup>1</sup> **Note**: For full examples of how to enter JSONPath, XPath, or CSV syntax, see the following topics:
 * <xref:JSONPathSyntaxForValueRetrievalSDF>
 * <xref:XPathAndCSVSyntaxForValueRetrievalSDF>
+
+<sup>2</sup> **ValueField** and **DataFields** are mutually exclusive. For example, if you specify **ValueField**, you cannot specify **DataFields** and vice versa.
 
 ## Structured Data Files data selection examples
 
@@ -73,7 +75,7 @@ The following are examples of valid Structured Data Files data selection configu
 ```json
 [
   {
-    "Selected": false,
+    "Selected": true,
     "Name": "Name",
     "StreamId": "StreamId",
     "ValueField": "Pressure",
@@ -84,12 +86,54 @@ The following are examples of valid Structured Data Files data selection configu
 ]
 ```
 
-### Structured Data Files data selection configuration example with unselected item
+### Structured Data Files data selection configuration example with complex data
+
+Example complex data (CSV file with header):
+
+```csv
+timestamp, lat, long, x_col, y_col, z_col
+2021-09-12, 15.294533, 20.479839, 1.1, 2.2, 3.3
+2021-09-12, 36.33403, -82.4019478, 4.1, 5.2, 6.3
+```
+
+Example data selection configuration for complex data
 
 ```json
 [
   {
     "Selected": true,
+    "Name": "Name_XYZ",
+    "StreamId": "StreamId_XYZ",
+    "ValueField": null,
+	"DataFields": {
+		"X": "x_col",
+		"Y": "y_col",
+		"Z": "z_col"
+	},
+    "IndexField": "timestamp",
+    "DataType": "Float64"
+  },
+  {
+    "Selected": true,
+    "Name": "Name_LatLong",
+    "StreamId": "StreamId_LatLong",
+    "ValueField": null,
+	"DataFields": {
+		"Latitude": "lat",
+		"Longitude": "long"
+	},
+    "IndexField": "timestamp",
+    "DataType": "Float64"
+  }
+]
+```
+
+### Structured Data Files data selection configuration example with unselected item
+
+```json
+[
+  {
+    "Selected": false,
     "Name": "Name",
     "StreamId": "StreamId",
     "ValueField": "FanSpeed",
