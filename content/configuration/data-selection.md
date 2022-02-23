@@ -72,7 +72,7 @@ The following are examples of valid Structured Data Files data selection configu
 ```json
 [
   {
-    "Selected": false,
+    "Selected": true,
     "Name": "Name",
     "StreamId": "StreamId",
     "ValueField": "Pressure",
@@ -88,7 +88,7 @@ The following are examples of valid Structured Data Files data selection configu
 ```json
 [
   {
-    "Selected": true,
+    "Selected": false,
     "Name": "Name",
     "StreamId": "StreamId",
     "ValueField": "FanSpeed",
