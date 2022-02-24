@@ -9,7 +9,7 @@
   items:
   - topicUid: SystemRequirements
   - topicUid: InstallTheAdapter
-  - topicUid: InstallPIAdapterForSDFUsingDocker
+  - topicUid: InstallUsingDocker
   - topicUid: UninstallTheAdapter
 - topicUid: StructuredDataFilesConfiguration
   items:
