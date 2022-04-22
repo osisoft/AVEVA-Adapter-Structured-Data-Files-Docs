@@ -13,6 +13,7 @@
   - topicUid: UninstallTheAdapter
 - topicUid: StructuredDataFilesConfiguration
   items:
+  - topicUid: PIAdapterForStructuredDataFilesSecurity
   - topicUid: ConfigurationTools
   - topicUid: PIAdapterForSDFSystemComponentsConfiguration
     items:
