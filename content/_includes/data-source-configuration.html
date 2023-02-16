@@ -8,7 +8,7 @@
     <title>Data source configuration with required parameters </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Data source configuration with required parameters ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -79,20 +79,21 @@
 <h3 id="data-source-configuration-with-required-parameters">Data source configuration with required parameters</h3>
 
 <pre><code class="lang-json">{
-  &quot;InputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
-  &quot;OutputDirectory&quot;: &quot;C:\\OutputDirectory&quot;
+  &quot;inputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
+  &quot;outputDirectory&quot;: &quot;C:\\OutputDirectory&quot;
 }
 </code></pre><h3 id="data-source-configuration-with-optional-parameters-windows">Data source configuration with optional parameters (Windows)</h3>
 <pre><code class="lang-json">{
-  &quot;FriendlyName&quot;: &quot;Weather&quot;,
-  &quot;InputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
-  &quot;FileNameFilter&quot;: &quot;*.csv&quot;,
-  &quot;OutputDirectory&quot;: &quot;C:\\OutputDirectory&quot;,
-  &quot;HasHeader&quot;: true,
-  &quot;Culture&quot;: &quot;fr-FR&quot;,
-  &quot;TimeZone&quot;: &quot;Europe/Paris&quot;,
-  &quot;Compression&quot;: &quot;Zip&quot;,
-  &quot;FieldSeparator&quot;: &quot;|&quot;
+  &quot;friendlyName&quot;: &quot;Weather&quot;,
+  &quot;inputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
+  &quot;fileNameFilter&quot;: &quot;*.csv&quot;,
+  &quot;outputDirectory&quot;: &quot;C:\\OutputDirectory&quot;,
+  &quot;hasHeader&quot;: true,
+  &quot;culture&quot;: &quot;fr-FR&quot;,
+  &quot;timeZone&quot;: &quot;Europe/Paris&quot;,
+  &quot;compression&quot;: &quot;Zip&quot;,
+  &quot;fieldSeparator&quot;: &quot;|&quot;,
+  &quot;purgeDelay&quot;: &quot;5.04:03:02.0000000&quot;
 }
 </code></pre><h3 id="data-source-configuration-with-optional-parameters-linux">Data source configuration with optional parameters (Linux)</h3>
 <pre><code class="lang-json">{ 
@@ -106,7 +107,8 @@
   &quot;encoding&quot;: &quot;UTF8&quot;,
   &quot;fieldSeparator&quot;: &quot;,&quot;,
   &quot;lineSeparator&quot;: &quot;\n&quot;,
-  &quot;defaultStreamIdPattern&quot;: &quot;{FriendlyName}.{ValueField}&quot;
+  &quot;defaultStreamIdPattern&quot;: &quot;{FriendlyName}.{ValueField}&quot;,
+  &quot;purgeDelay&quot;: &quot;5.04:03:02.0000000&quot;
 }
 </code></pre></article>
           </div>

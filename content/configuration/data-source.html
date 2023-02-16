@@ -8,7 +8,7 @@
     <title>Data source </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Data source ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -134,13 +134,19 @@
 <td><strong>InputDirectory</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>Location of the source files to process. FTP servers are not supported.<br><br>Example: <code>C:\\InputDirectory</code><br><br><strong>Note:</strong> For the adapter to process data, the adapter service account must have read and write permissions for the input directory.</td>
+<td>Location of the source files to process. FTP servers are not supported.<br><br>Example: <code>C:\\InputDirectory</code><br><br><strong>Note:</strong> For the adapter to process data, the adapter service account must have read, write, and delete permissions for the input directory.</td>
 </tr>
 <tr>
 <td><strong>OutputDirectory</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>Location for the files to be moved to after being processed. FTP servers are not supported.<br><br>Example: <code>C:\\OutputDirectory</code><br><br><strong>Note:</strong> For the adapter to process data, the adapter service account must have write permissions for the output directory.</td>
+<td>Location for the files to be moved to after being processed. FTP servers are not supported.<br><br>Example: <code>C:\\OutputDirectory</code><br><br><strong>Note:</strong> For the adapter to process data, the adapter service account must have read, write, and delete permissions for the output directory.</td>
+</tr>
+<tr>
+<td><strong>DiscoveryDirectory</strong></td>
+<td>Optional</td>
+<td><code>string</code></td>
+<td>Location for the files to be processed during discovery. FTP servers are not supported.<br><br>Example: <code>C:\\DiscoveryDirectory</code><br>Default value: <code>null</code><br><br><strong>Note:</strong> For the adapter to process data, the adapter service account must have read, write, and delete permissions for the discovery directory.</td>
 </tr>
 <tr>
 <td><strong>FileNameFilter</strong></td>
@@ -152,7 +158,7 @@
 <td><strong>HasHeader</strong></td>
 <td>Optional</td>
 <td><code>bool</code></td>
-<td>Indicates if a header line is present in the file. Only applies to CSV files.<br><br>Default value: <code>false</code></td>
+<td>Indicates if a header line is present in the file. Only applies to <code>CSV</code> files.<br><br>Default value: <code>false</code></td>
 </tr>
 <tr>
 <td><strong>Culture</strong></td>
@@ -164,7 +170,7 @@
 <td><strong>TimeZone</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Time zone of timestamps in the input files. If specified, the value must be a valid entry from the IANA time zone database.<br><br>Example: <code>America/Los_Angeles</code><br>Default value: <code>Etc/UTC</code></td>
+<td>Time zone of timestamps in the input files. If specified, the value must be a valid entry from the IANA time zone database.<br><br>Example 1: <code>America/Los_Angeles</code><br>Default value: <code>Etc/UTC</code> <br><br>Example 2: This example represents three <code>dates</code> and a <code>value</code> seperated by commas.<br><br><code>Date1,Date2,Date3,Value</code><br><code>03-08-2020T02:59-05:00,03-08-2020T02:59,03-08-2020T02:59Z,12345.6789</code><br><br>Date1 = <code>03-08-2020T02:59-05:00</code><br>this date has a &quot;-05:00&quot; adjustment meaning the date will be UTC-5.<br><br>Date2 = <code>03-08-2020T02:59</code><br>this date is displayed with no adjustment and will make use of the default timezone properly.<br><br>Date3 = <code>03-08-2020T02:59Z</code><br>this date is displayed with a &quot;Z&quot; so will be UTC.<br><br>Value = <code>12345.6789</code></td>
 </tr>
 <tr>
 <td><strong>Format</strong></td>
@@ -188,13 +194,13 @@
 <td><strong>FieldSeparator</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Character used to delineate fields in the input files. Only applies to CSV files.<br><br>Default value: <code>,</code></td>
+<td>Character used to delineate fields in the input files. Only applies to <code>CSV</code> files.<br><br>Default value: <code>,</code></td>
 </tr>
 <tr>
 <td><strong>LineSeparator</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Character(s) used to separate lines in the input files. Only applies to CSV files.<br><br>Default value: <code>\n</code></td>
+<td>Character(s) used to separate lines in the input files. Only applies to <code>CSV</code> files.<br><br>Allowed values: <code>\n</code>, <code>\r</code>, <code>\r\n</code><br>Default value: <code>\n</code></td>
 </tr>
 <tr>
 <td><strong>StreamIdPrefix</strong></td>
@@ -206,7 +212,13 @@
 <td><strong>DefaultStreamIdPattern</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Specifies the default stream ID pattern to use.<br><br>Possible parameters: <code>{FriendlyName}</code>, <code>{ValueField}</code><br>Default pattern: <code>{FriendlyName}.{ValueField}</code></td>
+<td>Specifies the default stream ID pattern to use.<br><br>Possible parameters: <code>{FriendlyName}</code>, <code>{ValueField}</code><br>Default pattern: <code>{FriendlyName}.{ValueField}</code><br><br><strong>Note:</strong> The <code>{FriendlyName}</code> parameter can contain any text, the <code>{ValueField}</code> parameter contains JSONPath/XPath symbols, which are replaced according to <a class="xref" href="../main/shared-content/configuration/text-parser/text-parser.html#special-characters-support">Special characters support</a>.</td>
+</tr>
+<tr>
+<td><strong>PurgeDelay</strong></td>
+<td>Optional</td>
+<td><code>string</code></td>
+<td>Specifies a time after which processed files will be removed from the output directory to save disk space.<br><br>Allowed value: A valid time span string (minimum of zero seconds: <code>0.00:00:00.0000000</code>) or <code>null</code><br>Default value: 10 days: <code>10.00:00:00.0000000</code><br><br><strong>Note:</strong> If <strong>PurgeDelay</strong> is set to <code>null</code>, files will never be purged from the output directory.</td>
 </tr>
 </tbody>
 </table>
@@ -215,20 +227,21 @@
 <p><strong>Note:</strong> When copy and pasting the examples below, validate the <code>InputDirectory</code> and <code>OutputDirectory</code> path for the data source host operating system: Windows or Linux.</p>
 <h3 id="data-source-configuration-with-required-parameters">Data source configuration with required parameters</h3>
 <pre><code class="lang-json">{
-  &quot;InputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
-  &quot;OutputDirectory&quot;: &quot;C:\\OutputDirectory&quot;
+  &quot;inputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
+  &quot;outputDirectory&quot;: &quot;C:\\OutputDirectory&quot;
 }
 </code></pre><h3 id="data-source-configuration-with-optional-parameters-windows">Data source configuration with optional parameters (Windows)</h3>
 <pre><code class="lang-json">{
-  &quot;FriendlyName&quot;: &quot;Weather&quot;,
-  &quot;InputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
-  &quot;FileNameFilter&quot;: &quot;*.csv&quot;,
-  &quot;OutputDirectory&quot;: &quot;C:\\OutputDirectory&quot;,
-  &quot;HasHeader&quot;: true,
-  &quot;Culture&quot;: &quot;fr-FR&quot;,
-  &quot;TimeZone&quot;: &quot;Europe/Paris&quot;,
-  &quot;Compression&quot;: &quot;Zip&quot;,
-  &quot;FieldSeparator&quot;: &quot;|&quot;
+  &quot;friendlyName&quot;: &quot;Weather&quot;,
+  &quot;inputDirectory&quot;: &quot;C:\\InputDirectory&quot;,
+  &quot;fileNameFilter&quot;: &quot;*.csv&quot;,
+  &quot;outputDirectory&quot;: &quot;C:\\OutputDirectory&quot;,
+  &quot;hasHeader&quot;: true,
+  &quot;culture&quot;: &quot;fr-FR&quot;,
+  &quot;timeZone&quot;: &quot;Europe/Paris&quot;,
+  &quot;compression&quot;: &quot;Zip&quot;,
+  &quot;fieldSeparator&quot;: &quot;|&quot;,
+  &quot;purgeDelay&quot;: &quot;5.04:03:02.0000000&quot;
 }
 </code></pre><h3 id="data-source-configuration-with-optional-parameters-linux">Data source configuration with optional parameters (Linux)</h3>
 <pre><code class="lang-json">{ 
@@ -242,7 +255,8 @@
   &quot;encoding&quot;: &quot;UTF8&quot;,
   &quot;fieldSeparator&quot;: &quot;,&quot;,
   &quot;lineSeparator&quot;: &quot;\n&quot;,
-  &quot;defaultStreamIdPattern&quot;: &quot;{FriendlyName}.{ValueField}&quot;
+  &quot;defaultStreamIdPattern&quot;: &quot;{FriendlyName}.{ValueField}&quot;,
+  &quot;purgeDelay&quot;: &quot;5.04:03:02.0000000&quot;
 }
 </code></pre><h2 id="rest-urls">REST URLs</h2>
 <table>

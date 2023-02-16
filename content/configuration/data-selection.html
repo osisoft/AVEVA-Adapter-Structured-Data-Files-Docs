@@ -8,7 +8,7 @@
     <title>Data selection </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Data selection ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -142,51 +142,91 @@
 <td><strong>StreamId</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>The custom identifier used to create the streams. If not specified, the adapter generates a default value based on the <strong>DefaultStreamIdPattern</strong> in the <a class="xref" href="data-source.html">PI Adapter for Structured Data Files data source configuration</a>.<br>A properly configured custom stream ID follows these rules: <br> Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores <code>__</code> .<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters:<br>/  :  ? #  [  ]  @  !  $  &amp;  &#39;  (  )  \  *  +  ,  ;  =  %  &lt;  >  `</td>
+<td>The custom identifier used to create the streams. If not specified or <code>null</code>, the adapter generates a default value based on the <strong>DefaultStreamIdPattern</strong> in the <a class="xref" href="data-source.html">PI Adapter for Structured Data Files data source configuration</a>.<br><br>A properly configured custom stream ID follows these rules:<br> Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores <code>__</code> .<br>Can contain a maximum of 100 characters.<br><br>For more information on how the adapter encodes special characters in the <strong>StreamId</strong>, see <a class="xref" href="../main/shared-content/configuration/egress-endpoints.html#special-characters-encoding">Egress endpoints</a>.</td>
 </tr>
 <tr>
 <td><strong>ValueField</strong></td>
-<td>Required</td>
+<td>Required<sup>2</sup></td>
 <td><code>string</code></td>
 <td>Name of the value field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (<code>1</code> being the first column) should be specified.<br><br> Example: &quot;FanSpeed&quot;.<br> Allowed Values: Any name to represent the value.</td>
 </tr>
 <tr>
-<td><strong>TimeField</strong></td>
-<td>Required</td>
+<td><strong>IndexField</strong></td>
+<td>Optional</td>
 <td><code>string</code></td>
-<td>Name of the time field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (<code>1</code> being the first column) should be specified. If no timestamp is provided in the file, the following reserved values can be used to specify the timestamp:<br> - <strong>FileCreationTime</strong> - UTC time when the file was created. <br> -  <strong>FileModifiedTime</strong> - UTC time when the file was modified.<br> - <strong>AdapterGeneratedTime</strong> - UTC time the file is processed by the adapter.<br><br>Example: &quot;FanSpeedTimeStamp&quot;</td>
+<td>Name of the time field. JSONPath, XPath, and CSV are supported<sup>1</sup>. For CSV files without a header, the column index (<code>1</code> being the first column) should be specified.<br><br>Default value (also when empty string, or only whitespace characters):<br> <code>null</code> - UTC time the file is processed by the adapter.<br><br>Allowed values if no timestamp is provided in the file:<br>- <code>null</code> <br>  - <code>FileCreationTime</code> - UTC time when the file was created. <br> - <code>FileModifiedTime</code> - UTC time when the file was modified.<br> - Any valid JSONPath, XPath, or CSV column number or header<br><br>Example: &quot;FanSpeedTimeStamp&quot;</td>
 </tr>
 <tr>
 <td><strong>DataType</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>Data type of the values specified in the <strong>ValueField</strong> parameter.<br><br>Example: &quot;Int32&quot; <br>Allowed values: SByte, Byte, Int16, UInt16, Int32, UInt32, Int64, UInt64, Single, Double, Decimal, Boolean, DateTime, String</td>
+<td>Data type of the values specified in the <strong>ValueField</strong> parameter.<br><br>Example: &quot;Int32&quot; <br>Allowed values: Boolean, Int16, UInt16, Int32, UInt32, Int64, UInt64, Float32, Float64, String, Date-Time</td>
 </tr>
 <tr>
-<td><strong>TimeFormat</strong></td>
+<td><strong>IndexFormat</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Time format of the timestamp specified in the <strong>TimeField</strong> parameter.<br><br>Default value: <code>null</code>.<br>Example: <code>MM/dd/yyyy H:mm:ss zzz</code>.<br><br><strong>Note:</strong> For more examples of time format syntax, see <a class="xref" href="../main/shared-content/configuration/text-parser/text-parser.html#date-and-time-processing">Date and time processing</a>.</td>
+<td>Time format of the timestamp specified in the <strong>IndexField</strong> parameter. When <strong>IndexField</strong> is <code>null</code>, <strong>IndexFormat</strong> is passed as <code>Adapter</code>.<br><br>Default value: <code>null</code>.<br>Example: <code>MM/dd/yyyy H:mm:ss zzz</code>.<br><br><strong>Note:</strong> For more examples of time format syntax, see <a class="xref" href="../main/shared-content/configuration/text-parser/text-parser.html#date-and-time-processing">Date and time processing</a>.</td>
+</tr>
+<tr>
+<td><strong>DataFields</strong></td>
+<td>Required<sup>2</sup></td>
+<td>dictionary&lt;string, string&gt;</td>
+<td>A dictionary of values with key-value pairs. The keys are specific fields for a complex type and the values are a JSONPath, XPath, or CSV to the value field<sup>1</sup>. For CSV files without a header, the column index (<code>1</code> being the first column) should be specified <br><br>Allowed keys: <code>Latitude</code>, <code>Longitude</code>, <code>x</code>, <code>y</code>, <code>z</code><br>Default value: <code>null</code></td>
 </tr>
 </tbody>
 </table>
-<p><sup>1</sup><strong>Note</strong>: For full examples of how to enter JSONPath, XPath, or CSV syntax, see the following topics:</p>
+<p><sup>1</sup> <strong>Note</strong>: For full examples of how to enter JSONPath, XPath, or CSV syntax, see the following topics:</p>
 <ul>
-<li><a class="xref" href="../main/shared-content/configuration/text-parser/jsonpath-syntax-for-value-retrieval.html">JSONPath syntax for value retrieval</a></li>
-<li><a class="xref" href="../main/shared-content/configuration/text-parser/xpath-and-csv-syntax-for-value-retrieval.html">XPath and CSV syntax for value retrieval</a></li>
+<li><a class="xref" href="text-parser/jsonpath-syntax-for-value-retrieval.html">JSONPath syntax for value retrieval</a></li>
+<li><a class="xref" href="text-parser/xpath-and-csv-syntax-for-value-retrieval.html">XPath and CSV syntax for value retrieval</a></li>
 </ul>
+<p><sup>2</sup> <strong>ValueField</strong> and <strong>DataFields</strong> are mutually exclusive. For example, if you specify <strong>ValueField</strong>, you cannot specify <strong>DataFields</strong> and vice versa.</p>
 <h2 id="structured-data-files-data-selection-examples">Structured Data Files data selection examples</h2>
 <p>The following are examples of valid Structured Data Files data selection configurations:</p>
-<h3 id="structured-data-files-data-selection-configuration-example-with-custom-timeformat">Structured Data Files data selection configuration example with custom TimeFormat</h3>
+<h3 id="structured-data-files-data-selection-configuration-example-with-custom-indexformat">Structured Data Files data selection configuration example with custom IndexFormat</h3>
 <pre><code class="lang-json">[
   {
     &quot;Selected&quot;: true,
     &quot;Name&quot;: &quot;Name&quot;,
     &quot;StreamId&quot;: &quot;StreamId&quot;,
-    &quot;ValueField&quot;: &quot;FanSpeed&quot;,
-    &quot;TimeField&quot;: &quot;FileCreationTime&quot;,
-    &quot;TimeFormat&quot;: &quot;mm/dd/yy&quot;,
-    &quot;DataType&quot;: &quot;Int32&quot;
+    &quot;ValueField&quot;: &quot;Pressure&quot;,
+    &quot;IndexField&quot;: &quot;PressureTimeStamp&quot;,
+    &quot;IndexFormat&quot;: &quot;mm/dd/yy&quot;,
+    &quot;DataType&quot;: &quot;Int16&quot;
+  }
+]
+</code></pre><h3 id="structured-data-files-data-selection-configuration-example-with-complex-data">Structured Data Files data selection configuration example with complex data</h3>
+<p>Example complex data (CSV file with header):</p>
+<pre><code class="lang-csv">timestamp, lat, long, x_col, y_col, z_col
+2021-09-12, 15.294533, 20.479839, 1.1, 2.2, 3.3
+2021-09-12, 36.33403, -82.4019478, 4.1, 5.2, 6.3
+</code></pre><p>Example data selection configuration for complex data</p>
+<pre><code class="lang-json">[
+  {
+    &quot;Selected&quot;: true,
+    &quot;Name&quot;: &quot;Name_XYZ&quot;,
+    &quot;StreamId&quot;: &quot;StreamId_XYZ&quot;,
+    &quot;ValueField&quot;: null,
+    &quot;DataFields&quot;: {
+        &quot;X&quot;: &quot;x_col&quot;,
+        &quot;Y&quot;: &quot;y_col&quot;,
+        &quot;Z&quot;: &quot;z_col&quot;
+    },
+    &quot;IndexField&quot;: &quot;timestamp&quot;,
+    &quot;DataType&quot;: &quot;Float64&quot;
+  },
+  {
+    &quot;Selected&quot;: true,
+    &quot;Name&quot;: &quot;Name_LatLong&quot;,
+    &quot;StreamId&quot;: &quot;StreamId_LatLong&quot;,
+    &quot;ValueField&quot;: null,
+    &quot;DataFields&quot;: {
+        &quot;Latitude&quot;: &quot;lat&quot;,
+        &quot;Longitude&quot;: &quot;long&quot;
+    },
+    &quot;IndexField&quot;: &quot;timestamp&quot;,
+    &quot;DataType&quot;: &quot;Float64&quot;
   }
 ]
 </code></pre><h3 id="structured-data-files-data-selection-configuration-example-with-unselected-item">Structured Data Files data selection configuration example with unselected item</h3>
@@ -195,9 +235,9 @@
     &quot;Selected&quot;: false,
     &quot;Name&quot;: &quot;Name&quot;,
     &quot;StreamId&quot;: &quot;StreamId&quot;,
-    &quot;ValueField&quot;: &quot;Pressure&quot;,
-    &quot;TimeField&quot;: &quot;PressureTimeStamp&quot;,
-    &quot;DataType&quot;: &quot;Int16&quot;
+    &quot;ValueField&quot;: &quot;FanSpeed&quot;,
+    &quot;IndexField&quot;: &quot;FileCreationTime&quot;,
+    &quot;DataType&quot;: &quot;Int32&quot;
   }
 ]
 </code></pre><h2 id="rest-urls">REST URLs</h2>
