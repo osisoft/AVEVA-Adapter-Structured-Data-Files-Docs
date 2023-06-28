@@ -104,8 +104,8 @@ The following example is a complete configuration for the PI Adapter for Structu
         "password": "PASSWORD"
       },
       {
-        "id": "OCS Endpoint",
-        "endpoint": "https://OCSEndpoint/omf",
+        "id": "ADH Endpoint",
+        "endpoint": "https://ADHEndpoint/omf",
         "clientId": "CLIENTID",
         "clientSecret": "CLIENTSECRET"
       }
