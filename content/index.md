@@ -4,7 +4,7 @@ uid: PIAdapterforSDFOverview
 
 # Overview
 
-PI Adapter for Structured Data Files is a data-collection component that transfers time-series data from source files in a local or remote directory to OMF endpoints in OSIsoft Cloud Services or PI Servers.
+PI Adapter for Structured Data Files is a data-collection component that transfers time-series data from source files in a local or remote directory to OMF endpoints in AVEVA Data Hub or PI Servers.
 
 ![PI Adapter for Structured Data Files architecture](images/pi-adapter-for-sdf-architecture-diagram.png)
 
@@ -12,7 +12,7 @@ PI Adapter for Structured Data Files is a data-collection component that transfe
 
 ## Adapter installation
 
-You can install the adapter with a download kit that you can obtain from the OSIsoft Customer Portal. You can install the adapter on devices running either Windows or Linux operating systems.
+You can install the adapter with a download kit that you can obtain from the AVEVA Customer Portal. You can install the adapter on devices running either Windows or Linux operating systems.
 
 ## Adapter configuration
 

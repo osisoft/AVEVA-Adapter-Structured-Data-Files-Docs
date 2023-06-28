@@ -1,6 +1,6 @@
 # PI-Adapter-for-Structured-Data-Files-Docs
 
-PI Adapter for Structured Data Files is a data-collection component that transfers time-series data from source devices to Open Message Format (OMF) endpoints in OSIsoft Cloud Services or PI Servers.
+PI Adapter for Structured Data Files is a data-collection component that transfers time-series data from source devices to OMF (OSIsoft Message Format) endpoints in AVEVA Data Hub or AVEVA PI Servers.
 
 This repository contains the documentation for PI Adapter for Structured Data Files.
 
