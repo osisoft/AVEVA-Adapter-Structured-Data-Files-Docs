@@ -1,1 +1,1 @@
-PI Adapter for Structured Data Files
+AVEVA Adapter for Structured Data Files
