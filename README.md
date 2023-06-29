@@ -1,8 +1,8 @@
-# PI-Adapter-for-Structured-Data-Files-Docs
+# AVEVA-Adapter-for-Structured-Data-Files-Docs
 
-PI Adapter for Structured Data Files is a data-collection component that transfers time-series data from source devices to OMF (Open Message Format) endpoints in AVEVA Data Hub or AVEVA PI Servers.
+AVEVA Adapter for Structured Data Files is a data-collection component that transfers time-series data from source devices to OMF (Open Message Format) endpoints in AVEVA Data Hub or AVEVA PI Servers.
 
-This repository contains the documentation for PI Adapter for Structured Data Files.
+This repository contains the documentation for AVEVA Adapter for Structured Data Files.
 
 ## Subtree
 
