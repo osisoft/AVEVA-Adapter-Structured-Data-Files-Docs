@@ -4,9 +4,9 @@ uid: PIAdapterforSDFOverview
 
 # Overview
 
-AVEVA Adapter for Structured Data Files is a data-collection component that transfers time-series data from source files in a local or remote directory to OMF endpoints in AVEVA Data Hub or AVEVA PI Servers.
+AVEVA Adapter for Structured Data Files is a data-collection component that transfers time-series data from source files in a local or remote directory to Open Message Format (OMF) endpoints in AVEVA Data Hub (ADH) or AVEVA PI Servers.
 
-![PI Adapter for Structured Data Files architecture](images/pi-adapter-for-sdf-architecture-diagram.png)
+![AVEVA Adapter for Structured Data Files architecture](images/aveva-adapter-for-sdf-architecture-diagram.png)
 
 <!--The conceptual information is very light. What type of files? Where do they come from? What sorts of scenarios would this be used in? I wouldn't expect to see installation and configuration information in the main overview page. It seems too detailed. I realize this is what is done on the other apater documents, but I would question it there, too.-->
 
