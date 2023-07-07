@@ -12,7 +12,7 @@ AVEVA Adapter for Structured Data Files is a data-collection component that tran
 
 ## Adapter installation
 
-You can install the adapter with a download kit that you can obtain from the AVEVA Customer Portal. You can install the adapter on devices running either Windows or Linux operating systems.
+You can install the adapter with a download kit that you can obtain from the [AVEVA Customer Portal](https://my.osisoft.com/). You can install the adapter on devices running either Windows or Linux operating systems.
 
 ## Adapter configuration
 
